@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c233df587c70144b8333caa5d7d4c01, type: 3}
+  m_Name: Geothermal
+  m_EditorClassIdentifier: 
+  totalHeatConsumption: 0
+  renewableEnergyProduced: 0
+  districtHeatingK1Multiplier: 6.23
+  copMultiplier: 2
+  maintenancePerSqMeterRe: 0
+  costPerKWCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 10
+      value: 956
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 16
+      value: 678
+      inSlope: -29.071428
+      outSlope: -29.071428
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 24
+      value: 549
+      inSlope: -14.857142
+      outSlope: -14.857142
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 30
+      value: 470
+      inSlope: -4.0212035
+      outSlope: -4.0212035
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 40
+      value: 437
+      inSlope: -5.1363635
+      outSlope: -5.1363635
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 52
+      value: 357
+      inSlope: -4.8333335
+      outSlope: -4.8333335
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 64
+      value: 321
+      inSlope: -2.4210527
+      outSlope: -2.4210527
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 90
+      value: 265
+      inSlope: -1.3043479
+      outSlope: -1.3043479
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 110
+      value: 250
+      inSlope: -0.36087915
+      outSlope: -0.36087915
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2909003
+    - serializedVersion: 3
+      time: 380
+      value: 174
+      inSlope: -0.11578948
+      outSlope: -0.11578948
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 490
+      value: 163
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 600
+      value: 190
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 800
+      value: 165
+      inSlope: -0.05
+      outSlope: -0.05
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1000
+      value: 160
+      inSlope: -0.0175
+      outSlope: -0.0175
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1200
+      value: 158
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1500
+      value: 160
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  costPerM3Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 500
+      value: 6.94
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2000
+      value: 2.41
+      inSlope: -0.0003199997
+      outSlope: -0.0003199997
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4000
+      value: 2.13
+      inSlope: -0.00013999999
+      outSlope: -0.00013999999
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 10000
+      value: 0.99
+      inSlope: -0.000069999995
+      outSlope: -0.000069999995
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 20000
+      value: 0.71
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 50000
+      value: 0.71
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  baseInvestmentCost: 10000
+  initialInvestmentCost: 28500
+  yearlyDHOperatingCost: 0
+  yearlyREOperatingCost: 0
+  yearlyDHCO2Amount: 0
+  yearlyRECO2Amount: 0
+  geothermalDivider: 2

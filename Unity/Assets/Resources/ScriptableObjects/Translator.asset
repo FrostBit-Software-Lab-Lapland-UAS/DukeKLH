@@ -1,0 +1,518 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d735ce58df6397d428eea152cb542033, type: 3}
+  m_Name: Translator
+  m_EditorClassIdentifier: 
+  textTranslations:
+  - id: start
+    translationsArray:
+    - Aloita
+    - Start
+    - "\r"
+  - id: selectBuildMethod
+    translationsArray:
+    - "Valitse rakennuksen m\xE4\xE4rittelytapa:"
+    - 'Choose how to define the building:'
+    - "\r"
+  - id: designBuilding
+    translationsArray:
+    - Muotoile oma rakennus
+    - Design a custom building
+    - "\r"
+  - id: calculateBuilding
+    translationsArray:
+    - Luo rakennus energiankulutuksen pohjalta
+    - Create a building based on heating energy information
+    - "\r"
+  - id: choosePreset
+    translationsArray:
+    - 'Tai valitse valmis rakennus:'
+    - 'Or choose a building preset:'
+    - "\r"
+  - id: customBuilding
+    translationsArray:
+    - Oma rakennus
+    - Custom building
+    - "\r"
+  - id: preset1
+    translationsArray:
+    - "Rivitalo\r\n 500 m2"
+    - 'Townhouse
+
+      500 m2'
+    - "\r"
+  - id: preset2
+    translationsArray:
+    - 'Pieni kerrostalo
+
+      800 m2'
+    - 'Apartment building
+
+      800 m2'
+    - "\r"
+  - id: preset3
+    translationsArray:
+    - 'Suuri kerrostalo
+
+      4000 m2'
+    - 'Apartment building
+
+      4000 m2'
+    - "\r"
+  - id: toSplash
+    translationsArray:
+    - Aloitusruutu
+    - Splash screen
+    - "\r"
+  - id: toMainMenu
+    translationsArray:
+    - "P\xE4\xE4valikko"
+    - Main menu
+    - "\r"
+  - id: toDrawer
+    translationsArray:
+    - Suunnittelu
+    - Design view
+    - "\r"
+  - id: toVisualisation
+    translationsArray:
+    - Visualisointi
+    - Visualisation view
+    - "\r"
+  - id: toDigitalTwins
+    translationsArray:
+    - Digitaaliset kaksoset
+    - Digital twins
+    - "\r"
+  - id: toTest
+    translationsArray:
+    - "Testiymp\xE4prist\xF6"
+    - Test environment
+    - "\r"
+  - id: annualHeating
+    translationsArray:
+    - "Vuotuinen l\xE4mmitys"
+    - Annual heating
+    - "\r"
+  - id: floorCount
+    translationsArray:
+    - "Kerrosten lukum\xE4\xE4r\xE4"
+    - Floor count
+    - "\r"
+  - id: constructionYear
+    translationsArray:
+    - Rakennusvuosi
+    - Construction year
+    - "\r"
+  - id: buildingZone
+    translationsArray:
+    - "Vy\xF6hyke"
+    - Building zone
+    - "\r"
+  - id: gotoDrawer
+    translationsArray:
+    - "Siirry piirton\xE4kym\xE4\xE4n"
+    - Proceed to Design view
+    - "\r"
+  - id: gotoVisualisation
+    translationsArray:
+    - Siirry visualisointiin
+    - Proceed to Visualisation view
+    - "\r"
+  - id: backToMainMenu
+    translationsArray:
+    - "Takaisin p\xE4\xE4valikkoon"
+    - Back to Main menu
+    - "\r"
+  - id: grossArea
+    translationsArray:
+    - Kerrospinta-ala
+    - Gross area
+    - "\r"
+  - id: grossVolume
+    translationsArray:
+    - Tilavuus
+    - Gross volume
+    - "\r"
+  - id: envelope
+    translationsArray:
+    - Vaipan pinta-ala
+    - Envelope area
+    - "\r"
+  - id: conduction
+    translationsArray:
+    - Johtuvuus
+    - Conduction
+    - "\r"
+  - id: ventilation
+    translationsArray:
+    - Ilmanvaihto
+    - Ventilation
+    - "\r"
+  - id: airInfiltration
+    translationsArray:
+    - Vuotoilma
+    - Air infiltration
+    - "\r"
+  - id: heatedWater
+    translationsArray:
+    - "K\xE4ytt\xF6vesi"
+    - Heated water
+    - "\r"
+  - id: internalSources
+    translationsArray:
+    - "Sis\xE4iset l\xE4hteet"
+    - Internal sources
+    - "\r"
+  - id: total
+    translationsArray:
+    - "Yhteens\xE4"
+    - Total
+    - "\r"
+  - id: townhouse
+    translationsArray:
+    - Rivitalo
+    - Townhouse
+    - "\r"
+  - id: smallAptBldg
+    translationsArray:
+    - Pieni kerrostalo
+    - Small apartment building
+    - "\r"
+  - id: largeAptBldg
+    translationsArray:
+    - Suuri kerrostalo
+    - Large apartment building
+    - "\r"
+  - id: staircases
+    translationsArray:
+    - Porrashuoneet
+    - Staircases
+    - "\r"
+  - id: warningBldgSize
+    translationsArray:
+    - "Rakennuksen koko on pieni,\r\ntulokset voivat olla ep\xE4tarkkoja."
+    - 'Building size is small,
+
+      results might be inaccurate.'
+    - "\r"
+  - id: warningLevelCount
+    translationsArray:
+    - "Kerrosm\xE4\xE4r\xE4 on liian pieni\r\npoistoilmal\xE4mp\xF6pumpulle."
+    - 'Floor count is too small
+
+      to include heat recovery.'
+    - "\r"
+  - id: warningStaircaseCount
+    translationsArray:
+    - "Porrashuoneiden lukum\xE4\xE4r\xE4:"
+    - 'The number of staircases:'
+    - "\r"
+  - id: infoGrossArea
+    translationsArray:
+    - "Kerrosala\r\nRakennuksen kaikkien kerrosten yhteenlaskettu k\xE4yt\xF6ss\xE4
+      oleva lattiapinta-ala."
+    - 'Gross area
+
+      Total value of the building''s every floor area.'
+    - "\r"
+  - id: infoGrossVolume
+    translationsArray:
+    - 'Tilavuus
+
+      Rakennuksen kokonaistilavuus.'
+    - 'Gross volume
+
+      Total volume of the building.'
+    - "\r"
+  - id: infoEnvelopeArea
+    translationsArray:
+    - 'Vaipan pinta-ala
+
+      Rakennuksen ulkokuoren yhteenlaskettu pinta-ala.'
+    - 'Envelope area
+
+      Total area of the building''s outer surface.'
+    - "\r"
+  - id: param_U
+    translationsArray:
+    - "l\xE4mm\xF6nl\xE4p\xE4isykerroin"
+    - thermal transmittance
+    - "\r"
+  - id: param_A
+    translationsArray:
+    - rakennuksen vaipan pinta-ala
+    - building envelope area
+    - "\r"
+  - id: param_Ts
+    translationsArray:
+    - "rakennuksen sis\xE4l\xE4mp\xF6tila"
+    - indoor temperature
+    - "\r"
+  - id: param_Tu
+    translationsArray:
+    - "rakennuksen ulkol\xE4mp\xF6tila"
+    - outdoor temperature
+    - "\r"
+  - id: param_Dt
+    translationsArray:
+    - ajanjakson pituus
+    - timespan
+    - "\r"
+  - id: param_RHOi
+    translationsArray:
+    - ilman tiheys
+    - air density
+    - "\r"
+  - id: param_cpi
+    translationsArray:
+    - "ilman ominaisl\xE4mp\xF6kapasiteetti"
+    - air specific heat capacity
+    - "\r"
+  - id: param_q
+    translationsArray:
+    - ilmavirta
+    - airflow
+    - "\r"
+  - id: param_td
+    translationsArray:
+    - "ilmanvaihdon vuorokautinen k\xE4yntiaikasuhde"
+    - ventilation daily usage ratio
+    - "\r"
+  - id: param_r
+    translationsArray:
+    - "vuorokautisen k\xE4yntiajan kerroin"
+    - daily usage multiplier
+    - "\r"
+  - id: param_tv
+    translationsArray:
+    - "ilmanvaihdon viikoittainen k\xE4yntiaikasuhde"
+    - ventilation weekly usage ratio
+    - "\r"
+  - id: param_ETAa
+    translationsArray:
+    - "L\xE4mm\xF6n talteenoton hy\xF6tysuhde"
+    - Heat recovery efficiency coefficient
+    - "\r"
+  - id: param_nv
+    translationsArray:
+    - vuotoilman vaihtuvuus
+    - air infiltration magnitude
+    - "\r"
+  - id: param_V
+    translationsArray:
+    - rakennuksen tilavuus
+    - building volume
+    - "\r"
+  - id: param_RHOv
+    translationsArray:
+    - veden tiheys
+    - water density
+    - "\r"
+  - id: param_cpv
+    translationsArray:
+    - "veden ominaisl\xE4mp\xF6kapasiteetti"
+    - water specific heat capacity
+    - "\r"
+  - id: param_Vlkv
+    translationsArray:
+    - "l\xE4mpim\xE4n k\xE4ytt\xF6veden kulutus"
+    - heated water usage
+    - "\r"
+  - id: param_Tlkv
+    translationsArray:
+    - "l\xE4mpim\xE4n k\xE4ytt\xF6veden l\xE4mp\xF6tila"
+    - heated water temperature
+    - "\r"
+  - id: param_Tkkv
+    translationsArray:
+    - "kylm\xE4n k\xE4ytt\xF6veden l\xE4mp\xF6tila"
+    - cold water temperature
+    - "\r"
+  - id: param_Vlkv,om.bra
+    translationsArray:
+    - "l\xE4mpim\xE4n k\xE4ytt\xF6veden ominaiskulutus"
+    - heated water specific usage
+    - "\r"
+  - id: param_Abr
+    translationsArray:
+    - rakennuksen bruttoala
+    - building gross area
+    - "\r"
+  - id: param_Qlk
+    translationsArray:
+    - "rakennuksen l\xE4mp\xF6kuorma"
+    - building heat load
+    - "\r"
+  - id: param_ETAl
+    translationsArray:
+    - "l\xE4mp\xF6kuormien kk. hy\xF6dynt\xE4misaste"
+    - monthly heat load efficiency
+    - "\r"
+  - id: param_GAMMA
+    translationsArray:
+    - "l\xE4mp\xF6kuorman suhde l\xE4mp\xF6h\xE4vi\xF6\xF6n"
+    - heat load relation to heat loss
+    - "\r"
+  - id: param_a
+    translationsArray:
+    - numeerinen parametri
+    - numeric parameter
+    - "\r"
+  - id: param_TAU
+    translationsArray:
+    - rakennuksen aikavakio
+    - building time constant
+    - "\r"
+  - id: param_Crak
+    translationsArray:
+    - "rakennuksen sis. tehollinen l\xE4mp\xF6kapasiteetti"
+    - building internal heat capacity
+    - "\r"
+  - id: param_Htila
+    translationsArray:
+    - "rakennuksen tilojen ominaisl\xE4mp\xF6h\xE4vi\xF6"
+    - building indoor specific heat loss
+    - "\r"
+  - id: param_Qtila
+    translationsArray:
+    - "rakennuksen tilojen l\xE4mmitysenergian tarve"
+    - building required heat energy
+    - "\r"
+  - id: doorToDigiTwins
+    translationsArray:
+    - LAITEHUONE
+    - DEVICES
+    - "\r"
+  - id: doorToKLHMain
+    translationsArray:
+    - SUUNNITTELU
+    - DESIGN
+    - "\r"
+  - id: toRoof
+    translationsArray:
+    - KATOLLE
+    - ROOF
+    - "\r"
+  - id: toCellar
+    translationsArray:
+    - LAITETILAAN
+    - TECHNICAL
+    - "\r"
+  - id: KL
+    translationsArray:
+    - KL
+    - DH
+    - "\r"
+  - id: KL+ML
+    translationsArray:
+    - KL+ML
+    - DH+GTH
+    - "\r"
+  - id: KL+VLP
+    translationsArray:
+    - KL+VPL
+    - DH+WAHP
+    - "\r"
+  - id: KL+PILP
+    translationsArray:
+    - KL+PILP
+    - DH+HR
+    - "\r"
+  - id: defineCost
+    translationsArray:
+    - "M\xE4\xE4rit\xE4 s\xE4hk\xF6n hinta"
+    - Define electricity cost
+    - "\r"
+  - id: defineCO2
+    translationsArray:
+    - "M\xE4\xE4rit\xE4 CO2-kerroin"
+    - Define CO2 factor
+    - "\r"
+  - id: annualCost
+    translationsArray:
+    - Vuotuiset kustannukset
+    - Annual cost
+    - "\r"
+  - id: annualCO2
+    translationsArray:
+    - "Vuotuiset p\xE4\xE4st\xF6t"
+    - Annual CO2
+    - "\r"
+  - id: twentyCost
+    translationsArray:
+    - '20 vuoden kokonaiskustannus
+
+      (sis. investoinnit ja energia)'
+    - 'Twenty year total cost
+
+      (incl. investment + energy)'
+    - "\r"
+  - id: vive_trigger
+    translationsArray:
+    - "VR-tilassa:\r\nValitse ja piirr\xE4 LIIPASINPAINIKKEELLA"
+    - 'In VR mode:
+
+      Select and draw with TRIGGER button'
+    - "\r"
+  - id: vive_grip
+    translationsArray:
+    - "Siirr\xE4 piirtoalustaa ja kelluvia valikoita GRIP painikkeilla"
+    - Drag to move the drawing board and floating menus with GRIP buttons
+    - "\r"
+  - id: vive_trackpad
+    translationsArray:
+    - "\"K\xE4yt\xE4 KOSKETUSLEVY\xC4 kun kirjoitat numeroita \"\"Vuotuinen l\xE4mmitys\"\"
+      -kentt\xE4\xE4n.\""
+    - '"Use TRACKPAD to select numbers in ""Annual heating"" field"'
+    - "\r"
+  - id: desktop_help
+    translationsArray:
+    - "Hiiren ja n\xE4pp\xE4imist\xF6n k\xE4ytt\xF6 ohjaimina:\r\nHiiren vasen nappi
+      toimii valitsimena ja piirtoty\xF6kaluna.\r\nHiiren oikealla napilla voi k\xE4\xE4nt\xE4\xE4
+      n\xE4kym\xE4\xE4.\r\n\r\nWASD-n\xE4pp\xE4imill\xE4 voi liikkua tilassa.\r\nW
+      = liiku eteenp\xE4in\r\nS = liiku taaksep\xE4in\r\nA = liiku vasemmalle\r\nD
+      = liiku oikealle\r\n\r\nJoissakin tiloissa voi liikkua my\xF6s visuaalisia
+      siirtym\xE4linkkej\xE4 klikkaamalla.\r\n\r\nK\xE4yt\xE4 numeron\xE4pp\xE4imi\xE4
+      sy\xF6tt\xE4\xE4ksesi arvot <i>Vuotuinen l\xE4mmitys</i> -numerokentt\xE4\xE4n."
+    - 'In desktop mode:
+
+      Use left mouse button to select and draw.
+
+      Use
+      right mouse button to pan the view.
+
+      
+
+      WASD keys will move the
+      player.
+
+      W = forward
+
+      S = backward
+
+      A = move left
+
+      D
+      = move right
+
+      
+
+      In some spaces you can also use visually marked
+      hotspots to move around.
+
+      
+
+      Use normal number keys to input numbers
+      in <i>Annual heating</i> field.'
+    - "\r"
+  translationsCSVFile: {fileID: 4900000, guid: f440d5943461f274b94af69c77e5b87e, type: 3}

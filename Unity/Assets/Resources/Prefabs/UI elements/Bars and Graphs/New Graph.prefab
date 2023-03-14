@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5907077291165201610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5907077291165201608}
+  - component: {fileID: 5907077291165201609}
+  m_Layer: 0
+  m_Name: New Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5907077291165201608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907077291165201610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5907077291165201609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907077291165201610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926bbf382414f6340af2d59170771290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  graphArea: {fileID: 0}
+  graphType: 0
+  barDisplayType: 0
+  prevGraphType: 0
+  highlightDisplayedData: -1
+  sampleSize: 0
+  drawDebug: 0
+  liveUpdate: 1
+  renderColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+  barColors: []
+  createPointSpheres: 0
+  pointSize: 0.5
+  lineWidth: 0.1
+  barPadding: 1
+  barWidth: 150
+  barDepth: 50
+  lerpRatio: 1
+  lerpOverlap: 1
+  rectTransform: {fileID: 5907077291165201608}
+  pointContainer: {fileID: 0}
+  baseRenderMaterial: {fileID: 0}
+  lineRend: {fileID: 0}
+  barMesh: {fileID: -6920558492262526203, guid: 4322e43ccc3db2942ac269404455fe34, type: 3}
+  dataset:
+    unit: 
+    graphArea: {fileID: 0}
+    data: []
+    verticalRange: {x: 0, y: 0}
+    dataPointCount: 0
+    dataColumnNames: []
+    debugCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4

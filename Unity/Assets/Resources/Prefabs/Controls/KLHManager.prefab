@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4936906365250948275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4936906365250948277}
+  - component: {fileID: 4936906365250948276}
+  - component: {fileID: 2022590244330917329}
+  - component: {fileID: 7740228270385781885}
+  m_Layer: 0
+  m_Name: KLHManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4936906365250948277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936906365250948275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4936906365250948276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936906365250948275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47b9fee60fe047488c0ab7baff115a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.25
+  mode: 0
+  player: {fileID: 0}
+  fadeValue: 0
+  defaultPalette: {fileID: 11400000, guid: d32018cc6402f134293a4696e317af74, type: 2}
+  mainMenuUI: {fileID: 0}
+  buildingDrawer: {fileID: 0}
+  buildingDrawerUI: {fileID: 0}
+  buildingDrawerControls: {fileID: 0}
+  visualisationUI: {fileID: 0}
+  visualisationSelectors: {fileID: 0}
+  building: {fileID: 0}
+  buildings:
+  - {fileID: 11400000, guid: cd4f5392d9197a349b244cd0316fda88, type: 2}
+  - {fileID: 11400000, guid: ad97662738d92a54ebeb7e2741f7752d, type: 2}
+  - {fileID: 11400000, guid: a1acc8e5cffff274784e7f0995f40dd2, type: 2}
+  - {fileID: 11400000, guid: 39b0ea8466a62a8468bd8ba0a6628210, type: 2}
+  originalBuildings: []
+  volumeObj: {fileID: 0}
+  editTemplates: 0
+  resetTemplates: 0
+  language: 0
+--- !u!114 &2022590244330917329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936906365250948275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238effe854741e469822b287ca8c18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentlyFading: 0
+--- !u!114 &7740228270385781885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936906365250948275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35dec610145d5a42a4d9c3969bc6dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioVolume: 0.5
+  vrAudioSource: {fileID: 0}
+  desktopAudioSource: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 0b4edfc5b2a02db43bfcab2cfdae0088, type: 3}
+  clickSound: {fileID: 8300000, guid: 28b4844033fc9c5439fecc0de6914a99, type: 3}

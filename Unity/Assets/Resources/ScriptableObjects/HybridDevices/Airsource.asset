@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08d087fb3ad70944b5353466f1b8a89, type: 3}
+  m_Name: Airsource
+  m_EditorClassIdentifier: 
+  totalHeatConsumption: 0
+  renewableEnergyProduced: 0
+  districtHeatingK1Multiplier: 6.23
+  copMultiplier: 2
+  maintenancePerSqMeterRe: 0
+  costPerKWCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 42
+      value: 678
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 52
+      value: 586
+      inSlope: -7.8125
+      outSlope: -7.8125
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 58
+      value: 553
+      inSlope: -4.6842103
+      outSlope: -4.6842103
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 71
+      value: 497
+      inSlope: -4.409091
+      outSlope: -4.409091
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 80
+      value: 456
+      inSlope: -1.9117647
+      outSlope: -1.9117647
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 105
+      value: 432
+      inSlope: -0.9520173
+      outSlope: -0.9520173
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 118.410515
+      value: 419.43253
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 145
+      value: 426
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 161
+      value: 394
+      inSlope: -1.862069
+      outSlope: -1.862069
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 174
+      value: 372
+      inSlope: -1.3488373
+      outSlope: -1.3488373
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 204
+      value: 336
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  costPerM3Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 500
+      value: 6.94
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2000
+      value: 2.41
+      inSlope: -0.0003199997
+      outSlope: -0.0003199997
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4000
+      value: 2.13
+      inSlope: -0.00013999999
+      outSlope: -0.00013999999
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 10000
+      value: 0.99
+      inSlope: -0.000069999995
+      outSlope: -0.000069999995
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 20000
+      value: 0.71
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 50000
+      value: 0.71
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  baseInvestmentCost: 10000
+  initialInvestmentCost: 47000
+  yearlyDHOperatingCost: 0
+  yearlyREOperatingCost: 0
+  yearlyDHCO2Amount: 0
+  yearlyRECO2Amount: 0
+  airsourceDivider: 3
