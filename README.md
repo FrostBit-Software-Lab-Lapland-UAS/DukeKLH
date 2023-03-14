@@ -9,15 +9,22 @@ This project has been created using Unity 2021.3.8f1 and has been tested with Un
 
 
 ### Setting up the project ###
-Open Unity Hub after the cloning the files.
-Select Open -> Open project from disk.
-After the project first loads, you need to download the following packages from Unity's Package Manager:
+#### Packages ####
+After opening the project for the first time you need to download the following packages from Unity's Package Manager, which can be opened from Unity's top ribbon under *Window/Package Manager*. Filter the packages by selecting *Packages: Unity Registry* and search for the following packages:
 + High Definition RP
 + XR Plugin Management
-+ OpenXT Plugin
++ OpenXR Plugin
 + TextMeshPro
 + InputSystem
 
-After loading the packages you will likely see only pink materials. This means you need to convert the materials through HDRP Wizard, which can be found from Unity's top ribbon under *Window/Rendering/HDRP Wizard*.
+#### HDRP Wizard ####
+After loading the packages you will likely see only pink materials. This means you need to convert the materials through HDRP Wizard, which can be opened from Unity's top ribbon under *Window/Rendering/HDRP Wizard*.
 
+#### Curved UI text ####
 Texts are likely not shown correctly (if at all) when the project is first loaded. This is caused by text meshes not being generated yet. Hitting Play in any Scene should solve this issue. 
+
+#### Layers ####
+Input system uses layers to detect interaction, but layers are not configured in this project. See the picture below for default Layer configuration.
+
+![image](https://user-images.githubusercontent.com/125269615/225032758-92c1e1d8-6152-4b64-929b-453a92ef1f2e.png)
+
