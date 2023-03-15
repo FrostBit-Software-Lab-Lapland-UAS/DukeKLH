@@ -1,6 +1,40 @@
-MIT License
+Audio:
+CC0 / public domain
 
-Copyright (c) 2023 FrostBit Software Lab
+
+
+Fonts:
+Exo2 - SIL Open Font Licence, http://scripts.sil.org/OFL
+
+Copyright (c) 2023, Natanael Gama (https://fonts.google.com/specimen/Exo+2/about),
+with Reserved Font Name Exo2.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+
+
+3D models:
+Oculus Touch controllers:
+
+Art Attribution License 1.0
+
+Copyright © Facebook Technologies, LLC and its affiliates. All rights reserved.
+
+You may use these images solely for referring to the corresponding product in your video game or VR experience (including manuals for users). Otherwise, you may not use these images, or any trademarks, logos or other intellectual property owned by Facebook Technologies, LLC formerly known as Oculus VR, LLC (“Oculus”), including but not limited to use on merchandise or other product such as clothing, hats, or mugs. Do not use the Oculus images in a way that implies a partnership, sponsorship or endorsement; or features Oculus on materials associated with pornography, illegal activities, or other materials that violate Oculus Terms.
+
+THE IMAGES ARE PROVIDED TO YOU ON AN “AS IS” BASIS AND YOU ARE SOLELY RESPONSIBLE FOR YOUR USE OF THE IMAGES. OCULUS DISCLAIMS ALL WARRANTIES REGARDING THE IMAGES, INCLUDING WARRANTIES OF NON-INFRINGEMENT. OCULUS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES ARISING FROM OR RELATED TO YOUR USE OF THE IMAGES.
+
+For the avoidance of doubt, this license shall not apply to the Oculus name, trademark or service mark, logo or design.
+
+
+
+C# scripts:
+Lapin AMK - MIT-Licence
+
+Copyright   : Lapland University of Applied Sciences
+Licence     : MIT-Licence
+
+Copyright (c) 2023 Lapland University of Applied Sciences
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
