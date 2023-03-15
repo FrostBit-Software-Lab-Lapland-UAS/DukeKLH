@@ -28,3 +28,10 @@ Input system uses layers to detect interaction, but layers are not configured in
 
 ![image](https://user-images.githubusercontent.com/125269615/225032758-92c1e1d8-6152-4b64-929b-453a92ef1f2e.png)
 
+
+
+#### Build settings (Scenes) ####
+Scenes list needs to be set before the project can be used. Here is the configuration used by this project.
+
+![image](https://user-images.githubusercontent.com/125269615/225230745-35f1e052-a843-44a7-8965-6892f0a144cd.png)
+
