@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AudioController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AudioController
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.AudioController">
+  
+  
+  <h1 id="DUKE_AudioController" data-uid="DUKE.AudioController" class="text-break">Class AudioController
+  </h1>
+  <div class="markdown level0 summary"><p>Control the audio of the program. Offer public static methods to activate audio clips and music.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">AudioController</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.html">DUKE</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_AudioController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioController : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_AudioController_Audiomixer_" data-uid="DUKE.AudioController.Audiomixer*"></a>
+  <h4 id="DUKE_AudioController_Audiomixer" data-uid="DUKE.AudioController.Audiomixer">Audiomixer</h4>
+  <div class="markdown level1 summary"><p>Master <code data-dev-comment-type="typeparamref" class="typeparamref">AudioMixer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static AudioMixer Audiomixer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Audio.AudioMixer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_Current_" data-uid="DUKE.AudioController.Current*"></a>
+  <h4 id="DUKE_AudioController_Current" data-uid="DUKE.AudioController.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Public static instance of <code data-dev-comment-type="typeparamref" class="typeparamref">AudioController</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioController Current { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.AudioController.html">AudioController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_MusicBaseVolume_" data-uid="DUKE.AudioController.MusicBaseVolume*"></a>
+  <h4 id="DUKE_AudioController_MusicBaseVolume" data-uid="DUKE.AudioController.MusicBaseVolume">MusicBaseVolume</h4>
+  <div class="markdown level1 summary"><p>Base volume level for background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MusicBaseVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_MusicSource_" data-uid="DUKE.AudioController.MusicSource*"></a>
+  <h4 id="DUKE_AudioController_MusicSource" data-uid="DUKE.AudioController.MusicSource">MusicSource</h4>
+  <div class="markdown level1 summary"><p>Source audio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioSource MusicSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_MusicVolume_" data-uid="DUKE.AudioController.MusicVolume*"></a>
+  <h4 id="DUKE_AudioController_MusicVolume" data-uid="DUKE.AudioController.MusicVolume">MusicVolume</h4>
+  <div class="markdown level1 summary"><p>Current volume level for background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MusicVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_MusicVolumeAdjustment_" data-uid="DUKE.AudioController.MusicVolumeAdjustment*"></a>
+  <h4 id="DUKE_AudioController_MusicVolumeAdjustment" data-uid="DUKE.AudioController.MusicVolumeAdjustment">MusicVolumeAdjustment</h4>
+  <div class="markdown level1 summary"><p>Adjust multiplier for background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MusicVolumeAdjustment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_SoundBaseVolume_" data-uid="DUKE.AudioController.SoundBaseVolume*"></a>
+  <h4 id="DUKE_AudioController_SoundBaseVolume" data-uid="DUKE.AudioController.SoundBaseVolume">SoundBaseVolume</h4>
+  <div class="markdown level1 summary"><p>Base volume level for UI and other sound effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SoundBaseVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_SoundSource_" data-uid="DUKE.AudioController.SoundSource*"></a>
+  <h4 id="DUKE_AudioController_SoundSource" data-uid="DUKE.AudioController.SoundSource">SoundSource</h4>
+  <div class="markdown level1 summary"><p>Source audio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioSource SoundSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_SoundVolume_" data-uid="DUKE.AudioController.SoundVolume*"></a>
+  <h4 id="DUKE_AudioController_SoundVolume" data-uid="DUKE.AudioController.SoundVolume">SoundVolume</h4>
+  <div class="markdown level1 summary"><p>Current volume level for UI and other sound effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SoundVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_SoundVolumeAdjustment_" data-uid="DUKE.AudioController.SoundVolumeAdjustment*"></a>
+  <h4 id="DUKE_AudioController_SoundVolumeAdjustment" data-uid="DUKE.AudioController.SoundVolumeAdjustment">SoundVolumeAdjustment</h4>
+  <div class="markdown level1 summary"><p>Adjust multiplier for UI and other sound effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SoundVolumeAdjustment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_AudioController_ChangeMasterVolume_" data-uid="DUKE.AudioController.ChangeMasterVolume*"></a>
+  <h4 id="DUKE_AudioController_ChangeMasterVolume_System_Single_" data-uid="DUKE.AudioController.ChangeMasterVolume(System.Single)">ChangeMasterVolume(Single)</h4>
+  <div class="markdown level1 summary"><p>Change the master volume level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ChangeMasterVolume(float _volume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_volume</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_ChangeSnapshot_" data-uid="DUKE.AudioController.ChangeSnapshot*"></a>
+  <h4 id="DUKE_AudioController_ChangeSnapshot_System_Single_System_Single_" data-uid="DUKE.AudioController.ChangeSnapshot(System.Single,System.Single)">ChangeSnapshot(Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ChangeSnapshot(float _duration, float _musicLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_musicLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_DoSourceVolumeTransition_" data-uid="DUKE.AudioController.DoSourceVolumeTransition*"></a>
+  <h4 id="DUKE_AudioController_DoSourceVolumeTransition_UnityEngine_AudioSource_System_Single_System_Single_" data-uid="DUKE.AudioController.DoSourceVolumeTransition(UnityEngine.AudioSource,System.Single,System.Single)">DoSourceVolumeTransition(AudioSource, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Start the transition of the selected <code data-dev-comment-type="paramref" class="paramref">_source</code> to the desired volume level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoSourceVolumeTransition(AudioSource _source, float _targetVolume, float _duration = -1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioSource</span></td>
+        <td><span class="parametername">_source</span></td>
+        <td><p>Selected <code data-dev-comment-type="typeparamref" class="typeparamref">AudioSource</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_targetVolume</span></td>
+        <td><p>Desired volume level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_duration</span></td>
+        <td><p>Duration of the transition between current volume level and <code data-dev-comment-type="paramref" class="paramref">_targetVolume</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_PlayClickEnd_" data-uid="DUKE.AudioController.PlayClickEnd*"></a>
+  <h4 id="DUKE_AudioController_PlayClickEnd" data-uid="DUKE.AudioController.PlayClickEnd">PlayClickEnd()</h4>
+  <div class="markdown level1 summary"><p>Play the <code data-dev-comment-type="typeparamref" class="typeparamref">AudioClip</code> selected for click end instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayClickEnd()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_AudioController_PlayClickStart_" data-uid="DUKE.AudioController.PlayClickStart*"></a>
+  <h4 id="DUKE_AudioController_PlayClickStart" data-uid="DUKE.AudioController.PlayClickStart">PlayClickStart()</h4>
+  <div class="markdown level1 summary"><p>Play the <code data-dev-comment-type="typeparamref" class="typeparamref">AudioClip</code> selected for click start instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayClickStart()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_AudioController_PlayModeSwitchSound_" data-uid="DUKE.AudioController.PlayModeSwitchSound*"></a>
+  <h4 id="DUKE_AudioController_PlayModeSwitchSound" data-uid="DUKE.AudioController.PlayModeSwitchSound">PlayModeSwitchSound()</h4>
+  <div class="markdown level1 summary"><p>Play <code data-dev-comment-type="paramref" class="paramref">modeSwitchSound</code> once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayModeSwitchSound()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_AudioController_PlayMusic_" data-uid="DUKE.AudioController.PlayMusic*"></a>
+  <h4 id="DUKE_AudioController_PlayMusic_System_Boolean_System_Single_" data-uid="DUKE.AudioController.PlayMusic(System.Boolean,System.Single)">PlayMusic(Boolean, Single)</h4>
+  <div class="markdown level1 summary"><p>Toggle music on/off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IEnumerator PlayMusic(bool _on, float _time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_on</span></td>
+        <td><p>Whether to play or stop the music.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_AudioController_PlayTeleport_" data-uid="DUKE.AudioController.PlayTeleport*"></a>
+  <h4 id="DUKE_AudioController_PlayTeleport" data-uid="DUKE.AudioController.PlayTeleport">PlayTeleport()</h4>
+  <div class="markdown level1 summary"><p>Play the <code data-dev-comment-type="typeparamref" class="typeparamref">AudioClip</code> selected for teleport instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayTeleport()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_AudioController_PlayToggle_" data-uid="DUKE.AudioController.PlayToggle*"></a>
+  <h4 id="DUKE_AudioController_PlayToggle" data-uid="DUKE.AudioController.PlayToggle">PlayToggle()</h4>
+  <div class="markdown level1 summary"><p>Play the <code data-dev-comment-type="typeparamref" class="typeparamref">AudioClip</code> selected for toggle instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayToggle()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

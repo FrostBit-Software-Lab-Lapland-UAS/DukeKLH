@@ -1,0 +1,750 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Input
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Input
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.Controls.Input">
+  
+  
+  <h1 id="DUKE_Controls_Input" data-uid="DUKE.Controls.Input" class="text-break">Class Input
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for VRInput and DesktopInput.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">Input</span></div>
+      <div class="level6"><a class="xref" href="DUKE.Controls.DesktopInput.html">DesktopInput</a></div>
+      <div class="level6"><a class="xref" href="DUKE.Controls.VRHeadset.html">VRHeadset</a></div>
+      <div class="level6"><a class="xref" href="DUKE.Controls.VRInput.html">VRInput</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.Controls.html">DUKE.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_Controls_Input_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Input : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_Controls_Input_currentInteractionMode" data-uid="DUKE.Controls.Input.currentInteractionMode">currentInteractionMode</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">InteractionMode</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionMode currentInteractionMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.InteractionMode.html">InteractionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_currentInteractionTarget" data-uid="DUKE.Controls.Input.currentInteractionTarget">currentInteractionTarget</h4>
+  <div class="markdown level1 summary"><p>Currently linked <code data-dev-comment-type="typeparamref" class="typeparamref">Interactable</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Interactable currentInteractionTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_OnInteractionLinked" data-uid="DUKE.Controls.Input.OnInteractionLinked">OnInteractionLinked</h4>
+  <div class="markdown level1 summary"><p>Called when this instance becomes linked to an <code data-dev-comment-type="typeparamref" class="typeparamref">Interactable</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Interactable&gt; OnInteractionLinked</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_OnInteractionReleased" data-uid="DUKE.Controls.Input.OnInteractionReleased">OnInteractionReleased</h4>
+  <div class="markdown level1 summary"><p>Called when this instance is released from an <code data-dev-comment-type="typeparamref" class="typeparamref">Interactable</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Interactable&gt; OnInteractionReleased</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_OnTargetTransformChanged" data-uid="DUKE.Controls.Input.OnTargetTransformChanged">OnTargetTransformChanged</h4>
+  <div class="markdown level1 summary"><p>Sent when <code data-dev-comment-type="paramref" class="paramref">TargetTransform</code> is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Transform&gt; OnTargetTransformChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">UnityEngine.Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_rayBlockLayers" data-uid="DUKE.Controls.Input.rayBlockLayers">rayBlockLayers</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">LayerMask</code> which blocks <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected LayerMask rayBlockLayers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_rayDistance" data-uid="DUKE.Controls.Input.rayDistance">rayDistance</h4>
+  <div class="markdown level1 summary"><p>Distance of <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float rayDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_rayHitLayers" data-uid="DUKE.Controls.Input.rayHitLayers">rayHitLayers</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">LayerMask</code> which registers <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected LayerMask rayHitLayers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Input_targetTransform" data-uid="DUKE.Controls.Input.targetTransform">targetTransform</h4>
+  <div class="markdown level1 summary"><p>Currently targeted <code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Transform targetTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_Controls_Input_CanInteract_" data-uid="DUKE.Controls.Input.CanInteract*"></a>
+  <h4 id="DUKE_Controls_Input_CanInteract" data-uid="DUKE.Controls.Input.CanInteract">CanInteract</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanInteract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_CurrentInteractable_" data-uid="DUKE.Controls.Input.CurrentInteractable*"></a>
+  <h4 id="DUKE_Controls_Input_CurrentInteractable" data-uid="DUKE.Controls.Input.CurrentInteractable">CurrentInteractable</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">activeInteractables</code> is not empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Interactable CurrentInteractable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_Hit_" data-uid="DUKE.Controls.Input.Hit*"></a>
+  <h4 id="DUKE_Controls_Input_Hit" data-uid="DUKE.Controls.Input.Hit">Hit</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Hit</code> information of <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RaycastHit Hit { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RaycastHit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_InputActive_" data-uid="DUKE.Controls.Input.InputActive*"></a>
+  <h4 id="DUKE_Controls_Input_InputActive" data-uid="DUKE.Controls.Input.InputActive">InputActive</h4>
+  <div class="markdown level1 summary"><p>TRUE if this <code data-dev-comment-type="typeparamref" class="typeparamref">Input</code> should send and receive information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool InputActive { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_IsDesktop_" data-uid="DUKE.Controls.Input.IsDesktop*"></a>
+  <h4 id="DUKE_Controls_Input_IsDesktop" data-uid="DUKE.Controls.Input.IsDesktop">IsDesktop</h4>
+  <div class="markdown level1 summary"><p>TRUE if this <code data-dev-comment-type="typeparamref" class="typeparamref">Input</code> is of type <code data-dev-comment-type="typeparamref" class="typeparamref">DesktopInput</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDesktop { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_IsVR_" data-uid="DUKE.Controls.Input.IsVR*"></a>
+  <h4 id="DUKE_Controls_Input_IsVR" data-uid="DUKE.Controls.Input.IsVR">IsVR</h4>
+  <div class="markdown level1 summary"><p>TRUE if this <code data-dev-comment-type="typeparamref" class="typeparamref">Input</code> is of type <code data-dev-comment-type="typeparamref" class="typeparamref">VRInput</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_PointerRay_" data-uid="DUKE.Controls.Input.PointerRay*"></a>
+  <h4 id="DUKE_Controls_Input_PointerRay" data-uid="DUKE.Controls.Input.PointerRay">PointerRay</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Ray</code> through which <code data-dev-comment-type="typeparamref" class="typeparamref">Interactables</code> are detected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Ray PointerRay { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Ray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_PointerTarget_" data-uid="DUKE.Controls.Input.PointerTarget*"></a>
+  <h4 id="DUKE_Controls_Input_PointerTarget" data-uid="DUKE.Controls.Input.PointerTarget">PointerTarget</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code> of the object pointed at through <code data-dev-comment-type="typeparamref" class="typeparamref">Raycast</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Transform PointerTarget { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_PrimaryInteractionHeld_" data-uid="DUKE.Controls.Input.PrimaryInteractionHeld*"></a>
+  <h4 id="DUKE_Controls_Input_PrimaryInteractionHeld" data-uid="DUKE.Controls.Input.PrimaryInteractionHeld">PrimaryInteractionHeld</h4>
+  <div class="markdown level1 summary"><p>TRUE if primary interaction button is being held.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PrimaryInteractionHeld { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_TargetTransform_" data-uid="DUKE.Controls.Input.TargetTransform*"></a>
+  <h4 id="DUKE_Controls_Input_TargetTransform" data-uid="DUKE.Controls.Input.TargetTransform">TargetTransform</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code> of the currently targeted object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform TargetTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_Controls_Input_DisableInput_" data-uid="DUKE.Controls.Input.DisableInput*"></a>
+  <h4 id="DUKE_Controls_Input_DisableInput" data-uid="DUKE.Controls.Input.DisableInput">DisableInput()</h4>
+  <div class="markdown level1 summary"><p>Set this <code data-dev-comment-type="typeparamref" class="typeparamref">Input</code> inactive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DisableInput()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Input_EnableInput_" data-uid="DUKE.Controls.Input.EnableInput*"></a>
+  <h4 id="DUKE_Controls_Input_EnableInput" data-uid="DUKE.Controls.Input.EnableInput">EnableInput()</h4>
+  <div class="markdown level1 summary"><p>Set this Input active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EnableInput()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Input_LinkInteractable_" data-uid="DUKE.Controls.Input.LinkInteractable*"></a>
+  <h4 id="DUKE_Controls_Input_LinkInteractable_DUKE_Controls_Interactable_" data-uid="DUKE.Controls.Input.LinkInteractable(DUKE.Controls.Interactable)">LinkInteractable(Interactable)</h4>
+  <div class="markdown level1 summary"><p>Link <code data-dev-comment-type="paramref" class="paramref">_interactable</code> to this instance.
+Linking reserves this instance so that other <code data-dev-comment-type="typeparamref" class="typeparamref">Interactables</code> can't access it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LinkInteractable(Interactable _interactable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></td>
+        <td><span class="parametername">_interactable</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">Interactable</code> instance to be linked to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_ResetInteractables_" data-uid="DUKE.Controls.Input.ResetInteractables*"></a>
+  <h4 id="DUKE_Controls_Input_ResetInteractables" data-uid="DUKE.Controls.Input.ResetInteractables">ResetInteractables()</h4>
+  <div class="markdown level1 summary"><p>Reset the list of interactables and null 'currentInteractionTarget'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetInteractables()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Input_SetTargetTransform_" data-uid="DUKE.Controls.Input.SetTargetTransform*"></a>
+  <h4 id="DUKE_Controls_Input_SetTargetTransform_UnityEngine_Transform_" data-uid="DUKE.Controls.Input.SetTargetTransform(UnityEngine.Transform)">SetTargetTransform(Transform)</h4>
+  <div class="markdown level1 summary"><p>Set <code data-dev-comment-type="paramref" class="paramref">TargetTransform</code> and send pertinent <code data-dev-comment-type="typeparamref" class="typeparamref">Actions</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetTargetTransform(Transform _newTransform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_newTransform</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code> that will become <code data-dev-comment-type="paramref" class="paramref">TargetTransform</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Input_UnlinkInteractable_" data-uid="DUKE.Controls.Input.UnlinkInteractable*"></a>
+  <h4 id="DUKE_Controls_Input_UnlinkInteractable_DUKE_Controls_Interactable_" data-uid="DUKE.Controls.Input.UnlinkInteractable(DUKE.Controls.Interactable)">UnlinkInteractable(Interactable)</h4>
+  <div class="markdown level1 summary"><p>Unlink <code data-dev-comment-type="paramref" class="paramref">_interactable</code> from this instance.
+Unlinking allows this instance to be accessed by other <code data-dev-comment-type="typeparamref" class="typeparamref">Interactables</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UnlinkInteractable(Interactable _interactable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></td>
+        <td><span class="parametername">_interactable</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">Interactable</code> instance to be released from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CurvedUIElement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CurvedUIElement
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.UI.CurvedUIElement">
+  
+  
+  <h1 id="DUKE_UI_CurvedUIElement" data-uid="DUKE.UI.CurvedUIElement" class="text-break">Class CurvedUIElement
+  </h1>
+  <div class="markdown level0 summary"><p>Enable curving of an UI element that uses Image or TextMeshProUGUI component to render onto a canvas.
+Curved</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UnityEngine.EventSystems.UIBehaviour</span></div>
+    <div class="level6"><span class="xref">UnityEngine.UI.BaseMeshEffect</span></div>
+    <div class="level7"><span class="xref">CurvedUIElement</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">UnityEngine.UI.IMeshModifier</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.UI.BaseMeshEffect.OnDidApplyAnimationProperties()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.BaseMeshEffect.OnValidate()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.BaseMeshEffect.ModifyMesh(UnityEngine.Mesh)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.BaseMeshEffect.graphic</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.Start()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnDestroy()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.IsActive()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnBeforeTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnCanvasGroupChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnCanvasHierarchyChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.IsDestroyed()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.UI.html">DUKE.UI</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_UI_CurvedUIElement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+[Serializable]
+public class CurvedUIElement : BaseMeshEffect, IMeshModifier</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_UI_CurvedUIElement_CurvedMeshUpdated" data-uid="DUKE.UI.CurvedUIElement.CurvedMeshUpdated">CurvedMeshUpdated</h4>
+  <div class="markdown level1 summary"><p>Called each time <code data-dev-comment-type="paramref" class="paramref">CurvedMesh</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Mesh&gt; CurvedMeshUpdated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">UnityEngine.Mesh</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_AngleMax_" data-uid="DUKE.UI.CurvedUIElement.AngleMax*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_AngleMax" data-uid="DUKE.UI.CurvedUIElement.AngleMax">AngleMax</h4>
+  <div class="markdown level1 summary"><p>Maximum angles (corner).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 AngleMax { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_AngleMin_" data-uid="DUKE.UI.CurvedUIElement.AngleMin*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_AngleMin" data-uid="DUKE.UI.CurvedUIElement.AngleMin">AngleMin</h4>
+  <div class="markdown level1 summary"><p>Minimum angles (corner).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 AngleMin { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_CurvedMesh_" data-uid="DUKE.UI.CurvedUIElement.CurvedMesh*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_CurvedMesh" data-uid="DUKE.UI.CurvedUIElement.CurvedMesh">CurvedMesh</h4>
+  <div class="markdown level1 summary"><p>Curved mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh CurvedMesh { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_CurvedUIBase_" data-uid="DUKE.UI.CurvedUIElement.CurvedUIBase*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_CurvedUIBase" data-uid="DUKE.UI.CurvedUIElement.CurvedUIBase">CurvedUIBase</h4>
+  <div class="markdown level1 summary"><p>CurvedUIBase &quot;parent&quot; of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurvedUIBase CurvedUIBase { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.CurvedUIBase.html">CurvedUIBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_GraphicIsImage_" data-uid="DUKE.UI.CurvedUIElement.GraphicIsImage*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_GraphicIsImage" data-uid="DUKE.UI.CurvedUIElement.GraphicIsImage">GraphicIsImage</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="typeparamref" class="typeparamref">Graphic</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">Image</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool GraphicIsImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_GraphicIsText_" data-uid="DUKE.UI.CurvedUIElement.GraphicIsText*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_GraphicIsText" data-uid="DUKE.UI.CurvedUIElement.GraphicIsText">GraphicIsText</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="typeparamref" class="typeparamref">Graphic</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">TextMeshProUGUI</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool GraphicIsText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_ImgGraphic_" data-uid="DUKE.UI.CurvedUIElement.ImgGraphic*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_ImgGraphic" data-uid="DUKE.UI.CurvedUIElement.ImgGraphic">ImgGraphic</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Graphic</code> to be curved (<code data-dev-comment-type="typeparamref" class="typeparamref">Image</code> or <code data-dev-comment-type="typeparamref" class="typeparamref">TextMeshProUgui</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphic ImgGraphic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Graphic</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_ParentRT_" data-uid="DUKE.UI.CurvedUIElement.ParentRT*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_ParentRT" data-uid="DUKE.UI.CurvedUIElement.ParentRT">ParentRT</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code> of the parent object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform ParentRT { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_ReferencesSet_" data-uid="DUKE.UI.CurvedUIElement.ReferencesSet*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_ReferencesSet" data-uid="DUKE.UI.CurvedUIElement.ReferencesSet">ReferencesSet</h4>
+  <div class="markdown level1 summary"><p>TRUE if references have been set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReferencesSet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_SourceRT_" data-uid="DUKE.UI.CurvedUIElement.SourceRT*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_SourceRT" data-uid="DUKE.UI.CurvedUIElement.SourceRT">SourceRT</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code> of the source object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform SourceRT { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_Awake_" data-uid="DUKE.UI.CurvedUIElement.Awake*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_Awake" data-uid="DUKE.UI.CurvedUIElement.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.Awake()</span></div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_GetSourceAndParentCO_" data-uid="DUKE.UI.CurvedUIElement.GetSourceAndParentCO*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_GetSourceAndParentCO" data-uid="DUKE.UI.CurvedUIElement.GetSourceAndParentCO">GetSourceAndParentCO()</h4>
+  <div class="markdown level1 summary"><p>Get references to CurvedObjects that are either topmost in hierarchy or immediately above this instance.
+Subscribe to latter's ForceRefreshChildren Action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GetSourceAndParentCO()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_IsRefreshRequired_" data-uid="DUKE.UI.CurvedUIElement.IsRefreshRequired*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_IsRefreshRequired" data-uid="DUKE.UI.CurvedUIElement.IsRefreshRequired">IsRefreshRequired()</h4>
+  <div class="markdown level1 summary"><p>Update graphics mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRefreshRequired()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if refreshing of the mesh is needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_ModifyMesh_" data-uid="DUKE.UI.CurvedUIElement.ModifyMesh*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_ModifyMesh_UnityEngine_UI_VertexHelper_" data-uid="DUKE.UI.CurvedUIElement.ModifyMesh(UnityEngine.UI.VertexHelper)">ModifyMesh(VertexHelper)</h4>
+  <div class="markdown level1 summary"><p>Modify BaseMeshEffect-inherited UI mesh that is built with VertexHelper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ModifyMesh(VertexHelper vh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.VertexHelper</span></td>
+        <td><span class="parametername">vh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.UI.BaseMeshEffect.ModifyMesh(UnityEngine.UI.VertexHelper)</span></div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_OnChildDisabled_" data-uid="DUKE.UI.CurvedUIElement.OnChildDisabled*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_OnChildDisabled_DUKE_UI_CurvedUIElement_" data-uid="DUKE.UI.CurvedUIElement.OnChildDisabled(DUKE.UI.CurvedUIElement)">OnChildDisabled(CurvedUIElement)</h4>
+  <div class="markdown level1 summary"><p>Receive message when a child transform with CurvedObject is disabled.
+Relay the message to said transform's siblings in order to update their positions.
+(Layout Groups prevent reading changes in RectTransform's position data.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnChildDisabled(CurvedUIElement _childCO)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.CurvedUIElement.html">CurvedUIElement</a></td>
+        <td><span class="parametername">_childCO</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_OnDisable_" data-uid="DUKE.UI.CurvedUIElement.OnDisable*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_OnDisable" data-uid="DUKE.UI.CurvedUIElement.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.UI.BaseMeshEffect.OnDisable()</span></div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_OnEnable_" data-uid="DUKE.UI.CurvedUIElement.OnEnable*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_OnEnable" data-uid="DUKE.UI.CurvedUIElement.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.UI.BaseMeshEffect.OnEnable()</span></div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_ResetReferencesOfChildren_" data-uid="DUKE.UI.CurvedUIElement.ResetReferencesOfChildren*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_ResetReferencesOfChildren" data-uid="DUKE.UI.CurvedUIElement.ResetReferencesOfChildren">ResetReferencesOfChildren()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetReferencesOfChildren()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_TryGetReferences_" data-uid="DUKE.UI.CurvedUIElement.TryGetReferences*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_TryGetReferences" data-uid="DUKE.UI.CurvedUIElement.TryGetReferences">TryGetReferences()</h4>
+  <div class="markdown level1 summary"><p>Attempt to get references for required components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetReferences()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if references were found succesfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_CurvedUIElement_TryRefreshGraphic_" data-uid="DUKE.UI.CurvedUIElement.TryRefreshGraphic*"></a>
+  <h4 id="DUKE_UI_CurvedUIElement_TryRefreshGraphic" data-uid="DUKE.UI.CurvedUIElement.TryRefreshGraphic">TryRefreshGraphic()</h4>
+  <div class="markdown level1 summary"><p>Update imgGraphic to curve by recalculating the vertices of the mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TryRefreshGraphic()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">UnityEngine.UI.IMeshModifier</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DrawGrid
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DrawGrid
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.KLHData.DrawGrid">
+  
+  
+  <h1 id="DUKE_KLHData_DrawGrid" data-uid="DUKE.KLHData.DrawGrid" class="text-break">Class DrawGrid
+  </h1>
+  <div class="markdown level0 summary"><p>A 2D array of Cells with a defined width and depth.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DrawGrid</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.KLHData.html">DUKE.KLHData</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_KLHData_DrawGrid_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DrawGrid : ISerializationCallbackReceiver</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid__ctor_" data-uid="DUKE.KLHData.DrawGrid.#ctor*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid__ctor" data-uid="DUKE.KLHData.DrawGrid.#ctor">DrawGrid()</h4>
+  <div class="markdown level1 summary"><p>Empty constructor for <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid__ctor_" data-uid="DUKE.KLHData.DrawGrid.#ctor*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid__ctor_DUKE_KLHData_DrawCell_0__0___" data-uid="DUKE.KLHData.DrawGrid.#ctor(DUKE.KLHData.DrawCell[0:,0:])">DrawGrid(DrawCell[,])</h4>
+  <div class="markdown level1 summary"><p>Constructor for <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid(DrawCell[, ] _cells)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a>[,]</td>
+        <td><span class="parametername">_cells</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> 2D array to be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid__ctor_" data-uid="DUKE.KLHData.DrawGrid.#ctor*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid__ctor_DUKE_KLHData_DrawGrid_" data-uid="DUKE.KLHData.DrawGrid.#ctor(DUKE.KLHData.DrawGrid)">DrawGrid(DrawGrid)</h4>
+  <div class="markdown level1 summary"><p>Constructor for <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid(DrawGrid _otherGrid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawGrid.html">DrawGrid</a></td>
+        <td><span class="parametername">_otherGrid</span></td>
+        <td><p>Another <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code> to be copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid__ctor_" data-uid="DUKE.KLHData.DrawGrid.#ctor*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid__ctor_System_Int32_System_Int32_" data-uid="DUKE.KLHData.DrawGrid.#ctor(System.Int32,System.Int32)">DrawGrid(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor for <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid(int _width, int _depth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_width</span></td>
+        <td><p>Desired X-axis length.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_depth</span></td>
+        <td><p>Desired Y-axis length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_Cells_" data-uid="DUKE.KLHData.DrawGrid.Cells*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_Cells" data-uid="DUKE.KLHData.DrawGrid.Cells">Cells</h4>
+  <div class="markdown level1 summary"><p>Public reference to <code data-dev-comment-type="typeparamref" class="typeparamref">cells</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawCell[, ] Cells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a>[,]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CellsList_" data-uid="DUKE.KLHData.DrawGrid.CellsList*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CellsList" data-uid="DUKE.KLHData.DrawGrid.CellsList">CellsList</h4>
+  <div class="markdown level1 summary"><p>List of <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCells</code> used for serializing the 2D array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DrawCell&gt; CellsList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_Depth_" data-uid="DUKE.KLHData.DrawGrid.Depth*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_Depth" data-uid="DUKE.KLHData.DrawGrid.Depth">Depth</h4>
+  <div class="markdown level1 summary"><p>Y-axis length of the <code data-dev-comment-type="typeparamref" class="typeparamref">cells</code> 2D array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Depth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_LevelCellCount_" data-uid="DUKE.KLHData.DrawGrid.LevelCellCount*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_LevelCellCount" data-uid="DUKE.KLHData.DrawGrid.LevelCellCount">LevelCellCount</h4>
+  <div class="markdown level1 summary"><p>An array with each floor's <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] LevelCellCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_NullCells_" data-uid="DUKE.KLHData.DrawGrid.NullCells*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_NullCells" data-uid="DUKE.KLHData.DrawGrid.NullCells">NullCells</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="typeparamref" class="typeparamref">cells</code> has NULL <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCells</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NullCells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_Width_" data-uid="DUKE.KLHData.DrawGrid.Width*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_Width" data-uid="DUKE.KLHData.DrawGrid.Width">Width</h4>
+  <div class="markdown level1 summary"><p>X-axis length of the <code data-dev-comment-type="typeparamref" class="typeparamref">cells</code> 2D array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CalculateEnvelopeArea_" data-uid="DUKE.KLHData.DrawGrid.CalculateEnvelopeArea*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CalculateEnvelopeArea_System_Single_" data-uid="DUKE.KLHData.DrawGrid.CalculateEnvelopeArea(System.Single)">CalculateEnvelopeArea(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total surface area of KLHManager.Building in square metres.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateEnvelopeArea(float _storyHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_storyHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Total surface area of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in square metres.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CalculateGrossArea_" data-uid="DUKE.KLHData.DrawGrid.CalculateGrossArea*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CalculateGrossArea" data-uid="DUKE.KLHData.DrawGrid.CalculateGrossArea">CalculateGrossArea()</h4>
+  <div class="markdown level1 summary"><p>Calculate the gross area of KLHManager.Building in square metres.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateGrossArea()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Gross area of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in square metres.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CalculateHorizontalArea_" data-uid="DUKE.KLHData.DrawGrid.CalculateHorizontalArea*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CalculateHorizontalArea" data-uid="DUKE.KLHData.DrawGrid.CalculateHorizontalArea">CalculateHorizontalArea()</h4>
+  <div class="markdown level1 summary"><p>Calculate the horizontal surface area of KLHManager.Building in square metres.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateHorizontalArea()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Horizontal surface area of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> (roof and ground-facing floor) in square metres.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CalculateVolume_" data-uid="DUKE.KLHData.DrawGrid.CalculateVolume*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CalculateVolume_System_Single_" data-uid="DUKE.KLHData.DrawGrid.CalculateVolume(System.Single)">CalculateVolume(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total volume of KLHManager.Building in cubic metres.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateVolume(float _storyHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_storyHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Total volume of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in cubic metres.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CalculateWallArea_" data-uid="DUKE.KLHData.DrawGrid.CalculateWallArea*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CalculateWallArea_System_Single_" data-uid="DUKE.KLHData.DrawGrid.CalculateWallArea(System.Single)">CalculateWallArea(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the vertical surface area of KLHManager.Building in square metres.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateWallArea(float _storyHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_storyHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Vertical surface area of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> (walls) in square metres.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CellNeighbourElevationDifference_" data-uid="DUKE.KLHData.DrawGrid.CellNeighbourElevationDifference*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CellNeighbourElevationDifference_DUKE_KLHData_DrawCell_System_Boolean_" data-uid="DUKE.KLHData.DrawGrid.CellNeighbourElevationDifference(DUKE.KLHData.DrawCell,System.Boolean)">CellNeighbourElevationDifference(DrawCell, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Calculate the height difference (Value) of neighbouring cells.
+The order of sides is: [0] = +Z, [1] = +X, [2] = -Z, [3] = -X.
+Values answer the question &quot;How much taller is THIS cell compared to it's neighbours?&quot;.
+For optimization purposes this method should only be provided cells with a Value higher than 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] CellNeighbourElevationDifference(DrawCell _c, bool _includeDiagonals = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a></td>
+        <td><span class="parametername">_c</span></td>
+        <td><p>Origin <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> from which the height differences of surrounding <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCells</code> are calculated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_includeDiagonals</span></td>
+        <td><p>TRUE if the returned array should contain diagonal connections as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>Array of integers containing the height difference between <code data-dev-comment-type="paramref" class="paramref">_c</code> and its neighbouring <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code>s.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CellsAreNull_" data-uid="DUKE.KLHData.DrawGrid.CellsAreNull*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CellsAreNull" data-uid="DUKE.KLHData.DrawGrid.CellsAreNull">CellsAreNull()</h4>
+  <div class="markdown level1 summary"><p>Check if the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>'s grid contains NULL <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool CellsAreNull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>TRUE if a NULL <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> is found in the grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_CopyCells_" data-uid="DUKE.KLHData.DrawGrid.CopyCells*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_CopyCells_DUKE_KLHData_DrawCell_0__0___" data-uid="DUKE.KLHData.DrawGrid.CopyCells(DUKE.KLHData.DrawCell[0:,0:])">CopyCells(DrawCell[,])</h4>
+  <div class="markdown level1 summary"><p>Copy cells from <code data-dev-comment-type="paramref" class="paramref">_otherCells</code> to this object's cells array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CopyCells(DrawCell[, ] _otherCells)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a>[,]</td>
+        <td><span class="parametername">_otherCells</span></td>
+        <td><p>Another <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> array from which the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCells</code> are copied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_GetCell_" data-uid="DUKE.KLHData.DrawGrid.GetCell*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_GetCell_System_Int32_System_Int32_" data-uid="DUKE.KLHData.DrawGrid.GetCell(System.Int32,System.Int32)">GetCell(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get a <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> at coordinates (<code data-dev-comment-type="paramref" class="paramref">_x</code>,<code data-dev-comment-type="paramref" class="paramref">_y</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawCell GetCell(int _x, int _y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_x</span></td>
+        <td><p>Grid coordinate point of the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> on X-axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_y</span></td>
+        <td><p>Grid coordinate point of the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> on Y-axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a></td>
+        <td><p>A <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> at the specified coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_GetCell_" data-uid="DUKE.KLHData.DrawGrid.GetCell*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_GetCell_UnityEngine_Vector2Int_" data-uid="DUKE.KLHData.DrawGrid.GetCell(UnityEngine.Vector2Int)">GetCell(Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Get a <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> at coordinates <code data-dev-comment-type="paramref" class="paramref">_v2Pos</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawCell GetCell(Vector2Int _v2Pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td><span class="parametername">_v2Pos</span></td>
+        <td><p>Two-dimensional position with which the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> is selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a></td>
+        <td><p>A <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> at the specified coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_GetLevelCellCounts_" data-uid="DUKE.KLHData.DrawGrid.GetLevelCellCounts*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_GetLevelCellCounts" data-uid="DUKE.KLHData.DrawGrid.GetLevelCellCounts">GetLevelCellCounts()</h4>
+  <div class="markdown level1 summary"><p>Get the count of cells of each height (0-9).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] GetLevelCellCounts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>The count of cells at levels between 0 and 9.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_IsEdge_" data-uid="DUKE.KLHData.DrawGrid.IsEdge*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_IsEdge_DUKE_KLHData_DrawCell_UnityEngine_Vector2Int_" data-uid="DUKE.KLHData.DrawGrid.IsEdge(DUKE.KLHData.DrawCell,UnityEngine.Vector2Int)">IsEdge(DrawCell, Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Check whether the selected cell and another cell next to it are at different elevations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEdge(DrawCell _c, Vector2Int _dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawCell.html">DrawCell</a></td>
+        <td><span class="parametername">_c</span></td>
+        <td><p>The selected cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td><span class="parametername">_dir</span></td>
+        <td><p>The direction from the selected cell to the other cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>TRUE if <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> <code data-dev-comment-type="paramref" class="paramref">_c</code> and its neighbouring <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> at the direction specified with <code data-dev-comment-type="paramref" class="paramref">_dir</code> are at different elevations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_OnAfterDeserialize_" data-uid="DUKE.KLHData.DrawGrid.OnAfterDeserialize*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_OnAfterDeserialize" data-uid="DUKE.KLHData.DrawGrid.OnAfterDeserialize">OnAfterDeserialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_OnBeforeSerialize_" data-uid="DUKE.KLHData.DrawGrid.OnBeforeSerialize*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_OnBeforeSerialize" data-uid="DUKE.KLHData.DrawGrid.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_SaveGrid_" data-uid="DUKE.KLHData.DrawGrid.SaveGrid*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_SaveGrid" data-uid="DUKE.KLHData.DrawGrid.SaveGrid">SaveGrid()</h4>
+  <div class="markdown level1 summary"><p>Serialize the current DrawGrid as a list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGrid()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_Serialize2DArrayToList_" data-uid="DUKE.KLHData.DrawGrid.Serialize2DArrayToList*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_Serialize2DArrayToList" data-uid="DUKE.KLHData.DrawGrid.Serialize2DArrayToList">Serialize2DArrayToList()</h4>
+  <div class="markdown level1 summary"><p>Convert the grid to a list for serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Serialize2DArrayToList()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_DrawGrid_SerializeListTo2DArray_" data-uid="DUKE.KLHData.DrawGrid.SerializeListTo2DArray*"></a>
+  <h4 id="DUKE_KLHData_DrawGrid_SerializeListTo2DArray" data-uid="DUKE.KLHData.DrawGrid.SerializeListTo2DArray">SerializeListTo2DArray()</h4>
+  <div class="markdown level1 summary"><p>Convert the serialized list to a grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SerializeListTo2DArray()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

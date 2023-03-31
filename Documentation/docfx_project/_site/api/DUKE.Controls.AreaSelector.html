@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AreaSelector
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AreaSelector
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.Controls.AreaSelector">
+  
+  
+  <h1 id="DUKE_Controls_AreaSelector" data-uid="DUKE.Controls.AreaSelector" class="text-break">Class AreaSelector
+  </h1>
+  <div class="markdown level0 summary"><p>Select a coordinate (X and Y value) by clicking on an area.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></div>
+    <div class="level6"><a class="xref" href="DUKE.Controls.Clickable.html">Clickable</a></div>
+    <div class="level7"><span class="xref">AreaSelector</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_onClickStarted">Clickable.onClickStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_onClick">Clickable.onClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_clickAudio">Clickable.clickAudio</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_cUIElement">Clickable.cUIElement</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_updateEventSubscribedTo">Clickable.updateEventSubscribedTo</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_clickStarted">Clickable.clickStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_col">Clickable.col</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_baseColor">Clickable.baseColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_toggleColor">Clickable.toggleColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_uiPalette">Clickable.uiPalette</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_uiSettings">Clickable.uiSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_requireClickStartedToActivate">Clickable.requireClickStartedToActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_isToggleable">Clickable.isToggleable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_isToggled">Clickable.isToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_changeColorOnToggle">Clickable.changeColorOnToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_isPartOfGroup">Clickable.isPartOfGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_groupCanBeOff">Clickable.groupCanBeOff</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_isMultiToggleableInGroup">Clickable.isMultiToggleableInGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_UISettings">Clickable.UISettings</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_Image">Clickable.Image</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_Curved">Clickable.Curved</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_HasImage">Clickable.HasImage</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_IsCurved">Clickable.IsCurved</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_IsToggleable">Clickable.IsToggleable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_IsToggled">Clickable.IsToggled</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_ChangeColorOnToggle">Clickable.ChangeColorOnToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_IsPartOfGroup">Clickable.IsPartOfGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_IsMultiToggleableInGroup">Clickable.IsMultiToggleableInGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_GroupCanBeOff">Clickable.GroupCanBeOff</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_Color">Clickable.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_Toggled">Clickable.Toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_AddInput_DUKE_Controls_Input_">Clickable.AddInput(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_BeginInteraction_DUKE_Controls_Input_">Clickable.BeginInteraction(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_LogMessage_System_String_">Clickable.LogMessage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_SetToggled_System_Boolean_System_Boolean_">Clickable.SetToggled(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_SetUISettings_DUKE_UI_UISettingsElement_">Clickable.SetUISettings(UISettingsElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_SetupColliderForUIElement">Clickable.SetupColliderForUIElement()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_Start">Clickable.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_OnDisable">Clickable.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_EndInteraction">Clickable.EndInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_SubscribeToEvents">Clickable.SubscribeToEvents()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_UnsubscribeFromEvents">Clickable.UnsubscribeFromEvents()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_ClickStarted">Clickable.ClickStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_UpdateCollisionMesh_UnityEngine_Mesh_">Clickable.UpdateCollisionMesh(Mesh)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_SetImageColor">Clickable.SetImageColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_PlayAudio_System_Boolean_">Clickable.PlayAudio(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_UpdateGroup">Clickable.UpdateGroup()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_CanBeToggledOff">Clickable.CanBeToggledOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_GetGroup">Clickable.GetGroup()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_hoveringInputs">Interactable.hoveringInputs</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_isInteractable">Interactable.isInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_interactableTransform">Interactable.interactableTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_vrInteractionButton">Interactable.vrInteractionButton</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_desktopInteractionModifierFlags">Interactable.desktopInteractionModifierFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_interactionMode">Interactable.interactionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_updateEnabled">Interactable.updateEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_sourceInteractionMode">Interactable.sourceInteractionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_source">Interactable.source</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_vrInput">Interactable.vrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_mkbInput">Interactable.mkbInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_configurationInfo">Interactable.configurationInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Source">Interactable.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_VRInput">Interactable.VRInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_DesktopInput">Interactable.DesktopInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_InteractableTransform">Interactable.InteractableTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_IsInteractable">Interactable.IsInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_IsInteracting">Interactable.IsInteracting</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ConfigInfo">Interactable.ConfigInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_SourceInteractionMode">Interactable.SourceInteractionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Awake">Interactable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_RemoveInput_DUKE_Controls_Input_">Interactable.RemoveInput(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_BeginInteraction_DUKE_Controls_Input_System_Boolean_">Interactable.BeginInteraction(Input, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ForceEndInteraction">Interactable.ForceEndInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_HasInteractionMode_DUKE_Controls_InteractionMode_">Interactable.HasInteractionMode(InteractionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateInput_DUKE_Controls_Input_">Interactable.ValidateInput(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateVRInput_DUKE_Controls_VRInput_">Interactable.ValidateVRInput(VRInput)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateDesktopInput_DUKE_Controls_DesktopInput_">Interactable.ValidateDesktopInput(DesktopInput)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_GetAxisMultiplier_DUKE_Controls_AxisFlags_">Interactable.GetAxisMultiplier(AxisFlags)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.Controls.html">DUKE.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_Controls_AreaSelector_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AreaSelector : Clickable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_Controls_AreaSelector_OnAreaClicked" data-uid="DUKE.Controls.AreaSelector.OnAreaClicked">OnAreaClicked</h4>
+  <div class="markdown level1 summary"><p>Called when a click occurs within the area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Vector2&gt; OnAreaClicked</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">UnityEngine.Vector2</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_AreaSelector_OnMarginChanged" data-uid="DUKE.Controls.AreaSelector.OnMarginChanged">OnMarginChanged</h4>
+  <div class="markdown level1 summary"><p>Called when <code data-dev-comment-type="paramref" class="paramref">margin</code> is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnMarginChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_HasForegroundImage_" data-uid="DUKE.Controls.AreaSelector.HasForegroundImage*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_HasForegroundImage" data-uid="DUKE.Controls.AreaSelector.HasForegroundImage">HasForegroundImage</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">foregroundImg</code> is not NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasForegroundImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_HitAngles_" data-uid="DUKE.Controls.AreaSelector.HitAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_HitAngles" data-uid="DUKE.Controls.AreaSelector.HitAngles">HitAngles</h4>
+  <div class="markdown level1 summary"><p>Angles of the pointed-at position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 HitAngles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_InnerMaxAngles_" data-uid="DUKE.Controls.AreaSelector.InnerMaxAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_InnerMaxAngles" data-uid="DUKE.Controls.AreaSelector.InnerMaxAngles">InnerMaxAngles</h4>
+  <div class="markdown level1 summary"><p>Maximum angles of <code data-dev-comment-type="paramref" class="paramref">foregroundImg</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 InnerMaxAngles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_InnerMinAngles_" data-uid="DUKE.Controls.AreaSelector.InnerMinAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_InnerMinAngles" data-uid="DUKE.Controls.AreaSelector.InnerMinAngles">InnerMinAngles</h4>
+  <div class="markdown level1 summary"><p>Minimum angles of <code data-dev-comment-type="paramref" class="paramref">foregroundImg</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 InnerMinAngles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_OuterMaxAngles_" data-uid="DUKE.Controls.AreaSelector.OuterMaxAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_OuterMaxAngles" data-uid="DUKE.Controls.AreaSelector.OuterMaxAngles">OuterMaxAngles</h4>
+  <div class="markdown level1 summary"><p>Maximum angles of <code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 OuterMaxAngles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_OuterMinAngles_" data-uid="DUKE.Controls.AreaSelector.OuterMinAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_OuterMinAngles" data-uid="DUKE.Controls.AreaSelector.OuterMinAngles">OuterMinAngles</h4>
+  <div class="markdown level1 summary"><p>Minimum angles of <code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 OuterMinAngles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_Ratio_" data-uid="DUKE.Controls.AreaSelector.Ratio*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_Ratio" data-uid="DUKE.Controls.AreaSelector.Ratio">Ratio</h4>
+  <div class="markdown level1 summary"><p>Coordinate ratios within the area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Ratio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_CalculateAreaAngles_" data-uid="DUKE.Controls.AreaSelector.CalculateAreaAngles*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_CalculateAreaAngles" data-uid="DUKE.Controls.AreaSelector.CalculateAreaAngles">CalculateAreaAngles()</h4>
+  <div class="markdown level1 summary"><p>Calculate the angles of the main area's minimum and maximum points.
+If foreground image exists, calculate the angles for it as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateAreaAngles()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_ClickedInsideArea_" data-uid="DUKE.Controls.AreaSelector.ClickedInsideArea*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_ClickedInsideArea" data-uid="DUKE.Controls.AreaSelector.ClickedInsideArea">ClickedInsideArea()</h4>
+  <div class="markdown level1 summary"><p>Get the coordinate ratios, place a pointer object to the correct position and send an Action with ratios.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClickedInsideArea()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_ClickEnded_" data-uid="DUKE.Controls.AreaSelector.ClickEnded*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_ClickEnded" data-uid="DUKE.Controls.AreaSelector.ClickEnded">ClickEnded()</h4>
+  <div class="markdown level1 summary"><p>End the current click and invoke <code data-dev-comment-type="paramref" class="paramref">OnClick</code>.
+Calculate the click coordinates after that and send an Action with coordinate information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ClickEnded()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_ClickEnded">Clickable.ClickEnded()</a></div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_DesktopInteractionUpdate_" data-uid="DUKE.Controls.AreaSelector.DesktopInteractionUpdate*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_DesktopInteractionUpdate" data-uid="DUKE.Controls.AreaSelector.DesktopInteractionUpdate">DesktopInteractionUpdate()</h4>
+  <div class="markdown level1 summary"><p>Update loop for desktop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DesktopInteractionUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_DesktopInteractionUpdate">Clickable.DesktopInteractionUpdate()</a></div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_GetClickCoordinates_" data-uid="DUKE.Controls.AreaSelector.GetClickCoordinates*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_GetClickCoordinates" data-uid="DUKE.Controls.AreaSelector.GetClickCoordinates">GetClickCoordinates()</h4>
+  <div class="markdown level1 summary"><p>Calculate the position of the click, defined as a ratio between 0...1 on X and Y axii.
+This ratio is the point inside backgroundImg.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Vector2 GetClickCoordinates()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><p>Vector2 of ratios between 0...1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_OnEnable_" data-uid="DUKE.Controls.AreaSelector.OnEnable*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_OnEnable" data-uid="DUKE.Controls.AreaSelector.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_OnEnable">Clickable.OnEnable()</a></div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_SetPointerPosition_" data-uid="DUKE.Controls.AreaSelector.SetPointerPosition*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_SetPointerPosition_UnityEngine_Vector2_" data-uid="DUKE.Controls.AreaSelector.SetPointerPosition(UnityEngine.Vector2)">SetPointerPosition(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Set the pointer object to the position defined by <code data-dev-comment-type="paramref" class="paramref">_ratio</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointerPosition(Vector2 _ratio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">_ratio</span></td>
+        <td><p>Ratio of position between min and max coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_Update_" data-uid="DUKE.Controls.AreaSelector.Update*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_Update" data-uid="DUKE.Controls.AreaSelector.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Update">Interactable.Update()</a></div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_UpdateBackgroundSize_" data-uid="DUKE.Controls.AreaSelector.UpdateBackgroundSize*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_UpdateBackgroundSize" data-uid="DUKE.Controls.AreaSelector.UpdateBackgroundSize">UpdateBackgroundSize()</h4>
+  <div class="markdown level1 summary"><p>Scale the background image based on margin size defined by this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateBackgroundSize()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_AreaSelector_VRInteractionUpdate_" data-uid="DUKE.Controls.AreaSelector.VRInteractionUpdate*"></a>
+  <h4 id="DUKE_Controls_AreaSelector_VRInteractionUpdate" data-uid="DUKE.Controls.AreaSelector.VRInteractionUpdate">VRInteractionUpdate()</h4>
+  <div class="markdown level1 summary"><p>Update loop for VR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void VRInteractionUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Clickable.html#DUKE_Controls_Clickable_VRInteractionUpdate">Clickable.VRInteractionUpdate()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1392 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class KLHManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class KLHManager
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.KLHManager">
+  
+  
+  <h1 id="DUKE_KLHManager" data-uid="DUKE.KLHManager" class="text-break">Class KLHManager
+  </h1>
+  <div class="markdown level0 summary"><p>Controls the states of the game and relevant parameters.
+This object uses the Singleton pattern and is persistent
+independent of the loading or unloading of Scenes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">KLHManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.html">DUKE</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_KLHManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KLHManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_KLHManager_BuildingChanged" data-uid="DUKE.KLHManager.BuildingChanged">BuildingChanged</h4>
+  <div class="markdown level1 summary"><p>Called when the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action BuildingChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHManager_Current" data-uid="DUKE.KLHManager.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Public static instance of <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KLHManager Current</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHManager.html">KLHManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHManager_FadeValueChanged" data-uid="DUKE.KLHManager.FadeValueChanged">FadeValueChanged</h4>
+  <div class="markdown level1 summary"><p>Called when the fade value is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;float&gt; FadeValueChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHManager_LanguageSet" data-uid="DUKE.KLHManager.LanguageSet">LanguageSet</h4>
+  <div class="markdown level1 summary"><p>Called when the <code data-dev-comment-type="typeparamref" class="typeparamref">Language</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action LanguageSet</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHManager_ModeChanged" data-uid="DUKE.KLHManager.ModeChanged">ModeChanged</h4>
+  <div class="markdown level1 summary"><p>Called when the <code data-dev-comment-type="typeparamref" class="typeparamref">KLHMode</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action ModeChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_KLHManager_ActiveCamera_" data-uid="DUKE.KLHManager.ActiveCamera*"></a>
+  <h4 id="DUKE_KLHManager_ActiveCamera" data-uid="DUKE.KLHManager.ActiveCamera">ActiveCamera</h4>
+  <div class="markdown level1 summary"><p>Currently active <code data-dev-comment-type="typeparamref" class="typeparamref">Camera</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform ActiveCamera { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_ActiveInput_" data-uid="DUKE.KLHManager.ActiveInput*"></a>
+  <h4 id="DUKE_KLHManager_ActiveInput" data-uid="DUKE.KLHManager.ActiveInput">ActiveInput</h4>
+  <div class="markdown level1 summary"><p>Currently active <code data-dev-comment-type="typeparamref" class="typeparamref">Input</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Input ActiveInput { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Input.html">Input</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_Building_" data-uid="DUKE.KLHManager.Building*"></a>
+  <h4 id="DUKE_KLHManager_Building" data-uid="DUKE.KLHManager.Building">Building</h4>
+  <div class="markdown level1 summary"><p>Currently selected <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building Building { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_BuildingDrawer_" data-uid="DUKE.KLHManager.BuildingDrawer*"></a>
+  <h4 id="DUKE_KLHManager_BuildingDrawer" data-uid="DUKE.KLHManager.BuildingDrawer">BuildingDrawer</h4>
+  <div class="markdown level1 summary"><p>Reference to the <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingDrawer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildingDrawer BuildingDrawer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.BuildingDrawer.html">BuildingDrawer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_BuildingDrawerControls_" data-uid="DUKE.KLHManager.BuildingDrawerControls*"></a>
+  <h4 id="DUKE_KLHManager_BuildingDrawerControls" data-uid="DUKE.KLHManager.BuildingDrawerControls">BuildingDrawerControls</h4>
+  <div class="markdown level1 summary"><p>Reference to the controls panel object of <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingDrawer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject BuildingDrawerControls { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_BuildingDrawerUI_" data-uid="DUKE.KLHManager.BuildingDrawerUI*"></a>
+  <h4 id="DUKE_KLHManager_BuildingDrawerUI" data-uid="DUKE.KLHManager.BuildingDrawerUI">BuildingDrawerUI</h4>
+  <div class="markdown level1 summary"><p>Reference to the <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingDrawerUI</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildingDrawerUI BuildingDrawerUI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.BuildingDrawerUI.html">BuildingDrawerUI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_BuildingIsDefined_" data-uid="DUKE.KLHManager.BuildingIsDefined*"></a>
+  <h4 id="DUKE_KLHManager_BuildingIsDefined" data-uid="DUKE.KLHManager.BuildingIsDefined">BuildingIsDefined</h4>
+  <div class="markdown level1 summary"><p>TRUE if the currently selected <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> has <code data-dev-comment-type="typeparamref" class="typeparamref">GrossArea</code> higher than 0 m2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool BuildingIsDefined { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_Buildings_" data-uid="DUKE.KLHManager.Buildings*"></a>
+  <h4 id="DUKE_KLHManager_Buildings" data-uid="DUKE.KLHManager.Buildings">Buildings</h4>
+  <div class="markdown level1 summary"><p>List of all <code data-dev-comment-type="typeparamref" class="typeparamref">Buildings</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Building&gt; Buildings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DUKE.KLHData.Building.html">Building</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_CurrentAudioLevel_" data-uid="DUKE.KLHManager.CurrentAudioLevel*"></a>
+  <h4 id="DUKE_KLHManager_CurrentAudioLevel" data-uid="DUKE.KLHManager.CurrentAudioLevel">CurrentAudioLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioLevel CurrentAudioLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.AudioLevel.html">AudioLevel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_EditTemplates_" data-uid="DUKE.KLHManager.EditTemplates*"></a>
+  <h4 id="DUKE_KLHManager_EditTemplates" data-uid="DUKE.KLHManager.EditTemplates">EditTemplates</h4>
+  <div class="markdown level1 summary"><p>Template editing is allowed when set to TRUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EditTemplates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_FadeDuration_" data-uid="DUKE.KLHManager.FadeDuration*"></a>
+  <h4 id="DUKE_KLHManager_FadeDuration" data-uid="DUKE.KLHManager.FadeDuration">FadeDuration</h4>
+  <div class="markdown level1 summary"><p>Duration of the fade.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FadeDuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_FadeValue_" data-uid="DUKE.KLHManager.FadeValue*"></a>
+  <h4 id="DUKE_KLHManager_FadeValue" data-uid="DUKE.KLHManager.FadeValue">FadeValue</h4>
+  <div class="markdown level1 summary"><p>Current opacity of <code data-dev-comment-type="typeparamref" class="typeparamref">FadeOrbs</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FadeValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_IsDesktop_" data-uid="DUKE.KLHManager.IsDesktop*"></a>
+  <h4 id="DUKE_KLHManager_IsDesktop" data-uid="DUKE.KLHManager.IsDesktop">IsDesktop</h4>
+  <div class="markdown level1 summary"><p>TRUE if the current <code data-dev-comment-type="typeparamref" class="typeparamref">InputMode</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">Desktop</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDesktop { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_IsVR_" data-uid="DUKE.KLHManager.IsVR*"></a>
+  <h4 id="DUKE_KLHManager_IsVR" data-uid="DUKE.KLHManager.IsVR">IsVR</h4>
+  <div class="markdown level1 summary"><p>TRUE if the current <code data-dev-comment-type="typeparamref" class="typeparamref">InputMode</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">VR</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVR { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_Language_" data-uid="DUKE.KLHManager.Language*"></a>
+  <h4 id="DUKE_KLHManager_Language" data-uid="DUKE.KLHManager.Language">Language</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">Language</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Language Language { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Language.html">Language</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_MainMenuUI_" data-uid="DUKE.KLHManager.MainMenuUI*"></a>
+  <h4 id="DUKE_KLHManager_MainMenuUI" data-uid="DUKE.KLHManager.MainMenuUI">MainMenuUI</h4>
+  <div class="markdown level1 summary"><p>Reference to the <code data-dev-comment-type="typeparamref" class="typeparamref">MainMenuUI</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MainMenuUI MainMenuUI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.MainMenuUI.html">MainMenuUI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_Mode_" data-uid="DUKE.KLHManager.Mode*"></a>
+  <h4 id="DUKE_KLHManager_Mode" data-uid="DUKE.KLHManager.Mode">Mode</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">KLHMode</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KLHMode Mode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHMode.html">KLHMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_OriginalBuildings_" data-uid="DUKE.KLHManager.OriginalBuildings*"></a>
+  <h4 id="DUKE_KLHManager_OriginalBuildings" data-uid="DUKE.KLHManager.OriginalBuildings">OriginalBuildings</h4>
+  <div class="markdown level1 summary"><p>List of the original <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> templates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Building&gt; OriginalBuildings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DUKE.KLHData.Building.html">Building</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_Player_" data-uid="DUKE.KLHManager.Player*"></a>
+  <h4 id="DUKE_KLHManager_Player" data-uid="DUKE.KLHManager.Player">Player</h4>
+  <div class="markdown level1 summary"><p>Static reference of the player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject Player { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_RootDigitalTwins_" data-uid="DUKE.KLHManager.RootDigitalTwins*"></a>
+  <h4 id="DUKE_KLHManager_RootDigitalTwins" data-uid="DUKE.KLHManager.RootDigitalTwins">RootDigitalTwins</h4>
+  <div class="markdown level1 summary"><p>Reference to the root object of Digital_Twins_Full <code data-dev-comment-type="typeparamref" class="typeparamref">Scene</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject RootDigitalTwins { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_RootKLHMain_" data-uid="DUKE.KLHManager.RootKLHMain*"></a>
+  <h4 id="DUKE_KLHManager_RootKLHMain" data-uid="DUKE.KLHManager.RootKLHMain">RootKLHMain</h4>
+  <div class="markdown level1 summary"><p>Reference to the root object of KLH_MAIN <code data-dev-comment-type="typeparamref" class="typeparamref">Scene</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject RootKLHMain { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_RootMainMenu_" data-uid="DUKE.KLHManager.RootMainMenu*"></a>
+  <h4 id="DUKE_KLHManager_RootMainMenu" data-uid="DUKE.KLHManager.RootMainMenu">RootMainMenu</h4>
+  <div class="markdown level1 summary"><p>Reference to the root object of MainMenu <code data-dev-comment-type="typeparamref" class="typeparamref">Scene</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject RootMainMenu { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_VisualisationSelectors_" data-uid="DUKE.KLHManager.VisualisationSelectors*"></a>
+  <h4 id="DUKE_KLHManager_VisualisationSelectors" data-uid="DUKE.KLHManager.VisualisationSelectors">VisualisationSelectors</h4>
+  <div class="markdown level1 summary"><p>Reference to the parent object of <code data-dev-comment-type="typeparamref" class="typeparamref">AreaSelectors</code> for electricity and district heating values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject VisualisationSelectors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_VisualisationUI_" data-uid="DUKE.KLHManager.VisualisationUI*"></a>
+  <h4 id="DUKE_KLHManager_VisualisationUI" data-uid="DUKE.KLHManager.VisualisationUI">VisualisationUI</h4>
+  <div class="markdown level1 summary"><p>Reference to the <code data-dev-comment-type="typeparamref" class="typeparamref">DataVisualisationUI</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataVisualisationUI VisualisationUI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.DataVisualisationUI.html">DataVisualisationUI</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_VolumeObject_" data-uid="DUKE.KLHManager.VolumeObject*"></a>
+  <h4 id="DUKE_KLHManager_VolumeObject" data-uid="DUKE.KLHManager.VolumeObject">VolumeObject</h4>
+  <div class="markdown level1 summary"><p>Reference to the <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingVolumeObject</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildingVolumeObject VolumeObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.BuildingVolumeObject.html">BuildingVolumeObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_KLHManager_FormatFloatToString_" data-uid="DUKE.KLHManager.FormatFloatToString*"></a>
+  <h4 id="DUKE_KLHManager_FormatFloatToString_System_Single_System_Int32_" data-uid="DUKE.KLHManager.FormatFloatToString(System.Single,System.Int32)">FormatFloatToString(Single, Int32)</h4>
+  <div class="markdown level1 summary"><p>Format a float into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatFloatToString(float _value, int _decimals = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_value</span></td>
+        <td><p>Float value to be formatted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_decimals</span></td>
+        <td><p>The number of decimal points.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String form of the int value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_FormatFloatToStringPercentage_" data-uid="DUKE.KLHManager.FormatFloatToStringPercentage*"></a>
+  <h4 id="DUKE_KLHManager_FormatFloatToStringPercentage_System_Single_System_Int32_" data-uid="DUKE.KLHManager.FormatFloatToStringPercentage(System.Single,System.Int32)">FormatFloatToStringPercentage(Single, Int32)</h4>
+  <div class="markdown level1 summary"><p>Format a float into a string and add percent symbol to the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatFloatToStringPercentage(float _value, int _decimals = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_value</span></td>
+        <td><p>The float value (0...1) to be formatted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_decimals</span></td>
+        <td><p>The number of decimal points.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String form of the float value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_FormatIntToString_" data-uid="DUKE.KLHManager.FormatIntToString*"></a>
+  <h4 id="DUKE_KLHManager_FormatIntToString_System_Int32_System_Boolean_" data-uid="DUKE.KLHManager.FormatIntToString(System.Int32,System.Boolean)">FormatIntToString(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Format an integer (often energy consumption [kWh]) into a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatIntToString(int _value, bool _millionsAsM = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_value</span></td>
+        <td><p>Integer value to be formatted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_millionsAsM</span></td>
+        <td><p>Whether to display millions as M or full number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_GetActiveCamera_" data-uid="DUKE.KLHManager.GetActiveCamera*"></a>
+  <h4 id="DUKE_KLHManager_GetActiveCamera" data-uid="DUKE.KLHManager.GetActiveCamera">GetActiveCamera()</h4>
+  <div class="markdown level1 summary"><p>Get the active Camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform GetActiveCamera()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><p>Transform of the currently active Camera.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_OnBuildingDrawerUpdated_" data-uid="DUKE.KLHManager.OnBuildingDrawerUpdated*"></a>
+  <h4 id="DUKE_KLHManager_OnBuildingDrawerUpdated" data-uid="DUKE.KLHManager.OnBuildingDrawerUpdated">OnBuildingDrawerUpdated()</h4>
+  <div class="markdown level1 summary"><p>Called when BuildingDrawer updates the building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void OnBuildingDrawerUpdated()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_ResetBuildingTemplates_" data-uid="DUKE.KLHManager.ResetBuildingTemplates*"></a>
+  <h4 id="DUKE_KLHManager_ResetBuildingTemplates" data-uid="DUKE.KLHManager.ResetBuildingTemplates">ResetBuildingTemplates()</h4>
+  <div class="markdown level1 summary"><p>Reset the template Buildings list by instatiating each Building and saving them in a new list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetBuildingTemplates()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_SetLanguage_" data-uid="DUKE.KLHManager.SetLanguage*"></a>
+  <h4 id="DUKE_KLHManager_SetLanguage_DUKE_Language_" data-uid="DUKE.KLHManager.SetLanguage(DUKE.Language)">SetLanguage(Language)</h4>
+  <div class="markdown level1 summary"><p>Set the language of text elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLanguage(Language _lang)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Language.html">Language</a></td>
+        <td><span class="parametername">_lang</span></td>
+        <td><p>Selected language.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_SetLanguage_" data-uid="DUKE.KLHManager.SetLanguage*"></a>
+  <h4 id="DUKE_KLHManager_SetLanguage_System_Int32_" data-uid="DUKE.KLHManager.SetLanguage(System.Int32)">SetLanguage(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the language of text elements.
+Called through Clickable's UnityEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLanguage(int _lang)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_lang</span></td>
+        <td><p>Index of selected language in the Language enum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_SwitchMode_" data-uid="DUKE.KLHManager.SwitchMode*"></a>
+  <h4 id="DUKE_KLHManager_SwitchMode_DUKE_KLHMode_System_Boolean_" data-uid="DUKE.KLHManager.SwitchMode(DUKE.KLHMode,System.Boolean)">SwitchMode(KLHMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Change KLHMode and toggle relevant object (in)active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SwitchMode(KLHMode _mode, bool _fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHMode.html">KLHMode</a></td>
+        <td><span class="parametername">_mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_fade</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_TeleportPlayer_" data-uid="DUKE.KLHManager.TeleportPlayer*"></a>
+  <h4 id="DUKE_KLHManager_TeleportPlayer_DUKE_KLHMode_System_Boolean_" data-uid="DUKE.KLHManager.TeleportPlayer(DUKE.KLHMode,System.Boolean)">TeleportPlayer(KLHMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Teleport Player to a specified location and rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportPlayer(KLHMode _mode, bool _fadeOut = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHMode.html">KLHMode</a></td>
+        <td><span class="parametername">_mode</span></td>
+        <td><p>Defined mode that specifies which scene the teleport target is searched from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_fadeOut</span></td>
+        <td><p>Whether or not to use fading from black.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_TeleportPlayer_" data-uid="DUKE.KLHManager.TeleportPlayer*"></a>
+  <h4 id="DUKE_KLHManager_TeleportPlayer_UnityEngine_Transform_System_Boolean_" data-uid="DUKE.KLHManager.TeleportPlayer(UnityEngine.Transform,System.Boolean)">TeleportPlayer(Transform, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Teleport Player to a specified location and rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportPlayer(Transform _targetTransform, bool _fadeOut = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_targetTransform</span></td>
+        <td><p>Target Transform from which position and rotation are set to Player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_fadeOut</span></td>
+        <td><p>Whether or not to use fading from black.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_TeleportPlayer_" data-uid="DUKE.KLHManager.TeleportPlayer*"></a>
+  <h4 id="DUKE_KLHManager_TeleportPlayer_UnityEngine_Vector3_System_Boolean_" data-uid="DUKE.KLHManager.TeleportPlayer(UnityEngine.Vector3,System.Boolean)">TeleportPlayer(Vector3, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Teleport Player to a specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportPlayer(Vector3 _targetPosition, bool _fadeOut = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_targetPosition</span></td>
+        <td><p>Target position that is set to Player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_fadeOut</span></td>
+        <td><p>Whether or not to use fading from black.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHManager_ToBuildingDrawer_" data-uid="DUKE.KLHManager.ToBuildingDrawer*"></a>
+  <h4 id="DUKE_KLHManager_ToBuildingDrawer" data-uid="DUKE.KLHManager.ToBuildingDrawer">ToBuildingDrawer()</h4>
+  <div class="markdown level1 summary"><p>Begin the transition to KLH_MAIN (BuildingDrawer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToBuildingDrawer()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_ToDigitalTwins_" data-uid="DUKE.KLHManager.ToDigitalTwins*"></a>
+  <h4 id="DUKE_KLHManager_ToDigitalTwins" data-uid="DUKE.KLHManager.ToDigitalTwins">ToDigitalTwins()</h4>
+  <div class="markdown level1 summary"><p>Begin the transition to Digital_Twins_Full.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToDigitalTwins()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_ToMainMenu_" data-uid="DUKE.KLHManager.ToMainMenu*"></a>
+  <h4 id="DUKE_KLHManager_ToMainMenu" data-uid="DUKE.KLHManager.ToMainMenu">ToMainMenu()</h4>
+  <div class="markdown level1 summary"><p>Begin the transition to Main_Menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToMainMenu()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_ToSplashScreen_" data-uid="DUKE.KLHManager.ToSplashScreen*"></a>
+  <h4 id="DUKE_KLHManager_ToSplashScreen" data-uid="DUKE.KLHManager.ToSplashScreen">ToSplashScreen()</h4>
+  <div class="markdown level1 summary"><p>Begin the transition to Splash_Screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToSplashScreen()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_ToVisualisation_" data-uid="DUKE.KLHManager.ToVisualisation*"></a>
+  <h4 id="DUKE_KLHManager_ToVisualisation" data-uid="DUKE.KLHManager.ToVisualisation">ToVisualisation()</h4>
+  <div class="markdown level1 summary"><p>Begin the transition to KLH_MAIN (DataVisualisation).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToVisualisation()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHManager_TryCreatePlayer_" data-uid="DUKE.KLHManager.TryCreatePlayer*"></a>
+  <h4 id="DUKE_KLHManager_TryCreatePlayer" data-uid="DUKE.KLHManager.TryCreatePlayer">TryCreatePlayer()</h4>
+  <div class="markdown level1 summary"><p>Attempt to instantiate a Player prefab if one does not already exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject TryCreatePlayer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><p>Player prefab as a GameObject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

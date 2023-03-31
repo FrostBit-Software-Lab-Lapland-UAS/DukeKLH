@@ -1,0 +1,1383 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GraphArea
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GraphArea
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.UI.GraphArea">
+  
+  
+  <h1 id="DUKE_UI_GraphArea" data-uid="DUKE.UI.GraphArea" class="text-break">Class GraphArea
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the area in which a data set will be displayed.
+Creates a set of DataPoints with which data can be displayed on the curved plane.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">GraphArea</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.UI.html">DUKE.UI</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_UI_GraphArea_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+public class GraphArea : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_customBarDepth" data-uid="DUKE.UI.GraphArea.customBarDepth">customBarDepth</h4>
+  <div class="markdown level1 summary"><p>Custom depth of bars.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float customBarDepth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_customBarWidth" data-uid="DUKE.UI.GraphArea.customBarWidth">customBarWidth</h4>
+  <div class="markdown level1 summary"><p>Custom width of bars.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float customBarWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_displayHorizontalValues" data-uid="DUKE.UI.GraphArea.displayHorizontalValues">displayHorizontalValues</h4>
+  <div class="markdown level1 summary"><p>TRUE allows for displaying of horizontal values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool displayHorizontalValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_displayNameAndUnits" data-uid="DUKE.UI.GraphArea.displayNameAndUnits">displayNameAndUnits</h4>
+  <div class="markdown level1 summary"><p>TRUE allows for displaying of data names and units.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool displayNameAndUnits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_displayVerticalValues" data-uid="DUKE.UI.GraphArea.displayVerticalValues">displayVerticalValues</h4>
+  <div class="markdown level1 summary"><p>TRUE allows for displaying of vertical values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool displayVerticalValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_gridBackgroundColor" data-uid="DUKE.UI.GraphArea.gridBackgroundColor">gridBackgroundColor</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Color</code> of the grid background;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color gridBackgroundColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_gridHorizontalUnit" data-uid="DUKE.UI.GraphArea.gridHorizontalUnit">gridHorizontalUnit</h4>
+  <div class="markdown level1 summary"><p>Horizontal value unit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string gridHorizontalUnit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_gridLineColor" data-uid="DUKE.UI.GraphArea.gridLineColor">gridLineColor</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Color</code> of the grid lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color gridLineColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_gridName" data-uid="DUKE.UI.GraphArea.gridName">gridName</h4>
+  <div class="markdown level1 summary"><p>Name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string gridName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_gridVerticalUnit" data-uid="DUKE.UI.GraphArea.gridVerticalUnit">gridVerticalUnit</h4>
+  <div class="markdown level1 summary"><p>Vertical value unit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string gridVerticalUnit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_overrideBarDimensions" data-uid="DUKE.UI.GraphArea.overrideBarDimensions">overrideBarDimensions</h4>
+  <div class="markdown level1 summary"><p>TRUE allows for custom overriding of bar settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool overrideBarDimensions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_UI_GraphArea_verticalValuesAtHorizontalAlignment" data-uid="DUKE.UI.GraphArea.verticalValuesAtHorizontalAlignment">verticalValuesAtHorizontalAlignment</h4>
+  <div class="markdown level1 summary"><p>TRUE rotates vertical values to be displayed horizontally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool verticalValuesAtHorizontalAlignment</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_UI_GraphArea_AreaHeight_" data-uid="DUKE.UI.GraphArea.AreaHeight*"></a>
+  <h4 id="DUKE_UI_GraphArea_AreaHeight" data-uid="DUKE.UI.GraphArea.AreaHeight">AreaHeight</h4>
+  <div class="markdown level1 summary"><p>Height of the area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AreaHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_AreaWidth_" data-uid="DUKE.UI.GraphArea.AreaWidth*"></a>
+  <h4 id="DUKE_UI_GraphArea_AreaWidth" data-uid="DUKE.UI.GraphArea.AreaWidth">AreaWidth</h4>
+  <div class="markdown level1 summary"><p>Width of the area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AreaWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_BackgroundGrid_" data-uid="DUKE.UI.GraphArea.BackgroundGrid*"></a>
+  <h4 id="DUKE_UI_GraphArea_BackgroundGrid" data-uid="DUKE.UI.GraphArea.BackgroundGrid">BackgroundGrid</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code> of the background grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform BackgroundGrid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_CurvedUIBase_" data-uid="DUKE.UI.GraphArea.CurvedUIBase*"></a>
+  <h4 id="DUKE_UI_GraphArea_CurvedUIBase" data-uid="DUKE.UI.GraphArea.CurvedUIBase">CurvedUIBase</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">CurvedUIBase</code> used for calculating the positions of the elements of <code data-dev-comment-type="typeparamref" class="typeparamref">Graphs</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurvedUIBase CurvedUIBase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.CurvedUIBase.html">CurvedUIBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_DataCount_" data-uid="DUKE.UI.GraphArea.DataCount*"></a>
+  <h4 id="DUKE_UI_GraphArea_DataCount" data-uid="DUKE.UI.GraphArea.DataCount">DataCount</h4>
+  <div class="markdown level1 summary"><p>Number of data points per <code data-dev-comment-type="typeparamref" class="typeparamref">Graph</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_DataValueRange_" data-uid="DUKE.UI.GraphArea.DataValueRange*"></a>
+  <h4 id="DUKE_UI_GraphArea_DataValueRange" data-uid="DUKE.UI.GraphArea.DataValueRange">DataValueRange</h4>
+  <div class="markdown level1 summary"><p>Vertical range of the background grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 DataValueRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GraphAreaRectTransform_" data-uid="DUKE.UI.GraphArea.GraphAreaRectTransform*"></a>
+  <h4 id="DUKE_UI_GraphArea_GraphAreaRectTransform" data-uid="DUKE.UI.GraphArea.GraphAreaRectTransform">GraphAreaRectTransform</h4>
+  <div class="markdown level1 summary"><p>of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform GraphAreaRectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GraphCount_" data-uid="DUKE.UI.GraphArea.GraphCount*"></a>
+  <h4 id="DUKE_UI_GraphArea_GraphCount" data-uid="DUKE.UI.GraphArea.GraphCount">GraphCount</h4>
+  <div class="markdown level1 summary"><p>Number of <code data-dev-comment-type="typeparamref" class="typeparamref">Graphs</code> belonging to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GraphCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GraphsContainer_" data-uid="DUKE.UI.GraphArea.GraphsContainer*"></a>
+  <h4 id="DUKE_UI_GraphArea_GraphsContainer" data-uid="DUKE.UI.GraphArea.GraphsContainer">GraphsContainer</h4>
+  <div class="markdown level1 summary"><p>Container object for <code data-dev-comment-type="typeparamref" class="typeparamref">Graphs</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform GraphsContainer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GridBorderWidth_" data-uid="DUKE.UI.GraphArea.GridBorderWidth*"></a>
+  <h4 id="DUKE_UI_GraphArea_GridBorderWidth" data-uid="DUKE.UI.GraphArea.GridBorderWidth">GridBorderWidth</h4>
+  <div class="markdown level1 summary"><p>Border width of the background grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridBorderWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GridLineWidth_" data-uid="DUKE.UI.GraphArea.GridLineWidth*"></a>
+  <h4 id="DUKE_UI_GraphArea_GridLineWidth" data-uid="DUKE.UI.GraphArea.GridLineWidth">GridLineWidth</h4>
+  <div class="markdown level1 summary"><p>Width of standard lines of the background grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridLineWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_HorizontalGridSegments_" data-uid="DUKE.UI.GraphArea.HorizontalGridSegments*"></a>
+  <h4 id="DUKE_UI_GraphArea_HorizontalGridSegments" data-uid="DUKE.UI.GraphArea.HorizontalGridSegments">HorizontalGridSegments</h4>
+  <div class="markdown level1 summary"><p>Horizontal segments of the background grid.
+Horizontal segment lines travel vertically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HorizontalGridSegments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_MaxValue_" data-uid="DUKE.UI.GraphArea.MaxValue*"></a>
+  <h4 id="DUKE_UI_GraphArea_MaxValue" data-uid="DUKE.UI.GraphArea.MaxValue">MaxValue</h4>
+  <div class="markdown level1 summary"><p>Top value of <code data-dev-comment-type="paramref" class="paramref">DataValueRange</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_MinValue_" data-uid="DUKE.UI.GraphArea.MinValue*"></a>
+  <h4 id="DUKE_UI_GraphArea_MinValue" data-uid="DUKE.UI.GraphArea.MinValue">MinValue</h4>
+  <div class="markdown level1 summary"><p>Bottom value of <code data-dev-comment-type="paramref" class="paramref">DataValueRange</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_RectSize_" data-uid="DUKE.UI.GraphArea.RectSize*"></a>
+  <h4 id="DUKE_UI_GraphArea_RectSize" data-uid="DUKE.UI.GraphArea.RectSize">RectSize</h4>
+  <div class="markdown level1 summary"><p>Size of the <code data-dev-comment-type="typeparamref" class="typeparamref">Rect</code> of this <code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 RectSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_VerticalGridSegments_" data-uid="DUKE.UI.GraphArea.VerticalGridSegments*"></a>
+  <h4 id="DUKE_UI_GraphArea_VerticalGridSegments" data-uid="DUKE.UI.GraphArea.VerticalGridSegments">VerticalGridSegments</h4>
+  <div class="markdown level1 summary"><p>Veritcal segments of the background grid.
+Vertical segment lines travel horizontally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VerticalGridSegments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_UI_GraphArea_AddGraph_" data-uid="DUKE.UI.GraphArea.AddGraph*"></a>
+  <h4 id="DUKE_UI_GraphArea_AddGraph_DUKE_UI_Graph_" data-uid="DUKE.UI.GraphArea.AddGraph(DUKE.UI.Graph)">AddGraph(Graph)</h4>
+  <div class="markdown level1 summary"><p>Add a new Graph to this GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGraph(Graph _newGraph)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.Graph.html">Graph</a></td>
+        <td><span class="parametername">_newGraph</span></td>
+        <td><p>The Graph to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_ClearGraphs_" data-uid="DUKE.UI.GraphArea.ClearGraphs*"></a>
+  <h4 id="DUKE_UI_GraphArea_ClearGraphs" data-uid="DUKE.UI.GraphArea.ClearGraphs">ClearGraphs()</h4>
+  <div class="markdown level1 summary"><p>Clear (delete) the Graphs of this GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearGraphs()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_GraphArea_DeleteGraph_" data-uid="DUKE.UI.GraphArea.DeleteGraph*"></a>
+  <h4 id="DUKE_UI_GraphArea_DeleteGraph_DUKE_UI_Graph_" data-uid="DUKE.UI.GraphArea.DeleteGraph(DUKE.UI.Graph)">DeleteGraph(Graph)</h4>
+  <div class="markdown level1 summary"><p>Delete a Graph and it's hierarchy objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteGraph(Graph _g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.Graph.html">Graph</a></td>
+        <td><span class="parametername">_g</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetPixelPosition_" data-uid="DUKE.UI.GraphArea.GetPixelPosition*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetPixelPosition_System_Int32_System_Single_" data-uid="DUKE.UI.GraphArea.GetPixelPosition(System.Int32,System.Single)">GetPixelPosition(Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate pixel position of a GraphPoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetPixelPosition(int _x, float _y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_x</span></td>
+        <td><p>Horizontal index of the point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_y</span></td>
+        <td><p>Vertical total value of the point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetPixelPosition_" data-uid="DUKE.UI.GraphArea.GetPixelPosition*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetPixelPosition_UnityEngine_Vector2_" data-uid="DUKE.UI.GraphArea.GetPixelPosition(UnityEngine.Vector2)">GetPixelPosition(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Calculate pixel position of a GraphPoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetPixelPosition(Vector2 _ratio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">_ratio</span></td>
+        <td><p>Ratio within 0...1 on two axii, describing the position between min and max coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetWorldPositionOnCurvedGraph_" data-uid="DUKE.UI.GraphArea.GetWorldPositionOnCurvedGraph*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetWorldPositionOnCurvedGraph_UnityEngine_Vector2_System_Single_" data-uid="DUKE.UI.GraphArea.GetWorldPositionOnCurvedGraph(UnityEngine.Vector2,System.Single)">GetWorldPositionOnCurvedGraph(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the world position of a pixel position within the curved GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetWorldPositionOnCurvedGraph(Vector2 _ratio, float _depthOffset = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">_ratio</span></td>
+        <td><p>Ratio within 0...1 on two axii, describing the position between min and max coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_depthOffset</span></td>
+        <td><p>Custom depth of the object if it differs from the standard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetWorldPositionOnCurvedGraphLite_" data-uid="DUKE.UI.GraphArea.GetWorldPositionOnCurvedGraphLite*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetWorldPositionOnCurvedGraphLite_System_Int32_System_Single_System_Single_" data-uid="DUKE.UI.GraphArea.GetWorldPositionOnCurvedGraphLite(System.Int32,System.Single,System.Single)">GetWorldPositionOnCurvedGraphLite(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the world position of a pixel position within the curved GraphArea.
+Lightweight calculation compared to GetWorldPositionOnCurvedGraph().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetWorldPositionOnCurvedGraphLite(int _xIndex, float _yValue, float _depthOffset = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_xIndex</span></td>
+        <td><p>Index of the datapoint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_yValue</span></td>
+        <td><p>Value on the specified index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_depthOffset</span></td>
+        <td><p>Custom depth of the object if it differs from the standard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetWorldPositionWithIndexAndValue_" data-uid="DUKE.UI.GraphArea.GetWorldPositionWithIndexAndValue*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetWorldPositionWithIndexAndValue_System_Int32_System_Single_System_Single_" data-uid="DUKE.UI.GraphArea.GetWorldPositionWithIndexAndValue(System.Int32,System.Single,System.Single)">GetWorldPositionWithIndexAndValue(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate the world position of a pixel position within the curved GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetWorldPositionWithIndexAndValue(int _xIndex, float _yValue, float _depthOffset = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_xIndex</span></td>
+        <td><p>Horizontal index of the column.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_yValue</span></td>
+        <td><p>Vertical value within GraphArea.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_depthOffset</span></td>
+        <td><p>Custom depth of the object if it differs from the standard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GetYRatio_" data-uid="DUKE.UI.GraphArea.GetYRatio*"></a>
+  <h4 id="DUKE_UI_GraphArea_GetYRatio_System_Single_System_Boolean_" data-uid="DUKE.UI.GraphArea.GetYRatio(System.Single,System.Boolean)">GetYRatio(Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Return a ratio of the provided value inside DataValueRange.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetYRatio(float _value, bool _clamp01 = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_clamp01</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_GraphsOfThisArea_" data-uid="DUKE.UI.GraphArea.GraphsOfThisArea*"></a>
+  <h4 id="DUKE_UI_GraphArea_GraphsOfThisArea" data-uid="DUKE.UI.GraphArea.GraphsOfThisArea">GraphsOfThisArea()</h4>
+  <div class="markdown level1 summary"><p>Get every Graph inside this GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Graph&gt; GraphsOfThisArea()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DUKE.UI.Graph.html">Graph</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_TotalValueAtIndex_" data-uid="DUKE.UI.GraphArea.TotalValueAtIndex*"></a>
+  <h4 id="DUKE_UI_GraphArea_TotalValueAtIndex_System_Int32_" data-uid="DUKE.UI.GraphArea.TotalValueAtIndex(System.Int32)">TotalValueAtIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total value of all graphs on a specific index.
+For example, asking from index 0 returns the total value of every graph's first point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TotalValueAtIndex(int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_GraphArea_UpdateBackgroundGridVisuals_" data-uid="DUKE.UI.GraphArea.UpdateBackgroundGridVisuals*"></a>
+  <h4 id="DUKE_UI_GraphArea_UpdateBackgroundGridVisuals" data-uid="DUKE.UI.GraphArea.UpdateBackgroundGridVisuals">UpdateBackgroundGridVisuals()</h4>
+  <div class="markdown level1 summary"><p>Update the size and material parameters of the Background Grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBackgroundGridVisuals()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_GraphArea_UpdateBarsCustomValues_" data-uid="DUKE.UI.GraphArea.UpdateBarsCustomValues*"></a>
+  <h4 id="DUKE_UI_GraphArea_UpdateBarsCustomValues" data-uid="DUKE.UI.GraphArea.UpdateBarsCustomValues">UpdateBarsCustomValues()</h4>
+  <div class="markdown level1 summary"><p>Called through editor script if overrideBarDimensions is true.
+(Does not work in final build!)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBarsCustomValues()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_GraphArea_UpdateGraphs_" data-uid="DUKE.UI.GraphArea.UpdateGraphs*"></a>
+  <h4 id="DUKE_UI_GraphArea_UpdateGraphs" data-uid="DUKE.UI.GraphArea.UpdateGraphs">UpdateGraphs()</h4>
+  <div class="markdown level1 summary"><p>Update every Graph of this GraphArea.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGraphs()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_GraphArea_ValueAtIndex_" data-uid="DUKE.UI.GraphArea.ValueAtIndex*"></a>
+  <h4 id="DUKE_UI_GraphArea_ValueAtIndex_System_Int32_System_Int32_" data-uid="DUKE.UI.GraphArea.ValueAtIndex(System.Int32,System.Int32)">ValueAtIndex(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the value of a specific Graph's specific DataPoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ValueAtIndex(int _graphIndex, int _xIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_graphIndex</span></td>
+        <td><p>Index of the Graph in question.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_xIndex</span></td>
+        <td><p>Index of the DataPoint containing the requested value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

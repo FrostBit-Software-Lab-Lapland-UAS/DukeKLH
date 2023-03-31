@@ -1,0 +1,1092 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VRInput
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VRInput
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.Controls.VRInput">
+  
+  
+  <h1 id="DUKE_Controls_VRInput" data-uid="DUKE.Controls.VRInput" class="text-break">Class VRInput
+  </h1>
+  <div class="markdown level0 summary"><p>Attached to a VR controller object in hierarchy.
+VRInput receives input data through InputActions and converts them into Commands.
+Commands are then sent forward and processed or discarded depending on the target object.
+Use DesktopInput for desktop functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="DUKE.Controls.Input.html">Input</a></div>
+    <div class="level6"><span class="xref">VRInput</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_targetTransform">Input.targetTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_currentInteractionTarget">Input.currentInteractionTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_currentInteractionMode">Input.currentInteractionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_rayDistance">Input.rayDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_rayHitLayers">Input.rayHitLayers</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_rayBlockLayers">Input.rayBlockLayers</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_TargetTransform">Input.TargetTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_CurrentInteractable">Input.CurrentInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_CanInteract">Input.CanInteract</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_InputActive">Input.InputActive</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_IsVR">Input.IsVR</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_IsDesktop">Input.IsDesktop</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_OnTargetTransformChanged">Input.OnTargetTransformChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_OnInteractionLinked">Input.OnInteractionLinked</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_OnInteractionReleased">Input.OnInteractionReleased</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_LinkInteractable_DUKE_Controls_Interactable_">Input.LinkInteractable(Interactable)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_UnlinkInteractable_DUKE_Controls_Interactable_">Input.UnlinkInteractable(Interactable)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_ResetInteractables">Input.ResetInteractables()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_DisableInput">Input.DisableInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_EnableInput">Input.EnableInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_SetTargetTransform_UnityEngine_Transform_">Input.SetTargetTransform(Transform)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.Controls.html">DUKE.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_Controls_VRInput_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VRInput : Input</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_Controls_VRInput_Primary2DAxisDown" data-uid="DUKE.Controls.VRInput.Primary2DAxisDown">Primary2DAxisDown</h4>
+  <div class="markdown level1 summary"><p>Called when primary 2D axis is pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action Primary2DAxisDown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_VRInput_Primary2DAxisUp" data-uid="DUKE.Controls.VRInput.Primary2DAxisUp">Primary2DAxisUp</h4>
+  <div class="markdown level1 summary"><p>Called when primary 2D axis is released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action Primary2DAxisUp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_VRInput_TriggerDown" data-uid="DUKE.Controls.VRInput.TriggerDown">TriggerDown</h4>
+  <div class="markdown level1 summary"><p>Called when trigger button is pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action TriggerDown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_VRInput_TriggerUp" data-uid="DUKE.Controls.VRInput.TriggerUp">TriggerUp</h4>
+  <div class="markdown level1 summary"><p>Called when trigger button is released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action TriggerUp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_Controls_VRInput_ControllerPosition_" data-uid="DUKE.Controls.VRInput.ControllerPosition*"></a>
+  <h4 id="DUKE_Controls_VRInput_ControllerPosition" data-uid="DUKE.Controls.VRInput.ControllerPosition">ControllerPosition</h4>
+  <div class="markdown level1 summary"><p>World position of the controller object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ControllerPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_ControllerPositionDelta_" data-uid="DUKE.Controls.VRInput.ControllerPositionDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_ControllerPositionDelta" data-uid="DUKE.Controls.VRInput.ControllerPositionDelta">ControllerPositionDelta</h4>
+  <div class="markdown level1 summary"><p>World position delta of the controller object since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ControllerPositionDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_ControllerRotation_" data-uid="DUKE.Controls.VRInput.ControllerRotation*"></a>
+  <h4 id="DUKE_Controls_VRInput_ControllerRotation" data-uid="DUKE.Controls.VRInput.ControllerRotation">ControllerRotation</h4>
+  <div class="markdown level1 summary"><p>Rotation of the controller object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion ControllerRotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_ControllerRotationDelta_" data-uid="DUKE.Controls.VRInput.ControllerRotationDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_ControllerRotationDelta" data-uid="DUKE.Controls.VRInput.ControllerRotationDelta">ControllerRotationDelta</h4>
+  <div class="markdown level1 summary"><p>Rotation delta of the controller object since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion ControllerRotationDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_GripPressed_" data-uid="DUKE.Controls.VRInput.GripPressed*"></a>
+  <h4 id="DUKE_Controls_VRInput_GripPressed" data-uid="DUKE.Controls.VRInput.GripPressed">GripPressed</h4>
+  <div class="markdown level1 summary"><p>TRUE when grip button is being pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GripPressed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_Hit_" data-uid="DUKE.Controls.VRInput.Hit*"></a>
+  <h4 id="DUKE_Controls_VRInput_Hit" data-uid="DUKE.Controls.VRInput.Hit">Hit</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Hit</code> information of <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override RaycastHit Hit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RaycastHit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_Hit">Input.Hit</a></div>
+  
+  
+  <a id="DUKE_Controls_VRInput_MenuPressed_" data-uid="DUKE.Controls.VRInput.MenuPressed*"></a>
+  <h4 id="DUKE_Controls_VRInput_MenuPressed" data-uid="DUKE.Controls.VRInput.MenuPressed">MenuPressed</h4>
+  <div class="markdown level1 summary"><p>TRUE when menu button is being pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MenuPressed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_OverlapTarget_" data-uid="DUKE.Controls.VRInput.OverlapTarget*"></a>
+  <h4 id="DUKE_Controls_VRInput_OverlapTarget" data-uid="DUKE.Controls.VRInput.OverlapTarget">OverlapTarget</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code> this <code data-dev-comment-type="typeparamref" class="typeparamref">VRInput</code> is overlapping with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform OverlapTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerPosition_" data-uid="DUKE.Controls.VRInput.PointerPosition*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerPosition" data-uid="DUKE.Controls.VRInput.PointerPosition">PointerPosition</h4>
+  <div class="markdown level1 summary"><p>World position of the pointer (controller position).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PointerPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerPositionDelta_" data-uid="DUKE.Controls.VRInput.PointerPositionDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerPositionDelta" data-uid="DUKE.Controls.VRInput.PointerPositionDelta">PointerPositionDelta</h4>
+  <div class="markdown level1 summary"><p>World position delta of the pointer (controller position) since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PointerPositionDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerRay_" data-uid="DUKE.Controls.VRInput.PointerRay*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerRay" data-uid="DUKE.Controls.VRInput.PointerRay">PointerRay</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Ray</code> through which <code data-dev-comment-type="typeparamref" class="typeparamref">Interactables</code> are detected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Ray PointerRay { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Ray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_PointerRay">Input.PointerRay</a></div>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerRotation_" data-uid="DUKE.Controls.VRInput.PointerRotation*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerRotation" data-uid="DUKE.Controls.VRInput.PointerRotation">PointerRotation</h4>
+  <div class="markdown level1 summary"><p>Rotation of the pointer (controller rotation).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion PointerRotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerRotationDelta_" data-uid="DUKE.Controls.VRInput.PointerRotationDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerRotationDelta" data-uid="DUKE.Controls.VRInput.PointerRotationDelta">PointerRotationDelta</h4>
+  <div class="markdown level1 summary"><p>Rotation delta of the pointer (controller rotation) since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion PointerRotationDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PointerTarget_" data-uid="DUKE.Controls.VRInput.PointerTarget*"></a>
+  <h4 id="DUKE_Controls_VRInput_PointerTarget" data-uid="DUKE.Controls.VRInput.PointerTarget">PointerTarget</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Transform</code> this <code data-dev-comment-type="typeparamref" class="typeparamref">VRInput</code> is pointing at with <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Transform PointerTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_PointerTarget">Input.PointerTarget</a></div>
+  
+  
+  <a id="DUKE_Controls_VRInput_Primary2DAxisPressed_" data-uid="DUKE.Controls.VRInput.Primary2DAxisPressed*"></a>
+  <h4 id="DUKE_Controls_VRInput_Primary2DAxisPressed" data-uid="DUKE.Controls.VRInput.Primary2DAxisPressed">Primary2DAxisPressed</h4>
+  <div class="markdown level1 summary"><p>TRUE when primary 2D axis is being pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Primary2DAxisPressed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_Primary2DAxisTouched_" data-uid="DUKE.Controls.VRInput.Primary2DAxisTouched*"></a>
+  <h4 id="DUKE_Controls_VRInput_Primary2DAxisTouched" data-uid="DUKE.Controls.VRInput.Primary2DAxisTouched">Primary2DAxisTouched</h4>
+  <div class="markdown level1 summary"><p>TRUE when primary 2D ais is being touched.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Primary2DAxisTouched { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_Primary2DAxisValue_" data-uid="DUKE.Controls.VRInput.Primary2DAxisValue*"></a>
+  <h4 id="DUKE_Controls_VRInput_Primary2DAxisValue" data-uid="DUKE.Controls.VRInput.Primary2DAxisValue">Primary2DAxisValue</h4>
+  <div class="markdown level1 summary"><p>Current value of primary 2D axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Primary2DAxisValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PrimaryButtonPressed_" data-uid="DUKE.Controls.VRInput.PrimaryButtonPressed*"></a>
+  <h4 id="DUKE_Controls_VRInput_PrimaryButtonPressed" data-uid="DUKE.Controls.VRInput.PrimaryButtonPressed">PrimaryButtonPressed</h4>
+  <div class="markdown level1 summary"><p>TRUE when primary button is being pressed down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrimaryButtonPressed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PrimaryButtonTouched_" data-uid="DUKE.Controls.VRInput.PrimaryButtonTouched*"></a>
+  <h4 id="DUKE_Controls_VRInput_PrimaryButtonTouched" data-uid="DUKE.Controls.VRInput.PrimaryButtonTouched">PrimaryButtonTouched</h4>
+  <div class="markdown level1 summary"><p>TRUE when primary button is being touched.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrimaryButtonTouched { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_PrimaryInteractionHeld_" data-uid="DUKE.Controls.VRInput.PrimaryInteractionHeld*"></a>
+  <h4 id="DUKE_Controls_VRInput_PrimaryInteractionHeld" data-uid="DUKE.Controls.VRInput.PrimaryInteractionHeld">PrimaryInteractionHeld</h4>
+  <div class="markdown level1 summary"><p>TRUE when primary interaction button (<code data-dev-comment-type="paramref" class="paramref">TriggerHeld</code>) is being held.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool PrimaryInteractionHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Input.html#DUKE_Controls_Input_PrimaryInteractionHeld">Input.PrimaryInteractionHeld</a></div>
+  
+  
+  <a id="DUKE_Controls_VRInput_RayIsBlocked_" data-uid="DUKE.Controls.VRInput.RayIsBlocked*"></a>
+  <h4 id="DUKE_Controls_VRInput_RayIsBlocked" data-uid="DUKE.Controls.VRInput.RayIsBlocked">RayIsBlocked</h4>
+  <div class="markdown level1 summary"><p>TRUE when <code data-dev-comment-type="paramref" class="paramref">PointerRay</code> is blocked by a blocking layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RayIsBlocked { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_RayLength_" data-uid="DUKE.Controls.VRInput.RayLength*"></a>
+  <h4 id="DUKE_Controls_VRInput_RayLength" data-uid="DUKE.Controls.VRInput.RayLength">RayLength</h4>
+  <div class="markdown level1 summary"><p>Current distance of <code data-dev-comment-type="paramref" class="paramref">PointerRay</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RayLength { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_RayPointPosition_" data-uid="DUKE.Controls.VRInput.RayPointPosition*"></a>
+  <h4 id="DUKE_Controls_VRInput_RayPointPosition" data-uid="DUKE.Controls.VRInput.RayPointPosition">RayPointPosition</h4>
+  <div class="markdown level1 summary"><p>Last known position of <code data-dev-comment-type="paramref" class="paramref">Hit</code>.<code data-dev-comment-type="paramref" class="paramref">point</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RayPointPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_RayPointPositionDelta_" data-uid="DUKE.Controls.VRInput.RayPointPositionDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_RayPointPositionDelta" data-uid="DUKE.Controls.VRInput.RayPointPositionDelta">RayPointPositionDelta</h4>
+  <div class="markdown level1 summary"><p>Position delta of <code data-dev-comment-type="paramref" class="paramref">RayPointPosition</code> since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RayPointPositionDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TouchPointPosition_" data-uid="DUKE.Controls.VRInput.TouchPointPosition*"></a>
+  <h4 id="DUKE_Controls_VRInput_TouchPointPosition" data-uid="DUKE.Controls.VRInput.TouchPointPosition">TouchPointPosition</h4>
+  <div class="markdown level1 summary"><p>World position of <code data-dev-comment-type="paramref" class="paramref">touchPointOrigin</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 TouchPointPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TouchPointPositionDelta_" data-uid="DUKE.Controls.VRInput.TouchPointPositionDelta*"></a>
+  <h4 id="DUKE_Controls_VRInput_TouchPointPositionDelta" data-uid="DUKE.Controls.VRInput.TouchPointPositionDelta">TouchPointPositionDelta</h4>
+  <div class="markdown level1 summary"><p>World position delta of <code data-dev-comment-type="paramref" class="paramref">touchPointOrigin</code> since last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 TouchPointPositionDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TouchRadius_" data-uid="DUKE.Controls.VRInput.TouchRadius*"></a>
+  <h4 id="DUKE_Controls_VRInput_TouchRadius" data-uid="DUKE.Controls.VRInput.TouchRadius">TouchRadius</h4>
+  <div class="markdown level1 summary"><p>Current radius of the touch area originating from <code data-dev-comment-type="paramref" class="paramref">touchPointOrigin</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TouchRadius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TriggerHeld_" data-uid="DUKE.Controls.VRInput.TriggerHeld*"></a>
+  <h4 id="DUKE_Controls_VRInput_TriggerHeld" data-uid="DUKE.Controls.VRInput.TriggerHeld">TriggerHeld</h4>
+  <div class="markdown level1 summary"><p>TRUE when trigger button is being held over <code data-dev-comment-type="paramref" class="paramref">triggerHeldTreshold</code> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TriggerPressed_" data-uid="DUKE.Controls.VRInput.TriggerPressed*"></a>
+  <h4 id="DUKE_Controls_VRInput_TriggerPressed" data-uid="DUKE.Controls.VRInput.TriggerPressed">TriggerPressed</h4>
+  <div class="markdown level1 summary"><p>TRUE when trigger button is being held all the way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerPressed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_VRInput_TriggerValue_" data-uid="DUKE.Controls.VRInput.TriggerValue*"></a>
+  <h4 id="DUKE_Controls_VRInput_TriggerValue" data-uid="DUKE.Controls.VRInput.TriggerValue">TriggerValue</h4>
+  <div class="markdown level1 summary"><p>Current trigger button value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TriggerValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

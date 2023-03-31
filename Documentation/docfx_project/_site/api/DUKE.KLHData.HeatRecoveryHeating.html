@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HeatRecoveryHeating
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HeatRecoveryHeating
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.KLHData.HeatRecoveryHeating">
+  
+  
+  <h1 id="DUKE_KLHData_HeatRecoveryHeating" data-uid="DUKE.KLHData.HeatRecoveryHeating" class="text-break">Class HeatRecoveryHeating
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><a class="xref" href="DUKE.KLHData.HeatingMethod.html">HeatingMethod</a></div>
+    <div class="level4"><span class="xref">HeatRecoveryHeating</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_totalHeatConsumption">HeatingMethod.totalHeatConsumption</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_renewableEnergyProduced">HeatingMethod.renewableEnergyProduced</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_districtHeatingK1Multiplier">HeatingMethod.districtHeatingK1Multiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_copMultiplier">HeatingMethod.copMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_maintenancePerSqMeterDH">HeatingMethod.maintenancePerSqMeterDH</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_maintenancePerSqMeterRe">HeatingMethod.maintenancePerSqMeterRe</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_costPerKWCurve">HeatingMethod.costPerKWCurve</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_costPerM3Curve">HeatingMethod.costPerM3Curve</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_devicePowerDivider">HeatingMethod.devicePowerDivider</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_deviceMinimumCost">HeatingMethod.deviceMinimumCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_initialInvestmentCost">HeatingMethod.initialInvestmentCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_annualDHOperatingCost">HeatingMethod.annualDHOperatingCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_annualREOperatingCost">HeatingMethod.annualREOperatingCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_annualDHCO2Amount">HeatingMethod.annualDHCO2Amount</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_annualRECO2Amount">HeatingMethod.annualRECO2Amount</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_Building">HeatingMethod.Building</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_RenewableRatio">HeatingMethod.RenewableRatio</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_TotalHeatConsumption">HeatingMethod.TotalHeatConsumption</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_AnnualDHOperatingCost">HeatingMethod.AnnualDHOperatingCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_AnnualREOperatingCost">HeatingMethod.AnnualREOperatingCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_AnnualOperatingCost">HeatingMethod.AnnualOperatingCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_AnnualDHCO2Amount">HeatingMethod.AnnualDHCO2Amount</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_AnnualRECO2Amount">HeatingMethod.AnnualRECO2Amount</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_TotalPower">HeatingMethod.TotalPower</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_DistrictHeatingConsumption">HeatingMethod.DistrictHeatingConsumption</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_InvestmentCost">HeatingMethod.InvestmentCost</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictBaseCost_System_Int32_">HeatingMethod.CalculateAnnualDistrictBaseCost(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateInvestmentCost_System_Int32_">HeatingMethod.CalculateInvestmentCost(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateCostPerKWFromCurve_System_Single_">HeatingMethod.CalculateCostPerKWFromCurve(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateCostPerM3FromCurve_System_Single_">HeatingMethod.CalculateCostPerM3FromCurve(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictCO2Amount">HeatingMethod.CalculateAnnualDistrictCO2Amount()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableCO2Amount">HeatingMethod.CalculateAnnualRenewableCO2Amount()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateLongtermDistrictEnergyCost_System_Int32_">HeatingMethod.CalculateLongtermDistrictEnergyCost(Int32)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.KLHData.html">DUKE.KLHData</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_KLHData_HeatRecoveryHeating_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(fileName = &quot;New HeatRecoveryDevice&quot;, menuName = &quot;ScriptableObjects/HybridDevices/New HeatRecoveryDevice&quot;, order = 0)]
+public class HeatRecoveryHeating : HeatingMethod</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateAnnualDistrictEnergyCost_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateAnnualDistrictEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateAnnualDistrictEnergyCost" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateAnnualDistrictEnergyCost">CalculateAnnualDistrictEnergyCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual operating cost of district heating in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CalculateAnnualDistrictEnergyCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual district heating energy cost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictEnergyCost">HeatingMethod.CalculateAnnualDistrictEnergyCost()</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateAnnualRenewableEnergyCost_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateAnnualRenewableEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateAnnualRenewableEnergyCost" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateAnnualRenewableEnergyCost">CalculateAnnualRenewableEnergyCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual operating cost of renewable heating in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CalculateAnnualRenewableEnergyCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual renewable energy operating costs in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableEnergyCost">HeatingMethod.CalculateAnnualRenewableEnergyCost()</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateInvestmentCost_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateInvestmentCost*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateInvestmentCost" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateInvestmentCost">CalculateInvestmentCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the <code data-dev-comment-type="paramref" class="paramref">initialInvestmentCost</code> cost in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CalculateInvestmentCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Initial investment cost in Euros.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateInvestmentCost">HeatingMethod.CalculateInvestmentCost()</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateLongtermMaintenanceCosts_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateLongtermMaintenanceCosts*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateLongtermMaintenanceCosts_System_Int32_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateLongtermMaintenanceCosts(System.Int32)">CalculateLongtermMaintenanceCosts(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate long term maintenance costs by number of years</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int CalculateLongtermMaintenanceCosts(int _yearcount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_yearcount</span></td>
+        <td><p>Number of years</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateLongtermMaintenanceCosts_System_Int32_">HeatingMethod.CalculateLongtermMaintenanceCosts(Int32)</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateLongtermRenewableEnergyCost_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateLongtermRenewableEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateLongtermRenewableEnergyCost_System_Int32_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateLongtermRenewableEnergyCost(System.Int32)">CalculateLongtermRenewableEnergyCost(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total cost of renewable heating within the specified timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int CalculateLongtermRenewableEnergyCost(int _yearcount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_yearcount</span></td>
+        <td><p>The specified timespan in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Total cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateLongtermRenewableEnergyCost_System_Int32_">HeatingMethod.CalculateLongtermRenewableEnergyCost(Int32)</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_CalculateRenewableEnergyProduced_" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateRenewableEnergyProduced*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_CalculateRenewableEnergyProduced" data-uid="DUKE.KLHData.HeatRecoveryHeating.CalculateRenewableEnergyProduced">CalculateRenewableEnergyProduced()</h4>
+  <div class="markdown level1 summary"><p>Calculate total renewable energy produced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CalculateRenewableEnergyProduced()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The amount (part of total energy) of renewable energy in kWh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_CalculateRenewableEnergyProduced">HeatingMethod.CalculateRenewableEnergyProduced()</a></div>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_GetHeatRecPowerFromVolume_" data-uid="DUKE.KLHData.HeatRecoveryHeating.GetHeatRecPowerFromVolume*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_GetHeatRecPowerFromVolume" data-uid="DUKE.KLHData.HeatRecoveryHeating.GetHeatRecPowerFromVolume">GetHeatRecPowerFromVolume()</h4>
+  <div class="markdown level1 summary"><p>Heat recovery heating device power from <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.<code data-dev-comment-type="paramref" class="paramref">GrossVolume</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetHeatRecPowerFromVolume()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Power in kW</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatRecoveryHeating_UpdateValues_" data-uid="DUKE.KLHData.HeatRecoveryHeating.UpdateValues*"></a>
+  <h4 id="DUKE_KLHData_HeatRecoveryHeating_UpdateValues_DUKE_KLHData_Building_" data-uid="DUKE.KLHData.HeatRecoveryHeating.UpdateValues(DUKE.KLHData.Building)">UpdateValues(Building)</h4>
+  <div class="markdown level1 summary"><p>Update the values of the <code data-dev-comment-type="typeparamref" class="typeparamref">HeatingMethod</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateValues(Building _building)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td><span class="parametername">_building</span></td>
+        <td><p>Selected <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.KLHData.HeatingMethod.html#DUKE_KLHData_HeatingMethod_UpdateValues_DUKE_KLHData_Building_">HeatingMethod.UpdateValues(Building)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1346 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HeatingMethod
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HeatingMethod
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.KLHData.HeatingMethod">
+  
+  
+  <h1 id="DUKE_KLHData_HeatingMethod" data-uid="DUKE.KLHData.HeatingMethod" class="text-break">Class HeatingMethod
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for hybrid devices that are attached to the district heating system.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">HeatingMethod</span></div>
+      <div class="level4"><a class="xref" href="DUKE.KLHData.AirsourceHeatPumpHeating.html">AirsourceHeatPumpHeating</a></div>
+      <div class="level4"><a class="xref" href="DUKE.KLHData.DistrictHeating.html">DistrictHeating</a></div>
+      <div class="level4"><a class="xref" href="DUKE.KLHData.GeothermalHeating.html">GeothermalHeating</a></div>
+      <div class="level4"><a class="xref" href="DUKE.KLHData.HeatRecoveryHeating.html">HeatRecoveryHeating</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.KLHData.html">DUKE.KLHData</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_KLHData_HeatingMethod_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HeatingMethod : ScriptableObject</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_annualDHCO2Amount" data-uid="DUKE.KLHData.HeatingMethod.annualDHCO2Amount">annualDHCO2Amount</h4>
+  <div class="markdown level1 summary"><p>Annual CO2 amount of district heating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int annualDHCO2Amount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_annualDHOperatingCost" data-uid="DUKE.KLHData.HeatingMethod.annualDHOperatingCost">annualDHOperatingCost</h4>
+  <div class="markdown level1 summary"><p>Annual operating cost of district heating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int annualDHOperatingCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_annualRECO2Amount" data-uid="DUKE.KLHData.HeatingMethod.annualRECO2Amount">annualRECO2Amount</h4>
+  <div class="markdown level1 summary"><p>Annual CO2 amount of the renewable heating method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int annualRECO2Amount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_annualREOperatingCost" data-uid="DUKE.KLHData.HeatingMethod.annualREOperatingCost">annualREOperatingCost</h4>
+  <div class="markdown level1 summary"><p>Annual operating cost of the renewable heating method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int annualREOperatingCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_copMultiplier" data-uid="DUKE.KLHData.HeatingMethod.copMultiplier">copMultiplier</h4>
+  <div class="markdown level1 summary"><p>Coefficiency of performance multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float copMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_costPerKWCurve" data-uid="DUKE.KLHData.HeatingMethod.costPerKWCurve">costPerKWCurve</h4>
+  <div class="markdown level1 summary"><p>Rate of Euros per kW.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected AnimationCurve costPerKWCurve</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AnimationCurve</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_costPerM3Curve" data-uid="DUKE.KLHData.HeatingMethod.costPerM3Curve">costPerM3Curve</h4>
+  <div class="markdown level1 summary"><p>Rate of Euros per m3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected AnimationCurve costPerM3Curve</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AnimationCurve</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_deviceMinimumCost" data-uid="DUKE.KLHData.HeatingMethod.deviceMinimumCost">deviceMinimumCost</h4>
+  <div class="markdown level1 summary"><p>Minimum cost of the <code data-dev-comment-type="typeparamref" class="typeparamref">HeatingMethod</code> independent of a <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>'s size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int deviceMinimumCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_devicePowerDivider" data-uid="DUKE.KLHData.HeatingMethod.devicePowerDivider">devicePowerDivider</h4>
+  <div class="markdown level1 summary"><p>Divider value is used to calculate which portion of the total power is covered with selected <code data-dev-comment-type="typeparamref" class="typeparamref">HeatingMethod</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float devicePowerDivider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_districtHeatingK1Multiplier" data-uid="DUKE.KLHData.HeatingMethod.districtHeatingK1Multiplier">districtHeatingK1Multiplier</h4>
+  <div class="markdown level1 summary"><p>Cost multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected float districtHeatingK1Multiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_initialInvestmentCost" data-uid="DUKE.KLHData.HeatingMethod.initialInvestmentCost">initialInvestmentCost</h4>
+  <div class="markdown level1 summary"><p>Initial investment cost of the <code data-dev-comment-type="typeparamref" class="typeparamref">HeatingMethod</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int initialInvestmentCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_maintenancePerSqMeterDH" data-uid="DUKE.KLHData.HeatingMethod.maintenancePerSqMeterDH">maintenancePerSqMeterDH</h4>
+  <div class="markdown level1 summary"><p>Annual maintenance cost per m2 for district heating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected static float maintenancePerSqMeterDH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_maintenancePerSqMeterRe" data-uid="DUKE.KLHData.HeatingMethod.maintenancePerSqMeterRe">maintenancePerSqMeterRe</h4>
+  <div class="markdown level1 summary"><p>Annual maintenance cost per m2 for renewable energy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float maintenancePerSqMeterRe</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_renewableEnergyProduced" data-uid="DUKE.KLHData.HeatingMethod.renewableEnergyProduced">renewableEnergyProduced</h4>
+  <div class="markdown level1 summary"><p>Total annual amount of renewable energy used by a <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in kWh.
+This amount is a part of <code data-dev-comment-type="paramref" class="paramref">totalHeatConsumption</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int renewableEnergyProduced</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_KLHData_HeatingMethod_totalHeatConsumption" data-uid="DUKE.KLHData.HeatingMethod.totalHeatConsumption">totalHeatConsumption</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption of a <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected int totalHeatConsumption</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_AnnualDHCO2Amount_" data-uid="DUKE.KLHData.HeatingMethod.AnnualDHCO2Amount*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_AnnualDHCO2Amount" data-uid="DUKE.KLHData.HeatingMethod.AnnualDHCO2Amount">AnnualDHCO2Amount</h4>
+  <div class="markdown level1 summary"><p>Annual district heating CO2 amount</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnnualDHCO2Amount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_AnnualDHOperatingCost_" data-uid="DUKE.KLHData.HeatingMethod.AnnualDHOperatingCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_AnnualDHOperatingCost" data-uid="DUKE.KLHData.HeatingMethod.AnnualDHOperatingCost">AnnualDHOperatingCost</h4>
+  <div class="markdown level1 summary"><p>Annual district heating operating costs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnnualDHOperatingCost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_AnnualOperatingCost_" data-uid="DUKE.KLHData.HeatingMethod.AnnualOperatingCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_AnnualOperatingCost" data-uid="DUKE.KLHData.HeatingMethod.AnnualOperatingCost">AnnualOperatingCost</h4>
+  <div class="markdown level1 summary"><p>Total annual operating costs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnnualOperatingCost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_AnnualRECO2Amount_" data-uid="DUKE.KLHData.HeatingMethod.AnnualRECO2Amount*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_AnnualRECO2Amount" data-uid="DUKE.KLHData.HeatingMethod.AnnualRECO2Amount">AnnualRECO2Amount</h4>
+  <div class="markdown level1 summary"><p>Annual renewable energy heating CO2 amount</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnnualRECO2Amount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_AnnualREOperatingCost_" data-uid="DUKE.KLHData.HeatingMethod.AnnualREOperatingCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_AnnualREOperatingCost" data-uid="DUKE.KLHData.HeatingMethod.AnnualREOperatingCost">AnnualREOperatingCost</h4>
+  <div class="markdown level1 summary"><p>Annual renewable energy heating operating costs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnnualREOperatingCost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_Building_" data-uid="DUKE.KLHData.HeatingMethod.Building*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_Building" data-uid="DUKE.KLHData.HeatingMethod.Building">Building</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Building Building { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_DistrictHeatingConsumption_" data-uid="DUKE.KLHData.HeatingMethod.DistrictHeatingConsumption*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_DistrictHeatingConsumption" data-uid="DUKE.KLHData.HeatingMethod.DistrictHeatingConsumption">DistrictHeatingConsumption</h4>
+  <div class="markdown level1 summary"><p>Amount of district heating energy after the renewable energy has been subtracted from the <code data-dev-comment-type="paramref" class="paramref">totalHeatConsumption</code>, using <code data-dev-comment-type="paramref" class="paramref">RenewableRatio</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DistrictHeatingConsumption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Energy in kWh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_InvestmentCost_" data-uid="DUKE.KLHData.HeatingMethod.InvestmentCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_InvestmentCost" data-uid="DUKE.KLHData.HeatingMethod.InvestmentCost">InvestmentCost</h4>
+  <div class="markdown level1 summary"><p>The initial investment cost in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InvestmentCost { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_RenewableRatio_" data-uid="DUKE.KLHData.HeatingMethod.RenewableRatio*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_RenewableRatio" data-uid="DUKE.KLHData.HeatingMethod.RenewableRatio">RenewableRatio</h4>
+  <div class="markdown level1 summary"><p>Ratio of reneweable energy from total energy consumption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RenewableRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Ratio as float</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_TotalHeatConsumption_" data-uid="DUKE.KLHData.HeatingMethod.TotalHeatConsumption*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_TotalHeatConsumption" data-uid="DUKE.KLHData.HeatingMethod.TotalHeatConsumption">TotalHeatConsumption</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption of a building in kWh</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalHeatConsumption { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_TotalPower_" data-uid="DUKE.KLHData.HeatingMethod.TotalPower*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_TotalPower" data-uid="DUKE.KLHData.HeatingMethod.TotalPower">TotalPower</h4>
+  <div class="markdown level1 summary"><p>power of a device, calculated from total consumption divided with <code data-dev-comment-type="typeparamref" class="typeparamref">KLHMath</code>.<code data-dev-comment-type="paramref" class="paramref">utilisationPeriodOfMaximumLoad</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalPower { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>power in kW</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictBaseCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictBaseCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictBaseCost_System_Int32_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictBaseCost(System.Int32)">CalculateAnnualDistrictBaseCost(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates annual base cost for district heating based on demanded energy
+Formulas copied from Energialaskenta Excel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateAnnualDistrictBaseCost(int _districtHeatingEnergyDemand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_districtHeatingEnergyDemand</span></td>
+        <td><p>Energy demand in kW (NOT kWh).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>districtHeatingAnnualBaseCost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictCO2Amount_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictCO2Amount*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictCO2Amount" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictCO2Amount">CalculateAnnualDistrictCO2Amount()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual CO2 amount of district heating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateAnnualDistrictCO2Amount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual CO2 amount in kilograms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictEnergyCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateAnnualDistrictEnergyCost" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualDistrictEnergyCost">CalculateAnnualDistrictEnergyCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual operating cost of district heating in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateAnnualDistrictEnergyCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual district heating energy cost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableCO2Amount_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualRenewableCO2Amount*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableCO2Amount" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualRenewableCO2Amount">CalculateAnnualRenewableCO2Amount()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual CO2 amount of renewable heating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateAnnualRenewableCO2Amount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual CO2 amount in kilograms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableEnergyCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualRenewableEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateAnnualRenewableEnergyCost" data-uid="DUKE.KLHData.HeatingMethod.CalculateAnnualRenewableEnergyCost">CalculateAnnualRenewableEnergyCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the annual operating cost of renewable heating in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateAnnualRenewableEnergyCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Annual renewable energy operating costs in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateCostPerKWFromCurve_" data-uid="DUKE.KLHData.HeatingMethod.CalculateCostPerKWFromCurve*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateCostPerKWFromCurve_System_Single_" data-uid="DUKE.KLHData.HeatingMethod.CalculateCostPerKWFromCurve(System.Single)">CalculateCostPerKWFromCurve(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cost per every kW from the curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float CalculateCostPerKWFromCurve(float _power)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_power</span></td>
+        <td><p>Power in kW</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateCostPerM3FromCurve_" data-uid="DUKE.KLHData.HeatingMethod.CalculateCostPerM3FromCurve*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateCostPerM3FromCurve_System_Single_" data-uid="DUKE.KLHData.HeatingMethod.CalculateCostPerM3FromCurve(System.Single)">CalculateCostPerM3FromCurve(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculates cost for district heating hybrid device cost.
+Only used for hybrid devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float CalculateCostPerM3FromCurve(float _buildingVolume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_buildingVolume</span></td>
+        <td><p>Building volume in m3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Cost in Euros per m3</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateInvestmentCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateInvestmentCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateInvestmentCost" data-uid="DUKE.KLHData.HeatingMethod.CalculateInvestmentCost">CalculateInvestmentCost()</h4>
+  <div class="markdown level1 summary"><p>Calculate the initial investment cost in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateInvestmentCost()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Device(s) cost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateInvestmentCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateInvestmentCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateInvestmentCost_System_Int32_" data-uid="DUKE.KLHData.HeatingMethod.CalculateInvestmentCost(System.Int32)">CalculateInvestmentCost(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the initial investment cost in Euros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateInvestmentCost(int _staircaseCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_staircaseCount</span></td>
+        <td><p>Number of staircases</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Device(s) cost</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateLongtermDistrictEnergyCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermDistrictEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateLongtermDistrictEnergyCost_System_Int32_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermDistrictEnergyCost(System.Int32)">CalculateLongtermDistrictEnergyCost(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total cost of district heating within the specified timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CalculateLongtermDistrictEnergyCost(int _yearcount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_yearcount</span></td>
+        <td><p>The specified timespan in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Total cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateLongtermMaintenanceCosts_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermMaintenanceCosts*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateLongtermMaintenanceCosts_System_Int32_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermMaintenanceCosts(System.Int32)">CalculateLongtermMaintenanceCosts(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate long term maintenance costs by number of years</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CalculateLongtermMaintenanceCosts(int _yearcount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_yearcount</span></td>
+        <td><p>Number of years</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateLongtermRenewableEnergyCost_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermRenewableEnergyCost*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateLongtermRenewableEnergyCost_System_Int32_" data-uid="DUKE.KLHData.HeatingMethod.CalculateLongtermRenewableEnergyCost(System.Int32)">CalculateLongtermRenewableEnergyCost(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate the total cost of renewable heating within the specified timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CalculateLongtermRenewableEnergyCost(int _yearcount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_yearcount</span></td>
+        <td><p>The specified timespan in years.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Total cost in Euros</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_CalculateRenewableEnergyProduced_" data-uid="DUKE.KLHData.HeatingMethod.CalculateRenewableEnergyProduced*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_CalculateRenewableEnergyProduced" data-uid="DUKE.KLHData.HeatingMethod.CalculateRenewableEnergyProduced">CalculateRenewableEnergyProduced()</h4>
+  <div class="markdown level1 summary"><p>Calculate total renewable energy produced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateRenewableEnergyProduced()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The amount (part of total energy) of renewable energy in kWh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_HeatingMethod_UpdateValues_" data-uid="DUKE.KLHData.HeatingMethod.UpdateValues*"></a>
+  <h4 id="DUKE_KLHData_HeatingMethod_UpdateValues_DUKE_KLHData_Building_" data-uid="DUKE.KLHData.HeatingMethod.UpdateValues(DUKE.KLHData.Building)">UpdateValues(Building)</h4>
+  <div class="markdown level1 summary"><p>Update the values of the HeatingMethod.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateValues(Building _building)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td><span class="parametername">_building</span></td>
+        <td><p>This Building's information is used in calculations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

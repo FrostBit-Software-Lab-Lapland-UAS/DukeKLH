@@ -1,0 +1,1397 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Graph
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Graph
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.UI.Graph">
+  
+  
+  <h1 id="DUKE_UI_Graph" data-uid="DUKE.UI.Graph" class="text-break">Class Graph
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for different Graphs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">Graph</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.UI.html">DUKE.UI</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_UI_Graph_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+[Serializable]
+public class Graph : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_UI_Graph_liveUpdate" data-uid="DUKE.UI.Graph.liveUpdate">liveUpdate</h4>
+  <div class="markdown level1 summary"><p>TRUE allows for continuous updating of the <code data-dev-comment-type="typeparamref" class="typeparamref">Graph</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool liveUpdate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_UI_Graph_BarDepth_" data-uid="DUKE.UI.Graph.BarDepth*"></a>
+  <h4 id="DUKE_UI_Graph_BarDepth" data-uid="DUKE.UI.Graph.BarDepth">BarDepth</h4>
+  <div class="markdown level1 summary"><p>Depth of the bar objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BarDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_BarDisplayType_" data-uid="DUKE.UI.Graph.BarDisplayType*"></a>
+  <h4 id="DUKE_UI_Graph_BarDisplayType" data-uid="DUKE.UI.Graph.BarDisplayType">BarDisplayType</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">BarDisplayType</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BarDisplayType BarDisplayType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.BarDisplayType.html">BarDisplayType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_BarsSideBySide_" data-uid="DUKE.UI.Graph.BarsSideBySide*"></a>
+  <h4 id="DUKE_UI_Graph_BarsSideBySide" data-uid="DUKE.UI.Graph.BarsSideBySide">BarsSideBySide</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">barDisplayType</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">BarDisplayType</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">SideBySide</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BarsSideBySide { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_BarsStacked_" data-uid="DUKE.UI.Graph.BarsStacked*"></a>
+  <h4 id="DUKE_UI_Graph_BarsStacked" data-uid="DUKE.UI.Graph.BarsStacked">BarsStacked</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">barDisplayType</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">BarDisplayType</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Stacked</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BarsStacked { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_BarWidth_" data-uid="DUKE.UI.Graph.BarWidth*"></a>
+  <h4 id="DUKE_UI_Graph_BarWidth" data-uid="DUKE.UI.Graph.BarWidth">BarWidth</h4>
+  <div class="markdown level1 summary"><p>Width of the bar objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BarWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_DataCount_" data-uid="DUKE.UI.Graph.DataCount*"></a>
+  <h4 id="DUKE_UI_Graph_DataCount" data-uid="DUKE.UI.Graph.DataCount">DataCount</h4>
+  <div class="markdown level1 summary"><p>Total number of data points on X-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_Dataset_" data-uid="DUKE.UI.Graph.Dataset*"></a>
+  <h4 id="DUKE_UI_Graph_Dataset" data-uid="DUKE.UI.Graph.Dataset">Dataset</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">GraphDataset</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphDataset Dataset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphDataset.html">GraphDataset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GraphArea_" data-uid="DUKE.UI.Graph.GraphArea*"></a>
+  <h4 id="DUKE_UI_Graph_GraphArea" data-uid="DUKE.UI.Graph.GraphArea">GraphArea</h4>
+  <div class="markdown level1 summary"><p>&quot;Parent&quot; <code data-dev-comment-type="typeparamref" class="typeparamref">GraphArea</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphArea GraphArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphArea.html">GraphArea</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GraphDisplayType_" data-uid="DUKE.UI.Graph.GraphDisplayType*"></a>
+  <h4 id="DUKE_UI_Graph_GraphDisplayType" data-uid="DUKE.UI.Graph.GraphDisplayType">GraphDisplayType</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">GraphType</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphType GraphDisplayType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphType.html">GraphType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_HighlightData_" data-uid="DUKE.UI.Graph.HighlightData*"></a>
+  <h4 id="DUKE_UI_Graph_HighlightData" data-uid="DUKE.UI.Graph.HighlightData">HighlightData</h4>
+  <div class="markdown level1 summary"><p>Current <code data-dev-comment-type="typeparamref" class="typeparamref">GraphDataSelection</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphDataSelection HighlightData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.GraphDataSelection.html">GraphDataSelection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_ID_" data-uid="DUKE.UI.Graph.ID*"></a>
+  <h4 id="DUKE_UI_Graph_ID" data-uid="DUKE.UI.Graph.ID">ID</h4>
+  <div class="markdown level1 summary"><p>Identification number of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_LerpOverlap_" data-uid="DUKE.UI.Graph.LerpOverlap*"></a>
+  <h4 id="DUKE_UI_Graph_LerpOverlap" data-uid="DUKE.UI.Graph.LerpOverlap">LerpOverlap</h4>
+  <div class="markdown level1 summary"><p>Overlap ratio of <code data-dev-comment-type="paramref" class="paramref">LerpRatio</code>.
+Value of 0 causes <code data-dev-comment-type="paramref" class="paramref">LerpRatio</code> to animate data one by one.
+Value of 1 causes <code data-dev-comment-type="paramref" class="paramref">LerpRatio</code> to animate data at the same time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LerpOverlap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_LerpRatio_" data-uid="DUKE.UI.Graph.LerpRatio*"></a>
+  <h4 id="DUKE_UI_Graph_LerpRatio" data-uid="DUKE.UI.Graph.LerpRatio">LerpRatio</h4>
+  <div class="markdown level1 summary"><p>Float between 0 and 1, which controls the animation of data from  0 to value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LerpRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_PointCount_" data-uid="DUKE.UI.Graph.PointCount*"></a>
+  <h4 id="DUKE_UI_Graph_PointCount" data-uid="DUKE.UI.Graph.PointCount">PointCount</h4>
+  <div class="markdown level1 summary"><p>Number of generated <code data-dev-comment-type="typeparamref" class="typeparamref">DataPointObjects</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int PointCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_RectTransform_" data-uid="DUKE.UI.Graph.RectTransform*"></a>
+  <h4 id="DUKE_UI_Graph_RectTransform" data-uid="DUKE.UI.Graph.RectTransform">RectTransform</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">RectTransform</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform RectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_RenderColor_" data-uid="DUKE.UI.Graph.RenderColor*"></a>
+  <h4 id="DUKE_UI_Graph_RenderColor" data-uid="DUKE.UI.Graph.RenderColor">RenderColor</h4>
+  <div class="markdown level1 summary"><p>Default render <code data-dev-comment-type="typeparamref" class="typeparamref">Color</code> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color RenderColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_TypeIsBar_" data-uid="DUKE.UI.Graph.TypeIsBar*"></a>
+  <h4 id="DUKE_UI_Graph_TypeIsBar" data-uid="DUKE.UI.Graph.TypeIsBar">TypeIsBar</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">graphType</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">GraphType</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Bar</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TypeIsBar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_TypeIsLine_" data-uid="DUKE.UI.Graph.TypeIsLine*"></a>
+  <h4 id="DUKE_UI_Graph_TypeIsLine" data-uid="DUKE.UI.Graph.TypeIsLine">TypeIsLine</h4>
+  <div class="markdown level1 summary"><p>TRUE if <code data-dev-comment-type="paramref" class="paramref">graphType</code> is <code data-dev-comment-type="typeparamref" class="typeparamref">GraphType</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Line</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TypeIsLine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_UI_Graph_BuildGraph_" data-uid="DUKE.UI.Graph.BuildGraph*"></a>
+  <h4 id="DUKE_UI_Graph_BuildGraph" data-uid="DUKE.UI.Graph.BuildGraph">BuildGraph()</h4>
+  <div class="markdown level1 summary"><p>Create the Graph and the required components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildGraph()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_ChangeBarPosition_" data-uid="DUKE.UI.Graph.ChangeBarPosition*"></a>
+  <h4 id="DUKE_UI_Graph_ChangeBarPosition_UnityEngine_Transform_UnityEngine_Transform_System_Int32_" data-uid="DUKE.UI.Graph.ChangeBarPosition(UnityEngine.Transform,UnityEngine.Transform,System.Int32)">ChangeBarPosition(Transform, Transform, Int32)</h4>
+  <div class="markdown level1 summary"><p>Change the position of a single bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChangeBarPosition(Transform _bar, Transform _parent, int _xIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_bar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_xIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_ChangeBarSize_" data-uid="DUKE.UI.Graph.ChangeBarSize*"></a>
+  <h4 id="DUKE_UI_Graph_ChangeBarSize_UnityEngine_Transform_UnityEngine_Transform_System_Int32_" data-uid="DUKE.UI.Graph.ChangeBarSize(UnityEngine.Transform,UnityEngine.Transform,System.Int32)">ChangeBarSize(Transform, Transform, Int32)</h4>
+  <div class="markdown level1 summary"><p>Change the size of a single bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChangeBarSize(Transform _bar, Transform _parent, int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_bar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_ChangeSpherePosition_" data-uid="DUKE.UI.Graph.ChangeSpherePosition*"></a>
+  <h4 id="DUKE_UI_Graph_ChangeSpherePosition_UnityEngine_Transform_UnityEngine_Transform_" data-uid="DUKE.UI.Graph.ChangeSpherePosition(UnityEngine.Transform,UnityEngine.Transform)">ChangeSpherePosition(Transform, Transform)</h4>
+  <div class="markdown level1 summary"><p>Change the position of a single point (sphere).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChangeSpherePosition(Transform _sphere, Transform _parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_sphere</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_ChangeSphereSize_" data-uid="DUKE.UI.Graph.ChangeSphereSize*"></a>
+  <h4 id="DUKE_UI_Graph_ChangeSphereSize_UnityEngine_Transform_System_Single_" data-uid="DUKE.UI.Graph.ChangeSphereSize(UnityEngine.Transform,System.Single)">ChangeSphereSize(Transform, Single)</h4>
+  <div class="markdown level1 summary"><p>Change the size of a single point (sphere).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ChangeSphereSize(Transform _sphere, float _size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_sphere</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_ClearChildren_" data-uid="DUKE.UI.Graph.ClearChildren*"></a>
+  <h4 id="DUKE_UI_Graph_ClearChildren_UnityEngine_RectTransform_" data-uid="DUKE.UI.Graph.ClearChildren(UnityEngine.RectTransform)">ClearChildren(RectTransform)</h4>
+  <div class="markdown level1 summary"><p>Clear every child of the provided RectTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ClearChildren(RectTransform _rectTransform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td><span class="parametername">_rectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_CreateContainers_" data-uid="DUKE.UI.Graph.CreateContainers*"></a>
+  <h4 id="DUKE_UI_Graph_CreateContainers" data-uid="DUKE.UI.Graph.CreateContainers">CreateContainers()</h4>
+  <div class="markdown level1 summary"><p>Create a container object for point objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CreateContainers()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_CreateHierarchyObjects_" data-uid="DUKE.UI.Graph.CreateHierarchyObjects*"></a>
+  <h4 id="DUKE_UI_Graph_CreateHierarchyObjects" data-uid="DUKE.UI.Graph.CreateHierarchyObjects">CreateHierarchyObjects()</h4>
+  <div class="markdown level1 summary"><p>Create the hierarchy objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CreateHierarchyObjects()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_CreatePoint_" data-uid="DUKE.UI.Graph.CreatePoint*"></a>
+  <h4 id="DUKE_UI_Graph_CreatePoint_System_Int32_System_Boolean_" data-uid="DUKE.UI.Graph.CreatePoint(System.Int32,System.Boolean)">CreatePoint(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a single point object and parent it to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform CreatePoint(int _index, bool _createChildSphere = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_createChildSphere</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_CreatePoints_" data-uid="DUKE.UI.Graph.CreatePoints*"></a>
+  <h4 id="DUKE_UI_Graph_CreatePoints_System_Int32_System_Boolean_" data-uid="DUKE.UI.Graph.CreatePoints(System.Int32,System.Boolean)">CreatePoints(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create point objects that are used for displaying data points on a graph.
+Set every point as disabled by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CreatePoints(int _count, bool _createChildObjects = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_createChildObjects</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_DeleteObject_" data-uid="DUKE.UI.Graph.DeleteObject*"></a>
+  <h4 id="DUKE_UI_Graph_DeleteObject_UnityEngine_GameObject_" data-uid="DUKE.UI.Graph.DeleteObject(UnityEngine.GameObject)">DeleteObject(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Destroy an object. Use Destroy or DestroyImmediate depending on editor state (Play / Editor).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DeleteObject(GameObject _obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">_obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GetGraphInfo_" data-uid="DUKE.UI.Graph.GetGraphInfo*"></a>
+  <h4 id="DUKE_UI_Graph_GetGraphInfo_System_Int32_" data-uid="DUKE.UI.Graph.GetGraphInfo(System.Int32)">GetGraphInfo(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the name and value of a point with the defined <code data-dev-comment-type="paramref" class="paramref">_index</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphInfo GetGraphInfo(int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td><p>Index with which the DataPoint is selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphInfo.html">GraphInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GetLerpPointHeight_" data-uid="DUKE.UI.Graph.GetLerpPointHeight*"></a>
+  <h4 id="DUKE_UI_Graph_GetLerpPointHeight_System_Int32_System_Single_System_Single_" data-uid="DUKE.UI.Graph.GetLerpPointHeight(System.Int32,System.Single,System.Single)">GetLerpPointHeight(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate a lerp ratio to the currently selected index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLerpPointHeight(int _x, float _base, float _target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_base</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GetLocalPointOnGraph_" data-uid="DUKE.UI.Graph.GetLocalPointOnGraph*"></a>
+  <h4 id="DUKE_UI_Graph_GetLocalPointOnGraph_System_Int32_System_Single_System_Single_" data-uid="DUKE.UI.Graph.GetLocalPointOnGraph(System.Int32,System.Single,System.Single)">GetLocalPointOnGraph(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate a point in Graph's local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetLocalPointOnGraph(int _xIndex, float _yValue, float _zDepth = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_xIndex</span></td>
+        <td><p>The index of horizontal column to which this point belongs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_yValue</span></td>
+        <td><p>The value of the data point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_zDepth</span></td>
+        <td><p>Custom depth of the object if it differs from the standard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GetLocalPointOnGraph_" data-uid="DUKE.UI.Graph.GetLocalPointOnGraph*"></a>
+  <h4 id="DUKE_UI_Graph_GetLocalPointOnGraph_UnityEngine_Vector2_System_Single_" data-uid="DUKE.UI.Graph.GetLocalPointOnGraph(UnityEngine.Vector2,System.Single)">GetLocalPointOnGraph(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Calculate a point in Graph's local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetLocalPointOnGraph(Vector2 _pixelPosition, float _zDepth = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">_pixelPosition</span></td>
+        <td><p>Local UI coordinates of the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_zDepth</span></td>
+        <td><p>Custom depth of the object if it differs from the standard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_GetReferences_" data-uid="DUKE.UI.Graph.GetReferences*"></a>
+  <h4 id="DUKE_UI_Graph_GetReferences" data-uid="DUKE.UI.Graph.GetReferences">GetReferences()</h4>
+  <div class="markdown level1 summary"><p>Get the references of required components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GetReferences()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_InitializeGraph_" data-uid="DUKE.UI.Graph.InitializeGraph*"></a>
+  <h4 id="DUKE_UI_Graph_InitializeGraph_DUKE_UI_GraphType_DUKE_UI_BarDisplayType_UnityEngine_Color_DUKE_UI_GraphDataset_System_Single_System_Single_System_Single_System_Single_" data-uid="DUKE.UI.Graph.InitializeGraph(DUKE.UI.GraphType,DUKE.UI.BarDisplayType,UnityEngine.Color,DUKE.UI.GraphDataset,System.Single,System.Single,System.Single,System.Single)">InitializeGraph(GraphType, BarDisplayType, Color, GraphDataset, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Initial method to be called when creating a new Graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeGraph(GraphType _type, BarDisplayType _barDisplayType, Color _color, GraphDataset _dataset = null, float _pointSize = 0F, float _lineWidth = 0.02F, float _barPadding = 0F, float _customZscale = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphType.html">GraphType</a></td>
+        <td><span class="parametername">_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.BarDisplayType.html">BarDisplayType</a></td>
+        <td><span class="parametername">_barDisplayType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">_color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphDataset.html">GraphDataset</a></td>
+        <td><span class="parametername">_dataset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_pointSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_lineWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_barPadding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_customZscale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_InitializeGraph_" data-uid="DUKE.UI.Graph.InitializeGraph*"></a>
+  <h4 id="DUKE_UI_Graph_InitializeGraph_System_String_DUKE_UI_GraphArea_DUKE_UI_GraphDataset_UnityEngine_Color___" data-uid="DUKE.UI.Graph.InitializeGraph(System.String,DUKE.UI.GraphArea,DUKE.UI.GraphDataset,UnityEngine.Color[])">InitializeGraph(String, GraphArea, GraphDataset, Color[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeGraph(string _name, GraphArea _graphArea, GraphDataset _dataset, Color[] _colors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphArea.html">GraphArea</a></td>
+        <td><span class="parametername">_graphArea</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.GraphDataset.html">GraphDataset</a></td>
+        <td><span class="parametername">_dataset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span>[]</td>
+        <td><span class="parametername">_colors</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_SetDataPointObjectDataSelection_" data-uid="DUKE.UI.Graph.SetDataPointObjectDataSelection*"></a>
+  <h4 id="DUKE_UI_Graph_SetDataPointObjectDataSelection_DUKE_GraphDataSelection_" data-uid="DUKE.UI.Graph.SetDataPointObjectDataSelection(DUKE.GraphDataSelection)">SetDataPointObjectDataSelection(GraphDataSelection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataPointObjectDataSelection(GraphDataSelection _selectionSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.GraphDataSelection.html">GraphDataSelection</a></td>
+        <td><span class="parametername">_selectionSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_SetupLineRenderer_" data-uid="DUKE.UI.Graph.SetupLineRenderer*"></a>
+  <h4 id="DUKE_UI_Graph_SetupLineRenderer" data-uid="DUKE.UI.Graph.SetupLineRenderer">SetupLineRenderer()</h4>
+  <div class="markdown level1 summary"><p>Setup a Line Renderer component for visual representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupLineRenderer()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_SwitchGraphTypeVisuals_" data-uid="DUKE.UI.Graph.SwitchGraphTypeVisuals*"></a>
+  <h4 id="DUKE_UI_Graph_SwitchGraphTypeVisuals" data-uid="DUKE.UI.Graph.SwitchGraphTypeVisuals">SwitchGraphTypeVisuals()</h4>
+  <div class="markdown level1 summary"><p>Switch visual representation type between Bar and Line.
+Currently the check is done by comparing the names of the objects, which is not optimal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SwitchGraphTypeVisuals()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_UpdateGraph_" data-uid="DUKE.UI.Graph.UpdateGraph*"></a>
+  <h4 id="DUKE_UI_Graph_UpdateGraph" data-uid="DUKE.UI.Graph.UpdateGraph">UpdateGraph()</h4>
+  <div class="markdown level1 summary"><p>Called when manual update of the graph is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGraph()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_UpdateLineRenderer_" data-uid="DUKE.UI.Graph.UpdateLineRenderer*"></a>
+  <h4 id="DUKE_UI_Graph_UpdateLineRenderer" data-uid="DUKE.UI.Graph.UpdateLineRenderer">UpdateLineRenderer()</h4>
+  <div class="markdown level1 summary"><p>Update LineRenderer with point positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLineRenderer()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_UpdatePoint_" data-uid="DUKE.UI.Graph.UpdatePoint*"></a>
+  <h4 id="DUKE_UI_Graph_UpdatePoint_UnityEngine_RectTransform_UnityEngine_Vector2_System_Int32_" data-uid="DUKE.UI.Graph.UpdatePoint(UnityEngine.RectTransform,UnityEngine.Vector2,System.Int32)">UpdatePoint(RectTransform, Vector2, Int32)</h4>
+  <div class="markdown level1 summary"><p>Update the position of a single point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdatePoint(RectTransform _point, Vector2 _pixelPosition, int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td><span class="parametername">_point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">_pixelPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_UI_Graph_UpdatePoints_" data-uid="DUKE.UI.Graph.UpdatePoints*"></a>
+  <h4 id="DUKE_UI_Graph_UpdatePoints" data-uid="DUKE.UI.Graph.UpdatePoints">UpdatePoints()</h4>
+  <div class="markdown level1 summary"><p>Update the position of each point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdatePoints()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_UI_Graph_UpdateVisuals_" data-uid="DUKE.UI.Graph.UpdateVisuals*"></a>
+  <h4 id="DUKE_UI_Graph_UpdateVisuals" data-uid="DUKE.UI.Graph.UpdateVisuals">UpdateVisuals()</h4>
+  <div class="markdown level1 summary"><p>Update the color of every material on the Graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateVisuals()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

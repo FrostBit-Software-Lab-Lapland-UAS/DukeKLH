@@ -1,0 +1,1468 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Clickable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Clickable
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.Controls.Clickable">
+  
+  
+  <h1 id="DUKE_Controls_Clickable" data-uid="DUKE.Controls.Clickable" class="text-break">Class Clickable
+  </h1>
+  <div class="markdown level0 summary"><p>Receives clicks and activations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="DUKE.Controls.Interactable.html">Interactable</a></div>
+    <div class="level6"><span class="xref">Clickable</span></div>
+      <div class="level7"><a class="xref" href="DUKE.Controls.AreaSelector.html">AreaSelector</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_hoveringInputs">Interactable.hoveringInputs</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_isInteractable">Interactable.isInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_interactableTransform">Interactable.interactableTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_vrInteractionButton">Interactable.vrInteractionButton</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_desktopInteractionModifierFlags">Interactable.desktopInteractionModifierFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_interactionMode">Interactable.interactionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_updateEnabled">Interactable.updateEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_sourceInteractionMode">Interactable.sourceInteractionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_source">Interactable.source</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_vrInput">Interactable.vrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_mkbInput">Interactable.mkbInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_configurationInfo">Interactable.configurationInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Source">Interactable.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_VRInput">Interactable.VRInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_DesktopInput">Interactable.DesktopInput</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_InteractableTransform">Interactable.InteractableTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_IsInteractable">Interactable.IsInteractable</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_IsInteracting">Interactable.IsInteracting</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ConfigInfo">Interactable.ConfigInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_SourceInteractionMode">Interactable.SourceInteractionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Awake">Interactable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Update">Interactable.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_RemoveInput_DUKE_Controls_Input_">Interactable.RemoveInput(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_BeginInteraction_DUKE_Controls_Input_System_Boolean_">Interactable.BeginInteraction(Input, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ForceEndInteraction">Interactable.ForceEndInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_HasInteractionMode_DUKE_Controls_InteractionMode_">Interactable.HasInteractionMode(InteractionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateInput_DUKE_Controls_Input_">Interactable.ValidateInput(Input)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateVRInput_DUKE_Controls_VRInput_">Interactable.ValidateVRInput(VRInput)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_ValidateDesktopInput_DUKE_Controls_DesktopInput_">Interactable.ValidateDesktopInput(DesktopInput)</a>
+    </div>
+    <div>
+      <a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_GetAxisMultiplier_DUKE_Controls_AxisFlags_">Interactable.GetAxisMultiplier(AxisFlags)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.Controls.html">DUKE.Controls</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_Controls_Clickable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Clickable : Interactable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_baseColor" data-uid="DUKE.Controls.Clickable.baseColor">baseColor</h4>
+  <div class="markdown level1 summary"><p>Base color of the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected Color baseColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_changeColorOnToggle" data-uid="DUKE.Controls.Clickable.changeColorOnToggle">changeColorOnToggle</h4>
+  <div class="markdown level1 summary"><p>TRUE allows the color to be changed on toggling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool changeColorOnToggle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_clickAudio" data-uid="DUKE.Controls.Clickable.clickAudio">clickAudio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected ClickAudio clickAudio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.ClickAudio.html">ClickAudio</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_clickStarted" data-uid="DUKE.Controls.Clickable.clickStarted">clickStarted</h4>
+  <div class="markdown level1 summary"><p>TRUE when a click has been started over this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected bool clickStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_col" data-uid="DUKE.Controls.Clickable.col">col</h4>
+  <div class="markdown level1 summary"><p>Collider of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected Collider col</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Collider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_cUIElement" data-uid="DUKE.Controls.Clickable.cUIElement">cUIElement</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">CurvedUIElement</code> component attached to this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected CurvedUIElement cUIElement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.CurvedUIElement.html">CurvedUIElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_groupCanBeOff" data-uid="DUKE.Controls.Clickable.groupCanBeOff">groupCanBeOff</h4>
+  <div class="markdown level1 summary"><p>TRUE allows the group be toggled off completely.
+FALSE prevents the last toggled <code data-dev-comment-type="typeparamref" class="typeparamref">Clickable</code> in the group from being toggled off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool groupCanBeOff</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_isMultiToggleableInGroup" data-uid="DUKE.Controls.Clickable.isMultiToggleableInGroup">isMultiToggleableInGroup</h4>
+  <div class="markdown level1 summary"><p>TRUE allows multiple <code data-dev-comment-type="typeparamref" class="typeparamref">Clickables</code> in the group to be toggled on simultaneously.
+FALSE toggles every other <code data-dev-comment-type="typeparamref" class="typeparamref">Clickable</code> off when one is toggled on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool isMultiToggleableInGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_isPartOfGroup" data-uid="DUKE.Controls.Clickable.isPartOfGroup">isPartOfGroup</h4>
+  <div class="markdown level1 summary"><p>TRUE marks this instance as a part of a group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool isPartOfGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_isToggleable" data-uid="DUKE.Controls.Clickable.isToggleable">isToggleable</h4>
+  <div class="markdown level1 summary"><p>TRUE allows this instance to be toggleable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool isToggleable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_isToggled" data-uid="DUKE.Controls.Clickable.isToggled">isToggled</h4>
+  <div class="markdown level1 summary"><p>TRUE when this instance is toggled on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected bool isToggled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_onClick" data-uid="DUKE.Controls.Clickable.onClick">onClick</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">UnityEvent</code> which is activated when a click is released over this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected UnityEvent onClick</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Events.UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_onClickStarted" data-uid="DUKE.Controls.Clickable.onClickStarted">onClickStarted</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">UnityEvent</code> which is activated when a click is pressed down over this instace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space(20F)]
+[SerializeField]
+protected UnityEvent onClickStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Events.UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_requireClickStartedToActivate" data-uid="DUKE.Controls.Clickable.requireClickStartedToActivate">requireClickStartedToActivate</h4>
+  <div class="markdown level1 summary"><p>TRUE registers a click only if it started and ended within the same instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Button Settings&quot;)]
+[SerializeField]
+protected bool requireClickStartedToActivate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_toggleColor" data-uid="DUKE.Controls.Clickable.toggleColor">toggleColor</h4>
+  <div class="markdown level1 summary"><p>Toggled color of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected Color toggleColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_Toggled" data-uid="DUKE.Controls.Clickable.Toggled">Toggled</h4>
+  <div class="markdown level1 summary"><p>Called when this instance is toggled on or off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;bool&gt; Toggled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_uiPalette" data-uid="DUKE.Controls.Clickable.uiPalette">uiPalette</h4>
+  <div class="markdown level1 summary"><p>Currently active <code data-dev-comment-type="typeparamref" class="typeparamref">UIPaletteSO</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected UIPaletteSO uiPalette</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.UIPaletteSO.html">UIPaletteSO</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_uiSettings" data-uid="DUKE.Controls.Clickable.uiSettings">uiSettings</h4>
+  <div class="markdown level1 summary"><p>Currently active <code data-dev-comment-type="typeparamref" class="typeparamref">UISettingsElement</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected UISettingsElement uiSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.UISettingsElement.html">UISettingsElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_Controls_Clickable_updateEventSubscribedTo" data-uid="DUKE.Controls.Clickable.updateEventSubscribedTo">updateEventSubscribedTo</h4>
+  <div class="markdown level1 summary"><p>TRUE when update events have been subscribed to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[HideInInspector]
+protected bool updateEventSubscribedTo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_Controls_Clickable_ChangeColorOnToggle_" data-uid="DUKE.Controls.Clickable.ChangeColorOnToggle*"></a>
+  <h4 id="DUKE_Controls_Clickable_ChangeColorOnToggle" data-uid="DUKE.Controls.Clickable.ChangeColorOnToggle">ChangeColorOnToggle</h4>
+  <div class="markdown level1 summary"><p>TRUE allows the color to be changed on toggling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChangeColorOnToggle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_Color_" data-uid="DUKE.Controls.Clickable.Color*"></a>
+  <h4 id="DUKE_Controls_Clickable_Color" data-uid="DUKE.Controls.Clickable.Color">Color</h4>
+  <div class="markdown level1 summary"><p>Current color of the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_Curved_" data-uid="DUKE.Controls.Clickable.Curved*"></a>
+  <h4 id="DUKE_Controls_Clickable_Curved" data-uid="DUKE.Controls.Clickable.Curved">Curved</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">CurvedUIElement</code> component attached to <code data-dev-comment-type="paramref" class="paramref">InteractableTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurvedUIElement Curved { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.CurvedUIElement.html">CurvedUIElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_GroupCanBeOff_" data-uid="DUKE.Controls.Clickable.GroupCanBeOff*"></a>
+  <h4 id="DUKE_Controls_Clickable_GroupCanBeOff" data-uid="DUKE.Controls.Clickable.GroupCanBeOff">GroupCanBeOff</h4>
+  <div class="markdown level1 summary"><p>TRUE allows the group to be toggled off completely. FALSE prevents the last toggled <code data-dev-comment-type="typeparamref" class="typeparamref">Clickable</code> in the group from being toggled off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GroupCanBeOff { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_HasImage_" data-uid="DUKE.Controls.Clickable.HasImage*"></a>
+  <h4 id="DUKE_Controls_Clickable_HasImage" data-uid="DUKE.Controls.Clickable.HasImage">HasImage</h4>
+  <div class="markdown level1 summary"><p>TRUE when <code data-dev-comment-type="paramref" class="paramref">Image</code> is not NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_Image_" data-uid="DUKE.Controls.Clickable.Image*"></a>
+  <h4 id="DUKE_Controls_Clickable_Image" data-uid="DUKE.Controls.Clickable.Image">Image</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Image</code> component attached to <code data-dev-comment-type="paramref" class="paramref">InteractableTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Image { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_IsCurved_" data-uid="DUKE.Controls.Clickable.IsCurved*"></a>
+  <h4 id="DUKE_Controls_Clickable_IsCurved" data-uid="DUKE.Controls.Clickable.IsCurved">IsCurved</h4>
+  <div class="markdown level1 summary"><p>TRUE when <code data-dev-comment-type="paramref" class="paramref">Curved</code> is not NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurved { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_IsMultiToggleableInGroup_" data-uid="DUKE.Controls.Clickable.IsMultiToggleableInGroup*"></a>
+  <h4 id="DUKE_Controls_Clickable_IsMultiToggleableInGroup" data-uid="DUKE.Controls.Clickable.IsMultiToggleableInGroup">IsMultiToggleableInGroup</h4>
+  <div class="markdown level1 summary"><p>TRUE allows multiple <code data-dev-comment-type="typeparamref" class="typeparamref">Clickables</code> in the group to be toggled on simultaneously. FALSE toggles every other <code data-dev-comment-type="typeparamref" class="typeparamref">Clickable</code> off when one is toggled on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultiToggleableInGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_IsPartOfGroup_" data-uid="DUKE.Controls.Clickable.IsPartOfGroup*"></a>
+  <h4 id="DUKE_Controls_Clickable_IsPartOfGroup" data-uid="DUKE.Controls.Clickable.IsPartOfGroup">IsPartOfGroup</h4>
+  <div class="markdown level1 summary"><p>TRUE marks this instance as a part of a group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPartOfGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_IsToggleable_" data-uid="DUKE.Controls.Clickable.IsToggleable*"></a>
+  <h4 id="DUKE_Controls_Clickable_IsToggleable" data-uid="DUKE.Controls.Clickable.IsToggleable">IsToggleable</h4>
+  <div class="markdown level1 summary"><p>TRUE allows this instance to be toggleable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsToggleable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_IsToggled_" data-uid="DUKE.Controls.Clickable.IsToggled*"></a>
+  <h4 id="DUKE_Controls_Clickable_IsToggled" data-uid="DUKE.Controls.Clickable.IsToggled">IsToggled</h4>
+  <div class="markdown level1 summary"><p>TRUE when this instance is toggled on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsToggled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_UISettings_" data-uid="DUKE.Controls.Clickable.UISettings*"></a>
+  <h4 id="DUKE_Controls_Clickable_UISettings" data-uid="DUKE.Controls.Clickable.UISettings">UISettings</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">UISettingsElement</code> component attached to <code data-dev-comment-type="paramref" class="paramref">InteractableTransform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISettingsElement UISettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.UISettingsElement.html">UISettingsElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_Controls_Clickable_AddInput_" data-uid="DUKE.Controls.Clickable.AddInput*"></a>
+  <h4 id="DUKE_Controls_Clickable_AddInput_DUKE_Controls_Input_" data-uid="DUKE.Controls.Clickable.AddInput(DUKE.Controls.Input)">AddInput(Input)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddInput(Input _input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Input.html">Input</a></td>
+        <td><span class="parametername">_input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_AddInput_DUKE_Controls_Input_">Interactable.AddInput(Input)</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_BeginInteraction_" data-uid="DUKE.Controls.Clickable.BeginInteraction*"></a>
+  <h4 id="DUKE_Controls_Clickable_BeginInteraction_DUKE_Controls_Input_" data-uid="DUKE.Controls.Clickable.BeginInteraction(DUKE.Controls.Input)">BeginInteraction(Input)</h4>
+  <div class="markdown level1 summary"><p>Begin the interaction and add listeners to <code data-dev-comment-type="paramref" class="paramref">_source</code>-specific events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeginInteraction(Input _source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Input.html">Input</a></td>
+        <td><span class="parametername">_source</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">Input</code> which is interacting with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_BeginInteraction_DUKE_Controls_Input_">Interactable.BeginInteraction(Input)</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_CanBeToggledOff_" data-uid="DUKE.Controls.Clickable.CanBeToggledOff*"></a>
+  <h4 id="DUKE_Controls_Clickable_CanBeToggledOff" data-uid="DUKE.Controls.Clickable.CanBeToggledOff">CanBeToggledOff()</h4>
+  <div class="markdown level1 summary"><p>Determine whether this Clickable can be turned off based on other Clickables' IsToggled state in the group
+and whether GroupCanBeTurnedOff is true or false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CanBeToggledOff()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if toggling off is allowed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_ClickEnded_" data-uid="DUKE.Controls.Clickable.ClickEnded*"></a>
+  <h4 id="DUKE_Controls_Clickable_ClickEnded" data-uid="DUKE.Controls.Clickable.ClickEnded">ClickEnded()</h4>
+  <div class="markdown level1 summary"><p>End the current click and invoke <code data-dev-comment-type="paramref" class="paramref">OnClick</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClickEnded()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Clickable_ClickStarted_" data-uid="DUKE.Controls.Clickable.ClickStarted*"></a>
+  <h4 id="DUKE_Controls_Clickable_ClickStarted" data-uid="DUKE.Controls.Clickable.ClickStarted">ClickStarted()</h4>
+  <div class="markdown level1 summary"><p>A new click started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ClickStarted()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Clickable_DesktopInteractionUpdate_" data-uid="DUKE.Controls.Clickable.DesktopInteractionUpdate*"></a>
+  <h4 id="DUKE_Controls_Clickable_DesktopInteractionUpdate" data-uid="DUKE.Controls.Clickable.DesktopInteractionUpdate">DesktopInteractionUpdate()</h4>
+  <div class="markdown level1 summary"><p>Update loop for desktop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DesktopInteractionUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_DesktopInteractionUpdate">Interactable.DesktopInteractionUpdate()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_EndInteraction_" data-uid="DUKE.Controls.Clickable.EndInteraction*"></a>
+  <h4 id="DUKE_Controls_Clickable_EndInteraction" data-uid="DUKE.Controls.Clickable.EndInteraction">EndInteraction()</h4>
+  <div class="markdown level1 summary"><p>Let source controller know this interaction should end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void EndInteraction()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_EndInteraction">Interactable.EndInteraction()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_GetGroup_" data-uid="DUKE.Controls.Clickable.GetGroup*"></a>
+  <h4 id="DUKE_Controls_Clickable_GetGroup" data-uid="DUKE.Controls.Clickable.GetGroup">GetGroup()</h4>
+  <div class="markdown level1 summary"><p>Find every other Clickable that has the same parent than this and is also part of a group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Clickable[] GetGroup()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Clickable.html">Clickable</a>[]</td>
+        <td><p>Array of Clickables that share the same parent with this Clickable and have been set as part of a group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_LogMessage_" data-uid="DUKE.Controls.Clickable.LogMessage*"></a>
+  <h4 id="DUKE_Controls_Clickable_LogMessage_System_String_" data-uid="DUKE.Controls.Clickable.LogMessage(System.String)">LogMessage(String)</h4>
+  <div class="markdown level1 summary"><p>Log message with Debug.Log(<code data-dev-comment-type="paramref" class="paramref">_s</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LogMessage(string _s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">_s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_OnDisable_" data-uid="DUKE.Controls.Clickable.OnDisable*"></a>
+  <h4 id="DUKE_Controls_Clickable_OnDisable" data-uid="DUKE.Controls.Clickable.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_OnDisable">Interactable.OnDisable()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_OnEnable_" data-uid="DUKE.Controls.Clickable.OnEnable*"></a>
+  <h4 id="DUKE_Controls_Clickable_OnEnable" data-uid="DUKE.Controls.Clickable.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_OnEnable">Interactable.OnEnable()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_PlayAudio_" data-uid="DUKE.Controls.Clickable.PlayAudio*"></a>
+  <h4 id="DUKE_Controls_Clickable_PlayAudio_System_Boolean_" data-uid="DUKE.Controls.Clickable.PlayAudio(System.Boolean)">PlayAudio(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Play audio when a click is started or ended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PlayAudio(bool _clickStarted)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_clickStarted</span></td>
+        <td><p>TRUE when the click is started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_SetImageColor_" data-uid="DUKE.Controls.Clickable.SetImageColor*"></a>
+  <h4 id="DUKE_Controls_Clickable_SetImageColor" data-uid="DUKE.Controls.Clickable.SetImageColor">SetImageColor()</h4>
+  <div class="markdown level1 summary"><p>Change the color of this Clickable's Image component if it has one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetImageColor()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Clickable_SetToggled_" data-uid="DUKE.Controls.Clickable.SetToggled*"></a>
+  <h4 id="DUKE_Controls_Clickable_SetToggled_System_Boolean_System_Boolean_" data-uid="DUKE.Controls.Clickable.SetToggled(System.Boolean,System.Boolean)">SetToggled(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set the Clickable's 'IsToggled' to true or false if IsToggleable has been defined as true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetToggled(bool _on, bool _ignoreRestrictions = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_on</span></td>
+        <td><p>Desired state of IsToggled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_ignoreRestrictions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_SetUISettings_" data-uid="DUKE.Controls.Clickable.SetUISettings*"></a>
+  <h4 id="DUKE_Controls_Clickable_SetUISettings_DUKE_UI_UISettingsElement_" data-uid="DUKE.Controls.Clickable.SetUISettings(DUKE.UI.UISettingsElement)">SetUISettings(UISettingsElement)</h4>
+  <div class="markdown level1 summary"><p>Update UISettingsSO from which to read color information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUISettings(UISettingsElement _newSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.UI.UISettingsElement.html">UISettingsElement</a></td>
+        <td><span class="parametername">_newSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_SetupColliderForUIElement_" data-uid="DUKE.Controls.Clickable.SetupColliderForUIElement*"></a>
+  <h4 id="DUKE_Controls_Clickable_SetupColliderForUIElement" data-uid="DUKE.Controls.Clickable.SetupColliderForUIElement">SetupColliderForUIElement()</h4>
+  <div class="markdown level1 summary"><p>Create a BoxCollider for the UI element if it doesn't have one yet.
+This method automates a tedious part of the manual UI setup,
+but is not the perfect solution for complex element shapes etc.
+DO NOT USE WITH LAYOUT GROUPS! Greyed-out rect fields count as 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetupColliderForUIElement()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Clickable_Start_" data-uid="DUKE.Controls.Clickable.Start*"></a>
+  <h4 id="DUKE_Controls_Clickable_Start" data-uid="DUKE.Controls.Clickable.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_Start">Interactable.Start()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_SubscribeToEvents_" data-uid="DUKE.Controls.Clickable.SubscribeToEvents*"></a>
+  <h4 id="DUKE_Controls_Clickable_SubscribeToEvents" data-uid="DUKE.Controls.Clickable.SubscribeToEvents">SubscribeToEvents()</h4>
+  <div class="markdown level1 summary"><p>Add listeners to relevant events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SubscribeToEvents()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_SubscribeToEvents">Interactable.SubscribeToEvents()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_UnsubscribeFromEvents_" data-uid="DUKE.Controls.Clickable.UnsubscribeFromEvents*"></a>
+  <h4 id="DUKE_Controls_Clickable_UnsubscribeFromEvents" data-uid="DUKE.Controls.Clickable.UnsubscribeFromEvents">UnsubscribeFromEvents()</h4>
+  <div class="markdown level1 summary"><p>Remove previously added listeners.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UnsubscribeFromEvents()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_UnsubscribeFromEvents">Interactable.UnsubscribeFromEvents()</a></div>
+  
+  
+  <a id="DUKE_Controls_Clickable_UpdateCollisionMesh_" data-uid="DUKE.Controls.Clickable.UpdateCollisionMesh*"></a>
+  <h4 id="DUKE_Controls_Clickable_UpdateCollisionMesh_UnityEngine_Mesh_" data-uid="DUKE.Controls.Clickable.UpdateCollisionMesh(UnityEngine.Mesh)">UpdateCollisionMesh(Mesh)</h4>
+  <div class="markdown level1 summary"><p>Get the up-to-date curved Mesh from CurvedUIElement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateCollisionMesh(Mesh _mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">_mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_Controls_Clickable_UpdateGroup_" data-uid="DUKE.Controls.Clickable.UpdateGroup*"></a>
+  <h4 id="DUKE_Controls_Clickable_UpdateGroup" data-uid="DUKE.Controls.Clickable.UpdateGroup">UpdateGroup()</h4>
+  <div class="markdown level1 summary"><p>Update the toggled state of every Clickable in the same group as this Clickable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateGroup()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_Controls_Clickable_VRInteractionUpdate_" data-uid="DUKE.Controls.Clickable.VRInteractionUpdate*"></a>
+  <h4 id="DUKE_Controls_Clickable_VRInteractionUpdate" data-uid="DUKE.Controls.Clickable.VRInteractionUpdate">VRInteractionUpdate()</h4>
+  <div class="markdown level1 summary"><p>Update loop for VR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void VRInteractionUpdate()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DUKE.Controls.Interactable.html#DUKE_Controls_Interactable_VRInteractionUpdate">Interactable.VRInteractionUpdate()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

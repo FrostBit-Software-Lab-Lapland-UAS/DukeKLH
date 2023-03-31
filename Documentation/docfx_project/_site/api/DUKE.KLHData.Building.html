@@ -1,0 +1,1021 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Building
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Building
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.KLHData.Building">
+  
+  
+  <h1 id="DUKE_KLHData_Building" data-uid="DUKE.KLHData.Building" class="text-break">Class Building
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of information about a specifi building.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">Building</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.KLHData.html">DUKE.KLHData</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_KLHData_Building_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(fileName = &quot;New Building&quot;, menuName = &quot;ScriptableObjects/Create a new Building&quot;, order = 0)]
+public class Building : ScriptableObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_Building_CalculateHeatLoss_" data-uid="DUKE.KLHData.Building.CalculateHeatLoss*"></a>
+  <h4 id="DUKE_KLHData_Building_CalculateHeatLoss" data-uid="DUKE.KLHData.Building.CalculateHeatLoss">CalculateHeatLoss</h4>
+  <div class="markdown level1 summary"><p>TRUE if heat loss should be calculated, FALSE if it should be set instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CalculateHeatLoss { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_ConstructionEra_" data-uid="DUKE.KLHData.Building.ConstructionEra*"></a>
+  <h4 id="DUKE_KLHData_Building_ConstructionEra" data-uid="DUKE.KLHData.Building.ConstructionEra">ConstructionEra</h4>
+  <div class="markdown level1 summary"><p>Construction era of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConstructionEra { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_ConstructionYear_" data-uid="DUKE.KLHData.Building.ConstructionYear*"></a>
+  <h4 id="DUKE_KLHData_Building_ConstructionYear" data-uid="DUKE.KLHData.Building.ConstructionYear">ConstructionYear</h4>
+  <div class="markdown level1 summary"><p>Construction year of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConstructionYear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_DailyHeatedWaterConsumption_" data-uid="DUKE.KLHData.Building.DailyHeatedWaterConsumption*"></a>
+  <h4 id="DUKE_KLHData_Building_DailyHeatedWaterConsumption" data-uid="DUKE.KLHData.Building.DailyHeatedWaterConsumption">DailyHeatedWaterConsumption</h4>
+  <div class="markdown level1 summary"><p>Daily heated water consumption of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DailyHeatedWaterConsumption { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_DrawGrid_" data-uid="DUKE.KLHData.Building.DrawGrid*"></a>
+  <h4 id="DUKE_KLHData_Building_DrawGrid" data-uid="DUKE.KLHData.Building.DrawGrid">DrawGrid</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code> instance containing the shape of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid DrawGrid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawGrid.html">DrawGrid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_EnvelopeArea_" data-uid="DUKE.KLHData.Building.EnvelopeArea*"></a>
+  <h4 id="DUKE_KLHData_Building_EnvelopeArea" data-uid="DUKE.KLHData.Building.EnvelopeArea">EnvelopeArea</h4>
+  <div class="markdown level1 summary"><p>Total envelope area of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in square meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EnvelopeArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_FloorArea_" data-uid="DUKE.KLHData.Building.FloorArea*"></a>
+  <h4 id="DUKE_KLHData_Building_FloorArea" data-uid="DUKE.KLHData.Building.FloorArea">FloorArea</h4>
+  <div class="markdown level1 summary"><p>Total area of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> when viewed directly from above.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FloorArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_FloorU_" data-uid="DUKE.KLHData.Building.FloorU*"></a>
+  <h4 id="DUKE_KLHData_Building_FloorU" data-uid="DUKE.KLHData.Building.FloorU">FloorU</h4>
+  <div class="markdown level1 summary"><p>Thermal transmittance of the floor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FloorU { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GrossArea_" data-uid="DUKE.KLHData.Building.GrossArea*"></a>
+  <h4 id="DUKE_KLHData_Building_GrossArea" data-uid="DUKE.KLHData.Building.GrossArea">GrossArea</h4>
+  <div class="markdown level1 summary"><p>Gross floor area of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in square meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GrossArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GrossVolume_" data-uid="DUKE.KLHData.Building.GrossVolume*"></a>
+  <h4 id="DUKE_KLHData_Building_GrossVolume" data-uid="DUKE.KLHData.Building.GrossVolume">GrossVolume</h4>
+  <div class="markdown level1 summary"><p>Gross volume of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> in cubic meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GrossVolume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatConsumptionDueToAirInfiltration_" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToAirInfiltration*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatConsumptionDueToAirInfiltration" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToAirInfiltration">HeatConsumptionDueToAirInfiltration</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption due to air infiltration in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeatConsumptionDueToAirInfiltration { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatConsumptionDueToConduction_" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToConduction*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatConsumptionDueToConduction" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToConduction">HeatConsumptionDueToConduction</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption of the due to conduction in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeatConsumptionDueToConduction { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatConsumptionDueToVentilation_" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToVentilation*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatConsumptionDueToVentilation" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToVentilation">HeatConsumptionDueToVentilation</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption due to ventilation in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeatConsumptionDueToVentilation { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatConsumptionDueToWaterHeating_" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToWaterHeating*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatConsumptionDueToWaterHeating" data-uid="DUKE.KLHData.Building.HeatConsumptionDueToWaterHeating">HeatConsumptionDueToWaterHeating</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> due to water heating in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeatConsumptionDueToWaterHeating { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatGainDueToInternalSources_" data-uid="DUKE.KLHData.Building.HeatGainDueToInternalSources*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatGainDueToInternalSources" data-uid="DUKE.KLHData.Building.HeatGainDueToInternalSources">HeatGainDueToInternalSources</h4>
+  <div class="markdown level1 summary"><p>Total annual heat gain of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code> due to internal sources in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeatGainDueToInternalSources { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HeatingMethods_" data-uid="DUKE.KLHData.Building.HeatingMethods*"></a>
+  <h4 id="DUKE_KLHData_Building_HeatingMethods" data-uid="DUKE.KLHData.Building.HeatingMethods">HeatingMethods</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">HeatingMethod</code> array containing <code data-dev-comment-type="typeparamref" class="typeparamref">DistrictHeating</code> and each type of supported hybrid heating method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HeatingMethod[] HeatingMethods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.HeatingMethod.html">HeatingMethod</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_HighestLevel_" data-uid="DUKE.KLHData.Building.HighestLevel*"></a>
+  <h4 id="DUKE_KLHData_Building_HighestLevel" data-uid="DUKE.KLHData.Building.HighestLevel">HighestLevel</h4>
+  <div class="markdown level1 summary"><p>Current highest floor count of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HighestLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_Name_" data-uid="DUKE.KLHData.Building.Name*"></a>
+  <h4 id="DUKE_KLHData_Building_Name" data-uid="DUKE.KLHData.Building.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>. This property is currently unused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_RoofU_" data-uid="DUKE.KLHData.Building.RoofU*"></a>
+  <h4 id="DUKE_KLHData_Building_RoofU" data-uid="DUKE.KLHData.Building.RoofU">RoofU</h4>
+  <div class="markdown level1 summary"><p>Thermal transmittance of the roof.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RoofU { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_StaircaseCount_" data-uid="DUKE.KLHData.Building.StaircaseCount*"></a>
+  <h4 id="DUKE_KLHData_Building_StaircaseCount" data-uid="DUKE.KLHData.Building.StaircaseCount">StaircaseCount</h4>
+  <div class="markdown level1 summary"><p>Staircase count of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StaircaseCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_TempDifference_" data-uid="DUKE.KLHData.Building.TempDifference*"></a>
+  <h4 id="DUKE_KLHData_Building_TempDifference" data-uid="DUKE.KLHData.Building.TempDifference">TempDifference</h4>
+  <div class="markdown level1 summary"><p>Average temperature difference within the selected <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingZone</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TempDifference { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_TotalHeatConsumption_" data-uid="DUKE.KLHData.Building.TotalHeatConsumption*"></a>
+  <h4 id="DUKE_KLHData_Building_TotalHeatConsumption" data-uid="DUKE.KLHData.Building.TotalHeatConsumption">TotalHeatConsumption</h4>
+  <div class="markdown level1 summary"><p>Total annual heat consumption in kWh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalHeatConsumption { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_WallAndWindowU_" data-uid="DUKE.KLHData.Building.WallAndWindowU*"></a>
+  <h4 id="DUKE_KLHData_Building_WallAndWindowU" data-uid="DUKE.KLHData.Building.WallAndWindowU">WallAndWindowU</h4>
+  <div class="markdown level1 summary"><p>Averaged thermal transmittance of walls and windows.
+See <code data-dev-comment-type="typeparamref" class="typeparamref">DUKE</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">KLHData</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">KLHMath</code> for further details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WallAndWindowU { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_WallArea_" data-uid="DUKE.KLHData.Building.WallArea*"></a>
+  <h4 id="DUKE_KLHData_Building_WallArea" data-uid="DUKE.KLHData.Building.WallArea">WallArea</h4>
+  <div class="markdown level1 summary"><p>Total vertical surface area of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WallArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_Zone_" data-uid="DUKE.KLHData.Building.Zone*"></a>
+  <h4 id="DUKE_KLHData_Building_Zone" data-uid="DUKE.KLHData.Building.Zone">Zone</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">BuildingZone</code> of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildingZone Zone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.BuildingZone.html">BuildingZone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_KLHData_Building_CalculateDimensions_" data-uid="DUKE.KLHData.Building.CalculateDimensions*"></a>
+  <h4 id="DUKE_KLHData_Building_CalculateDimensions" data-uid="DUKE.KLHData.Building.CalculateDimensions">CalculateDimensions()</h4>
+  <div class="markdown level1 summary"><p>Calculate area and volumetric measurements of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateDimensions()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_Building_CalculateHeatingValues_" data-uid="DUKE.KLHData.Building.CalculateHeatingValues*"></a>
+  <h4 id="DUKE_KLHData_Building_CalculateHeatingValues" data-uid="DUKE.KLHData.Building.CalculateHeatingValues">CalculateHeatingValues()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat loss values of the Building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateHeatingValues()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_KLHData_Building_CalculateHighestLevel_" data-uid="DUKE.KLHData.Building.CalculateHighestLevel*"></a>
+  <h4 id="DUKE_KLHData_Building_CalculateHighestLevel" data-uid="DUKE.KLHData.Building.CalculateHighestLevel">CalculateHighestLevel()</h4>
+  <div class="markdown level1 summary"><p>Calculate the highest level of the <code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int CalculateHighestLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Current highest floor number of the building.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetHeatGainThroughInternalSources_" data-uid="DUKE.KLHData.Building.GetHeatGainThroughInternalSources*"></a>
+  <h4 id="DUKE_KLHData_Building_GetHeatGainThroughInternalSources" data-uid="DUKE.KLHData.Building.GetHeatGainThroughInternalSources">GetHeatGainThroughInternalSources()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat gained from sun and internal sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetHeatGainThroughInternalSources()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Gained energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetHeatLossThroughConduction_" data-uid="DUKE.KLHData.Building.GetHeatLossThroughConduction*"></a>
+  <h4 id="DUKE_KLHData_Building_GetHeatLossThroughConduction" data-uid="DUKE.KLHData.Building.GetHeatLossThroughConduction">GetHeatLossThroughConduction()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat lost through conduction of the structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetHeatLossThroughConduction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Lost energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetHeatLossThroughReplacementAir_" data-uid="DUKE.KLHData.Building.GetHeatLossThroughReplacementAir*"></a>
+  <h4 id="DUKE_KLHData_Building_GetHeatLossThroughReplacementAir" data-uid="DUKE.KLHData.Building.GetHeatLossThroughReplacementAir">GetHeatLossThroughReplacementAir()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat lost through replacement air.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetHeatLossThroughReplacementAir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Lost energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetHeatLossThroughVentilation_" data-uid="DUKE.KLHData.Building.GetHeatLossThroughVentilation*"></a>
+  <h4 id="DUKE_KLHData_Building_GetHeatLossThroughVentilation" data-uid="DUKE.KLHData.Building.GetHeatLossThroughVentilation">GetHeatLossThroughVentilation()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat lost through ventilation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetHeatLossThroughVentilation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Lost energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetHeatLossThroughWaterHeating_" data-uid="DUKE.KLHData.Building.GetHeatLossThroughWaterHeating*"></a>
+  <h4 id="DUKE_KLHData_Building_GetHeatLossThroughWaterHeating" data-uid="DUKE.KLHData.Building.GetHeatLossThroughWaterHeating">GetHeatLossThroughWaterHeating()</h4>
+  <div class="markdown level1 summary"><p>Calculate the heat lost through heating the water used by the residents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetHeatLossThroughWaterHeating()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Lost energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_GetTotalHeatConsumption_" data-uid="DUKE.KLHData.Building.GetTotalHeatConsumption*"></a>
+  <h4 id="DUKE_KLHData_Building_GetTotalHeatConsumption" data-uid="DUKE.KLHData.Building.GetTotalHeatConsumption">GetTotalHeatConsumption()</h4>
+  <div class="markdown level1 summary"><p>Calculate the total amount of lost heat.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetTotalHeatConsumption()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Lost energy in kWh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_KLHData_Building_UpdateHeatingDevices_" data-uid="DUKE.KLHData.Building.UpdateHeatingDevices*"></a>
+  <h4 id="DUKE_KLHData_Building_UpdateHeatingDevices" data-uid="DUKE.KLHData.Building.UpdateHeatingDevices">UpdateHeatingDevices()</h4>
+  <div class="markdown level1 summary"><p>Rebuild the heating devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateHeatingDevices()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

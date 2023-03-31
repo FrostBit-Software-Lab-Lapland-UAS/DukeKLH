@@ -1,0 +1,1633 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BuildingDrawer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BuildingDrawer
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DUKE.BuildingDrawer">
+  
+  
+  <h1 id="DUKE_BuildingDrawer" data-uid="DUKE.BuildingDrawer" class="text-break">Class BuildingDrawer
+  </h1>
+  <div class="markdown level0 summary"><p>Design a building by drawing a floor plan and scaling it with the desired number of stories.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">BuildingDrawer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DUKE.html">DUKE</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DUKE_BuildingDrawer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BuildingDrawer : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_baseColor" data-uid="DUKE.BuildingDrawer.baseColor">baseColor</h4>
+  <div class="markdown level1 summary"><p>Color of the background plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space(20F)]
+public Color baseColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_BuildingDrawerUpdated" data-uid="DUKE.BuildingDrawer.BuildingDrawerUpdated">BuildingDrawerUpdated</h4>
+  <div class="markdown level1 summary"><p>Called each time <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action BuildingDrawerUpdated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_BuildingMeshesUpdated" data-uid="DUKE.BuildingDrawer.BuildingMeshesUpdated">BuildingMeshesUpdated</h4>
+  <div class="markdown level1 summary"><p>Called each time <code data-dev-comment-type="typeparamref" class="typeparamref">levelMeshes</code>,<code data-dev-comment-type="typeparamref" class="typeparamref">outlineMeshes</code> and <code data-dev-comment-type="typeparamref" class="typeparamref">bottomMeshes</code> are updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action BuildingMeshesUpdated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_Current" data-uid="DUKE.BuildingDrawer.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Static instance of <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingDrawer</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildingDrawer Current</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.BuildingDrawer.html">BuildingDrawer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_drawAreaSize" data-uid="DUKE.BuildingDrawer.drawAreaSize">drawAreaSize</h4>
+  <div class="markdown level1 summary"><p>Size of the draw plane (X, Y).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Grid Settings&quot;)]
+public Vector2 drawAreaSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_drawColors" data-uid="DUKE.BuildingDrawer.drawColors">drawColors</h4>
+  <div class="markdown level1 summary"><p>Color array of different building heights (floor 1-9).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color[] drawColors</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_indicatorLineWidth" data-uid="DUKE.BuildingDrawer.indicatorLineWidth">indicatorLineWidth</h4>
+  <div class="markdown level1 summary"><p>width of the indicator line objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float indicatorLineWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_lineColor" data-uid="DUKE.BuildingDrawer.lineColor">lineColor</h4>
+  <div class="markdown level1 summary"><p>Color of the draw plane's lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color lineColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_lineWidth" data-uid="DUKE.BuildingDrawer.lineWidth">lineWidth</h4>
+  <div class="markdown level1 summary"><p>Width of draw area's standard lines (every unit).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space(5F)]
+public float lineWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_thickLineInterval" data-uid="DUKE.BuildingDrawer.thickLineInterval">thickLineInterval</h4>
+  <div class="markdown level1 summary"><p>Frequency of thick lines within draw area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int thickLineInterval</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_thickLineWidth" data-uid="DUKE.BuildingDrawer.thickLineWidth">thickLineWidth</h4>
+  <div class="markdown level1 summary"><p>Width of draw area's large lines (frequence determined by <code data-dev-comment-type="typeparamref" class="typeparamref">thickLineInterval</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float thickLineWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_trimOverflowCells" data-uid="DUKE.BuildingDrawer.trimOverflowCells">trimOverflowCells</h4>
+  <div class="markdown level1 summary"><p>TRUE will limit the grid to the size allowed by <code data-dev-comment-type="paramref" class="paramref">drawAreaSize</code> and <code data-dev-comment-type="paramref" class="paramref">buildingScale</code>.
+FALSE will allow for grid to reach over the draw plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool trimOverflowCells</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="DUKE_BuildingDrawer_VolumeModelUpdated" data-uid="DUKE.BuildingDrawer.VolumeModelUpdated">VolumeModelUpdated</h4>
+  <div class="markdown level1 summary"><p>Called each time <code data-dev-comment-type="typeparamref" class="typeparamref">BuildingVolumeModel</code> is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action VolumeModelUpdated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="DUKE_BuildingDrawer_BottomMeshes_" data-uid="DUKE.BuildingDrawer.BottomMeshes*"></a>
+  <h4 id="DUKE_BuildingDrawer_BottomMeshes" data-uid="DUKE.BuildingDrawer.BottomMeshes">BottomMeshes</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code> array containing each floor's bottom <code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh[] BottomMeshes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_Bounds_" data-uid="DUKE.BuildingDrawer.Bounds*"></a>
+  <h4 id="DUKE_BuildingDrawer_Bounds" data-uid="DUKE.BuildingDrawer.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">BuildingBounds</code> instance generated from <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildingBounds Bounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.BuildingBounds.html">BuildingBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_Building_" data-uid="DUKE.BuildingDrawer.Building*"></a>
+  <h4 id="DUKE_BuildingDrawer_Building" data-uid="DUKE.BuildingDrawer.Building">Building</h4>
+  <div class="markdown level1 summary"><p>Reference to <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Building Building { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_Buildings_" data-uid="DUKE.BuildingDrawer.Buildings*"></a>
+  <h4 id="DUKE_BuildingDrawer_Buildings" data-uid="DUKE.BuildingDrawer.Buildings">Buildings</h4>
+  <div class="markdown level1 summary"><p>Reference to <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Buildings</code> list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Building&gt; Buildings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DUKE.KLHData.Building.html">Building</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_BuildingScale_" data-uid="DUKE.BuildingDrawer.BuildingScale*"></a>
+  <h4 id="DUKE_BuildingDrawer_BuildingScale" data-uid="DUKE.BuildingDrawer.BuildingScale">BuildingScale</h4>
+  <div class="markdown level1 summary"><p>Current building scale of the area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float BuildingScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_CurrentFloor_" data-uid="DUKE.BuildingDrawer.CurrentFloor*"></a>
+  <h4 id="DUKE_BuildingDrawer_CurrentFloor" data-uid="DUKE.BuildingDrawer.CurrentFloor">CurrentFloor</h4>
+  <div class="markdown level1 summary"><p>Currently selected floor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentFloor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_DrawAreaSize_" data-uid="DUKE.BuildingDrawer.DrawAreaSize*"></a>
+  <h4 id="DUKE_BuildingDrawer_DrawAreaSize" data-uid="DUKE.BuildingDrawer.DrawAreaSize">DrawAreaSize</h4>
+  <div class="markdown level1 summary"><p>Size of the draw plane (X, Y).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 DrawAreaSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_DrawColors_" data-uid="DUKE.BuildingDrawer.DrawColors*"></a>
+  <h4 id="DUKE_BuildingDrawer_DrawColors" data-uid="DUKE.BuildingDrawer.DrawColors">DrawColors</h4>
+  <div class="markdown level1 summary"><p>Color array of different building heights (floor 1-9).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color[] DrawColors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_DrawGrid_" data-uid="DUKE.BuildingDrawer.DrawGrid*"></a>
+  <h4 id="DUKE_BuildingDrawer_DrawGrid" data-uid="DUKE.BuildingDrawer.DrawGrid">DrawGrid</h4>
+  <div class="markdown level1 summary"><p>Reference to <code data-dev-comment-type="typeparamref" class="typeparamref">KLHManager</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Building</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawGrid DrawGrid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.DrawGrid.html">DrawGrid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_LevelMeshes_" data-uid="DUKE.BuildingDrawer.LevelMeshes*"></a>
+  <h4 id="DUKE_BuildingDrawer_LevelMeshes" data-uid="DUKE.BuildingDrawer.LevelMeshes">LevelMeshes</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code> array containing each floor's level <code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh[] LevelMeshes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_MaxGridDimensions_" data-uid="DUKE.BuildingDrawer.MaxGridDimensions*"></a>
+  <h4 id="DUKE_BuildingDrawer_MaxGridDimensions" data-uid="DUKE.BuildingDrawer.MaxGridDimensions">MaxGridDimensions</h4>
+  <div class="markdown level1 summary"><p>Hard-coded maximum for <code data-dev-comment-type="typeparamref" class="typeparamref">DrawGrid</code>.<code data-dev-comment-type="typeparamref" class="typeparamref">Grid</code> dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2Int MaxGridDimensions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_OutlineMeshes_" data-uid="DUKE.BuildingDrawer.OutlineMeshes*"></a>
+  <h4 id="DUKE_BuildingDrawer_OutlineMeshes" data-uid="DUKE.BuildingDrawer.OutlineMeshes">OutlineMeshes</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code> array containing each floor's outline <code data-dev-comment-type="typeparamref" class="typeparamref">Mesh</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh[] OutlineMeshes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_TrueHeight_" data-uid="DUKE.BuildingDrawer.TrueHeight*"></a>
+  <h4 id="DUKE_BuildingDrawer_TrueHeight" data-uid="DUKE.BuildingDrawer.TrueHeight">TrueHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float TrueHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="DUKE_BuildingDrawer_AddToHorizontalRun_" data-uid="DUKE.BuildingDrawer.AddToHorizontalRun*"></a>
+  <h4 id="DUKE_BuildingDrawer_AddToHorizontalRun_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Collections_Generic_List_UnityEngine_Vector3__System_Collections_Generic_List_System_Int32__System_Int32_System_Single_" data-uid="DUKE.BuildingDrawer.AddToHorizontalRun(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{System.Int32},System.Int32,System.Single)">AddToHorizontalRun(Vector3, Vector3, Single, List&lt;Vector3&gt;, List&lt;Int32&gt;, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Create a part of a horizontal frame mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddToHorizontalRun(Vector3 _vA, Vector3 _vB, float _height, List&lt;Vector3&gt; _verts, List&lt;int&gt; _tris, int _runResolution, float _meshThickness)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_vA</span></td>
+        <td><p>Point (from).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_vB</span></td>
+        <td><p>Point (to).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_height</span></td>
+        <td><p>Height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">UnityEngine.Vector3</span>&gt;</td>
+        <td><span class="parametername">_verts</span></td>
+        <td><p>A list of vertices the part is added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">_tris</span></td>
+        <td><p>A list of triangles the part is added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_runResolution</span></td>
+        <td><p>Determines the cross-section shape of the run.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_meshThickness</span></td>
+        <td><p>Determines the cross-section thickness of the run.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_AddToVerticalRun_" data-uid="DUKE.BuildingDrawer.AddToVerticalRun*"></a>
+  <h4 id="DUKE_BuildingDrawer_AddToVerticalRun_UnityEngine_Vector3_UnityEngine_Vector3_System_Collections_Generic_List_UnityEngine_Vector3__System_Collections_Generic_List_System_Int32__System_Int32_System_Single_" data-uid="DUKE.BuildingDrawer.AddToVerticalRun(UnityEngine.Vector3,UnityEngine.Vector3,System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{System.Int32},System.Int32,System.Single)">AddToVerticalRun(Vector3, Vector3, List&lt;Vector3&gt;, List&lt;Int32&gt;, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Create a part of a vertical frame mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddToVerticalRun(Vector3 _top, Vector3 _bot, List&lt;Vector3&gt; _verts, List&lt;int&gt; _tris, int _runResolution, float _meshThickness)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_top</span></td>
+        <td><p>Point (from).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_bot</span></td>
+        <td><p>Point (to).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">UnityEngine.Vector3</span>&gt;</td>
+        <td><span class="parametername">_verts</span></td>
+        <td><p>A list of vertices the part is added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">_tris</span></td>
+        <td><p>A list of triangles the part is added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_runResolution</span></td>
+        <td><p>Determines the cross-section shape of the run.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">_meshThickness</span></td>
+        <td><p>Determines the cross-section thickness of the run.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_Awake_" data-uid="DUKE.BuildingDrawer.Awake*"></a>
+  <h4 id="DUKE_BuildingDrawer_Awake" data-uid="DUKE.BuildingDrawer.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Awake()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_BeginDrawing_" data-uid="DUKE.BuildingDrawer.BeginDrawing*"></a>
+  <h4 id="DUKE_BuildingDrawer_BeginDrawing" data-uid="DUKE.BuildingDrawer.BeginDrawing">BeginDrawing()</h4>
+  <div class="markdown level1 summary"><p>Begin the drawing process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BeginDrawing()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_CalculateBuildingBoundingBoxAndCenter_" data-uid="DUKE.BuildingDrawer.CalculateBuildingBoundingBoxAndCenter*"></a>
+  <h4 id="DUKE_BuildingDrawer_CalculateBuildingBoundingBoxAndCenter" data-uid="DUKE.BuildingDrawer.CalculateBuildingBoundingBoxAndCenter">CalculateBuildingBoundingBoxAndCenter()</h4>
+  <div class="markdown level1 summary"><p>Calculate the bounds and center of a building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BuildingBounds CalculateBuildingBoundingBoxAndCenter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.BuildingBounds.html">BuildingBounds</a></td>
+        <td><p>A calculated BuildingBounds instance of the Building.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_ContinueDrawing_" data-uid="DUKE.BuildingDrawer.ContinueDrawing*"></a>
+  <h4 id="DUKE_BuildingDrawer_ContinueDrawing" data-uid="DUKE.BuildingDrawer.ContinueDrawing">ContinueDrawing()</h4>
+  <div class="markdown level1 summary"><p>Draw by moving the pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ContinueDrawing()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_CreateBottomMesh_" data-uid="DUKE.BuildingDrawer.CreateBottomMesh*"></a>
+  <h4 id="DUKE_BuildingDrawer_CreateBottomMesh_System_Int32_" data-uid="DUKE.BuildingDrawer.CreateBottomMesh(System.Int32)">CreateBottomMesh(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create the mesh at the bottom of the Building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Mesh CreateBottomMesh(int _level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><p>Bottom mesh of the selected level defined by <code data-dev-comment-type="paramref" class="paramref">_level</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_CreateCleanOutlineMesh_" data-uid="DUKE.BuildingDrawer.CreateCleanOutlineMesh*"></a>
+  <h4 id="DUKE_BuildingDrawer_CreateCleanOutlineMesh_System_Int32_" data-uid="DUKE.BuildingDrawer.CreateCleanOutlineMesh(System.Int32)">CreateCleanOutlineMesh(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a clean outline mesh for the selected level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Mesh CreateCleanOutlineMesh(int _level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><p>Outline mesh of the selected level defined by <code data-dev-comment-type="paramref" class="paramref">_level</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_CreateDefaultMesh_" data-uid="DUKE.BuildingDrawer.CreateDefaultMesh*"></a>
+  <h4 id="DUKE_BuildingDrawer_CreateDefaultMesh_System_Int32_" data-uid="DUKE.BuildingDrawer.CreateDefaultMesh(System.Int32)">CreateDefaultMesh(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a mesh of a single level (drawValue).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Mesh CreateDefaultMesh(int _level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><p>Default mesh of the selected level defined by <code data-dev-comment-type="paramref" class="paramref">_level</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_EndDrawing_" data-uid="DUKE.BuildingDrawer.EndDrawing*"></a>
+  <h4 id="DUKE_BuildingDrawer_EndDrawing" data-uid="DUKE.BuildingDrawer.EndDrawing">EndDrawing()</h4>
+  <div class="markdown level1 summary"><p>End the drawing process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndDrawing()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_GetNewDirection_" data-uid="DUKE.BuildingDrawer.GetNewDirection*"></a>
+  <h4 id="DUKE_BuildingDrawer_GetNewDirection_UnityEngine_Vector2Int_System_Boolean_" data-uid="DUKE.BuildingDrawer.GetNewDirection(UnityEngine.Vector2Int,System.Boolean)">GetNewDirection(Vector2Int, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get a new V2 direction by turning 90 degrees clockwise or anti-clockwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2Int GetNewDirection(Vector2Int _currentDirection, bool _clockwise)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td><span class="parametername">_currentDirection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_clockwise</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td><p>The new direction on a two-dimensional plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_GetSourceDevice_" data-uid="DUKE.BuildingDrawer.GetSourceDevice*"></a>
+  <h4 id="DUKE_BuildingDrawer_GetSourceDevice" data-uid="DUKE.BuildingDrawer.GetSourceDevice">GetSourceDevice()</h4>
+  <div class="markdown level1 summary"><p>Get the current source device (VRInput or DesktopInput).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Input GetSourceDevice()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.Controls.Input.html">Input</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_GridCoordinatesToWorldPosition_" data-uid="DUKE.BuildingDrawer.GridCoordinatesToWorldPosition*"></a>
+  <h4 id="DUKE_BuildingDrawer_GridCoordinatesToWorldPosition_System_Int32_System_Int32_System_Boolean_" data-uid="DUKE.BuildingDrawer.GridCoordinatesToWorldPosition(System.Int32,System.Int32,System.Boolean)">GridCoordinatesToWorldPosition(Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Transform grid coordinates to world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 GridCoordinatesToWorldPosition(int _x, int _y, bool _returnCellCenterPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_x</span></td>
+        <td><p>Grid coordinate position on X-axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_y</span></td>
+        <td><p>Grid coordinate position on Y-axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_returnCellCenterPosition</span></td>
+        <td><p>TRUE when the center of the <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code> should be returned.
+FALSE when the lower left corner should be returned instead.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><p>World coordinate position of the specified <code data-dev-comment-type="typeparamref" class="typeparamref">DrawCell</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_InitializeBuildingDrawer_" data-uid="DUKE.BuildingDrawer.InitializeBuildingDrawer*"></a>
+  <h4 id="DUKE_BuildingDrawer_InitializeBuildingDrawer" data-uid="DUKE.BuildingDrawer.InitializeBuildingDrawer">InitializeBuildingDrawer()</h4>
+  <div class="markdown level1 summary"><p>Setup the variables and references of BuildingDrawer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeBuildingDrawer()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_OnDisable_" data-uid="DUKE.BuildingDrawer.OnDisable*"></a>
+  <h4 id="DUKE_BuildingDrawer_OnDisable" data-uid="DUKE.BuildingDrawer.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_OnEnable_" data-uid="DUKE.BuildingDrawer.OnEnable*"></a>
+  <h4 id="DUKE_BuildingDrawer_OnEnable" data-uid="DUKE.BuildingDrawer.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnEnable()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_PaintArea_" data-uid="DUKE.BuildingDrawer.PaintArea*"></a>
+  <h4 id="DUKE_BuildingDrawer_PaintArea" data-uid="DUKE.BuildingDrawer.PaintArea">PaintArea()</h4>
+  <div class="markdown level1 summary"><p>Define a rectangular area from <code data-dev-comment-type="paramref" class="paramref">_action</code>'s <code data-dev-comment-type="paramref" class="paramref">StartPoint</code> and <code data-dev-comment-type="paramref" class="paramref">EndPoint</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PaintArea()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_RedoGridState_" data-uid="DUKE.BuildingDrawer.RedoGridState*"></a>
+  <h4 id="DUKE_BuildingDrawer_RedoGridState" data-uid="DUKE.BuildingDrawer.RedoGridState">RedoGridState()</h4>
+  <div class="markdown level1 summary"><p>Advance forward on the list of saved Grids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RedoGridState()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_ResetGridStates_" data-uid="DUKE.BuildingDrawer.ResetGridStates*"></a>
+  <h4 id="DUKE_BuildingDrawer_ResetGridStates" data-uid="DUKE.BuildingDrawer.ResetGridStates">ResetGridStates()</h4>
+  <div class="markdown level1 summary"><p>Reset gridStates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ResetGridStates()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_SaveGridState_" data-uid="DUKE.BuildingDrawer.SaveGridState*"></a>
+  <h4 id="DUKE_BuildingDrawer_SaveGridState" data-uid="DUKE.BuildingDrawer.SaveGridState">SaveGridState()</h4>
+  <div class="markdown level1 summary"><p>Save the current Grid as an instance.
+Trim Grids that branch from the new current.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SaveGridState()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_ScaleButtonClicked_" data-uid="DUKE.BuildingDrawer.ScaleButtonClicked*"></a>
+  <h4 id="DUKE_BuildingDrawer_ScaleButtonClicked_System_Int32_" data-uid="DUKE.BuildingDrawer.ScaleButtonClicked(System.Int32)">ScaleButtonClicked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the building scale for drawing. Called with UnityEvent from a Clickable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaleButtonClicked(int _scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_scale</span></td>
+        <td><p>Desired scale to be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetBuilding_" data-uid="DUKE.BuildingDrawer.SetBuilding*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetBuilding_DUKE_KLHData_Building_" data-uid="DUKE.BuildingDrawer.SetBuilding(DUKE.KLHData.Building)">SetBuilding(Building)</h4>
+  <div class="markdown level1 summary"><p>Set <code data-dev-comment-type="paramref" class="paramref">_newBuilding</code> as the current Building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuilding(Building _newBuilding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DUKE.KLHData.Building.html">Building</a></td>
+        <td><span class="parametername">_newBuilding</span></td>
+        <td><p>Building template that is used as the base.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetBuilding_" data-uid="DUKE.BuildingDrawer.SetBuilding*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetBuilding_System_Int32_" data-uid="DUKE.BuildingDrawer.SetBuilding(System.Int32)">SetBuilding(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the current Building from buildingTemplates.
+NOTE: This method is called from Clickables' OnClick UnityEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuilding(int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td><p>Index of an object from buildingTemplates list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetBuildingMaterialInstances_" data-uid="DUKE.BuildingDrawer.SetBuildingMaterialInstances*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetBuildingMaterialInstances" data-uid="DUKE.BuildingDrawer.SetBuildingMaterialInstances">SetBuildingMaterialInstances()</h4>
+  <div class="markdown level1 summary"><p>Setup Materials for meshObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetBuildingMaterialInstances()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetDrawPlaneAndGridSize_" data-uid="DUKE.BuildingDrawer.SetDrawPlaneAndGridSize*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetDrawPlaneAndGridSize" data-uid="DUKE.BuildingDrawer.SetDrawPlaneAndGridSize">SetDrawPlaneAndGridSize()</h4>
+  <div class="markdown level1 summary"><p>Resize 'drawPlane' and the material's parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDrawPlaneAndGridSize()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetMaterialInstance_" data-uid="DUKE.BuildingDrawer.SetMaterialInstance*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetMaterialInstance_UnityEngine_Transform_UnityEngine_Material_System_Int32_" data-uid="DUKE.BuildingDrawer.SetMaterialInstance(UnityEngine.Transform,UnityEngine.Material,System.Int32)">SetMaterialInstance(Transform, Material, Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a new material instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetMaterialInstance(Transform _container, Material _mat, int _index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">_container</span></td>
+        <td><p>The parent of objects to which new instances are added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">_mat</span></td>
+        <td><p>Material to be instantiated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_index</span></td>
+        <td><p>Index of the object within its parent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_SetMaterialParametersAndColors_" data-uid="DUKE.BuildingDrawer.SetMaterialParametersAndColors*"></a>
+  <h4 id="DUKE_BuildingDrawer_SetMaterialParametersAndColors" data-uid="DUKE.BuildingDrawer.SetMaterialParametersAndColors">SetMaterialParametersAndColors()</h4>
+  <div class="markdown level1 summary"><p>Update material parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetMaterialParametersAndColors()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_StoryButtonClicked_" data-uid="DUKE.BuildingDrawer.StoryButtonClicked*"></a>
+  <h4 id="DUKE_BuildingDrawer_StoryButtonClicked_System_Int32_" data-uid="DUKE.BuildingDrawer.StoryButtonClicked(System.Int32)">StoryButtonClicked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the story level for drawing. Called with UnityEvent from a Clickable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StoryButtonClicked(int _val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_val</span></td>
+        <td><p>Desired level to be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_UndoGridState_" data-uid="DUKE.BuildingDrawer.UndoGridState*"></a>
+  <h4 id="DUKE_BuildingDrawer_UndoGridState" data-uid="DUKE.BuildingDrawer.UndoGridState">UndoGridState()</h4>
+  <div class="markdown level1 summary"><p>Return backwards on the list of saved Grids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UndoGridState()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_Update_" data-uid="DUKE.BuildingDrawer.Update*"></a>
+  <h4 id="DUKE_BuildingDrawer_Update" data-uid="DUKE.BuildingDrawer.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Update()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_UpdateMeshObject_" data-uid="DUKE.BuildingDrawer.UpdateMeshObject*"></a>
+  <h4 id="DUKE_BuildingDrawer_UpdateMeshObject_System_Int32_" data-uid="DUKE.BuildingDrawer.UpdateMeshObject(System.Int32)">UpdateMeshObject(Int32)</h4>
+  <div class="markdown level1 summary"><p>Update the mesh of a selected level in BuildingDrawer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateMeshObject(int _level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">_level</span></td>
+        <td><p>Selected level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DUKE_BuildingDrawer_UpdateMeshObjects_" data-uid="DUKE.BuildingDrawer.UpdateMeshObjects*"></a>
+  <h4 id="DUKE_BuildingDrawer_UpdateMeshObjects" data-uid="DUKE.BuildingDrawer.UpdateMeshObjects">UpdateMeshObjects()</h4>
+  <div class="markdown level1 summary"><p>Update the mesh of every level in BuildingDrawer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateMeshObjects()</code></pre>
+  </div>
+  
+  
+  <a id="DUKE_BuildingDrawer_WorldPositionToGridCoordinates_" data-uid="DUKE.BuildingDrawer.WorldPositionToGridCoordinates*"></a>
+  <h4 id="DUKE_BuildingDrawer_WorldPositionToGridCoordinates_UnityEngine_Vector3_" data-uid="DUKE.BuildingDrawer.WorldPositionToGridCoordinates(UnityEngine.Vector3)">WorldPositionToGridCoordinates(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transform world position to grid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2Int WorldPositionToGridCoordinates(Vector3 _wPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">_wPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2Int</span></td>
+        <td><p>World coordinate position to be converted into grid coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
